@@ -134,7 +134,6 @@ function credits(){
   const links=el('div','source-links');
   [['Bộ 600 câu của Cục CSGT','https://xaydungchinhsach.chinhphu.vn/600-cau-hoi-dung-cho-sat-hach-lai-xe-co-gioi-duong-bo-119250513095211625.htm'],['Ảnh cung đường','licenses/route-photos.txt'],['Sơ đồ cung đường','licenses/route-maps.txt'],['Cây và mặt tiền','../streetscape/CREDITS.txt'],['Địa giới hành chính','assets/map/sources.txt'],['Đường và OSM','../vn-roads/CREDITS.txt'],['Leaflet','vendor/leaflet-license.txt'],['Three.js','../THREE-LICENSE.txt'],['Phông Barlow','licenses/barlow.txt'],['Barlow Condensed','licenses/barlow-condensed.txt'],['Explora','licenses/explora.txt']].forEach(([t,href])=>{const a=el('a','',t);a.href=href;a.target='_blank';a.rel='noopener';links.append(a);});
   content.append(links,el('p','','VietForward (VF) là hãng xe hư cấu của trò chơi. Dung lượng, tốc độ và mức tiêu thụ hiển thị là thông số trong game.'),el('p','','Lựa chọn xe, cung đường và tiến độ học được lưu trên trình duyệt của bạn.'));
-  const src=el('a','soft-button download-source','Tải mã nguồn Vi vu đất Việt');src.download='Vi-vu-dat-Viet.zip';src.href='../ma-nguon.zip';content.append(src);
 }
 $$('[data-dialog]').forEach(b=>b.onclick=b.dataset.dialog==='guide'?guide:credits);
 $('#scenic-open').onclick=()=>{
