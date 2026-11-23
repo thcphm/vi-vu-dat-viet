@@ -1,0 +1,82 @@
+Phế tích Mỹ Sơn
+
+“My Son Temple Ruins (Vietnam)” — Robert Szymaniuk (NeoTec), 2020.
+https://sketchfab.com/3d-models/my-son-temple-ruins-vietnam-833564ab7c2540b9be6ecefb8bfc2a8a
+Giấy phép Creative Commons Ghi công 4.0 Quốc tế (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Vi vu đất Việt giảm số tam giác và nén tọa độ bằng gltfpack 1.3 để hiển thị
+trên trình duyệt. Bốn ảnh phủ bề mặt cùng thông tin tác giả được giữ
+trong tệp GLB. Mô hình ghi lại một phần di tích và cây xanh quanh đó.
+
+Bản GLB trước khi tối ưu được phân phối trong Objaverse 1.0.
+https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-150/833564ab7c2540b9be6ecefb8bfc2a8a.glb
+
+Công trình G4, nhóm tháp G, Mỹ Sơn
+
+“G4 building at MySon (Vietnam)” — Computer Vision and Reverse Engineering
+Lab (GabrieleGuidi). Nhóm tác giả ghi hình ngày 20/03/2019 trước trùng tu.
+https://sketchfab.com/3d-models/g4-building-at-myson-vietnam-518acfd077b14520bd126dee56cd2dbf
+Giấy phép Creative Commons Ghi công 4.0 Quốc tế (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Vi vu đất Việt giảm số tam giác, nén tọa độ và giữ bốn ảnh phủ bề mặt để trình
+duyệt có thể tải công trình riêng. Tệp my-son-g4.glb thể hiện hiện trạng
+tại thời điểm ghi hình.
+https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-123/518acfd077b14520bd126dee56cd2dbf.glb
+
+Nội thất Đền Ngọc Sơn, Hà Nội
+
+“2017-04-27 14-51-34 - Temple” — Adam Cigler. Tác giả ghi lại một phần
+nội thất Đền Ngọc Sơn ngày 27/04/2017 bằng thiết bị Lenovo Phab 2 Pro.
+https://sketchfab.com/3d-models/2017-04-27-14-51-34-temple-cb5b4f68f93b41cf94a6d8e0d2c896a4
+Giấy phép Creative Commons Ghi công 4.0 Quốc tế (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Vi vu đất Việt lấy mẫu thưa hơn và nén tọa độ của đám mây điểm màu cho tệp
+den-ngoc-son.glb. Mỗi điểm hiển thị màu do thiết bị thu được.
+https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-132/cb5b4f68f93b41cf94a6d8e0d2c896a4.glb
+
+Mặt bia khoa Nhâm Tuất 1442, Văn Miếu – Quốc Tử Giám, Hà Nội
+
+“BiaTienSi1442.jpg” — Ngokhong. Ảnh chụp bia được dựng năm 1484 để ghi
+danh người đỗ khoa thi năm 1442. Vi vu đất Việt cắt riêng mặt bia, chỉnh phối
+cảnh và cân bằng độ sáng cho ảnh phủ van-mieu-1442-face.webp. Ảnh gốc
+và ảnh đã chỉnh dùng cùng giấy phép Creative Commons Ghi công – Chia sẻ
+tương tự 3.0 Chưa chuyển đổi (CC BY-SA 3.0).
+https://commons.wikimedia.org/wiki/File:BiaTienSi1442.jpg
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Tranh trên bàn thờ Quan Công, nhà cổ Huỳnh Thủy Lê, Sa Đéc
+
+Bùi Thụy Đào Nguyên chụp ảnh “Bàn thờ Quan Công (2).jpg”. Vi vu đất Việt thu
+nhỏ ảnh sang WebP rồi cắt phần tranh Quan Công và các dải trang trí
+của khung thờ để đặt trong mô hình. Ảnh gốc và phần ảnh đã cắt dùng giấy phép Creative Commons
+Ghi công – Chia sẻ tương tự 3.0 Chưa chuyển đổi (CC BY-SA 3.0).
+https://commons.wikimedia.org/wiki/File:B%C3%A0n_th%E1%BB%9D_Quan_C%C3%B4ng_(2).jpg
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Phù điêu võ sĩ ở hai cổng Đền Hùng, Phú Thọ
+
+Vi vu đất Việt cắt hai phù điêu từ ảnh “Cổng đền Hùng (Phú Thọ).jpg” của
+Bùi Thụy Đào Nguyên và bỏ nền để phủ lên mô hình. Hai tệp
+den-hung-cong-cu-trai.webp và den-hung-cong-cu-phai.webp dùng cùng
+giấy phép Creative Commons Ghi công – Chia sẻ tương tự 3.0.
+https://commons.wikimedia.org/wiki/File:C%E1%BB%95ng_%C4%91%E1%BB%81n_H%C3%B9ng_(Ph%C3%BA_Th%E1%BB%8D).jpg
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Hai tệp den-hung-den-thuong-trai.webp và den-hung-den-thuong-phai.webp
+là phần phù điêu được cắt và bỏ nền từ ảnh “Thuong temple.JPG” của
+Khương Việt Hà (Viethavvh). Tác giả đã hiến ảnh vào phạm vi công cộng.
+https://commons.wikimedia.org/wiki/File:Thuong_temple.JPG
+
+Phù điêu tại sân hành lễ dưới chân đồi D1, Điện Biên Phủ
+
+Adam Jones chụp hai cảnh dân công vận tải và quân Pháp đầu hàng ngày
+1/7/2019. Vi vu đất Việt cắt phần đá, loại cây che khuất và làm mờ mép ảnh
+để đặt lên tường cong. Hai tệp doi-d1-phu-dieu-dan-cong.webp và
+doi-d1-phu-dieu-dau-hang.webp dùng cùng giấy phép Creative Commons
+Ghi công – Chia sẻ tương tự 2.0 (CC BY-SA 2.0).
+https://commons.wikimedia.org/wiki/File:Frieze_Showing_Indigenous_Women_Porters_-_Foot_of_Hill_D1_(Victory_Monument)_-_Dien_Bien_Phu_-_Vietnam_(48168818402).jpg
+https://commons.wikimedia.org/wiki/File:Frieze_Showing_French_Surrender_in_May_1954_-_Hill_D1_(Victory_Monument)_-_Dien_Bien_Phu_-_Vietnam_(48168819157).jpg
+https://creativecommons.org/licenses/by-sa/2.0/

@@ -1,0 +1,60 @@
+.lessonYard, .lessonRoad, .lessonStreet {
+  --lesson-map: clamp(100px, 12vw, 150px);
+  --pedal-height: 46px;
+}
+body[data-map-size=small] {--lesson-map: clamp(83px, 10vw, 120px)}
+body[data-map-size=large] {--lesson-map: clamp(116px, 17vw, 185px)}
+body[data-button-size=large] {--pedal-height: 57px}
+.lessonYard #view #map, .lessonRoad .view #map, .lessonStreet .screen .map canvas {width: var(--lesson-map)}
+.lessonRoad[data-dashboard-map] .view #map, .lessonStreet[data-dashboard-map] .screen .map canvas {display:none}
+.lessonYard .lessonPedals, .lessonYard .lessonSwitches {display: flex; flex-wrap: wrap; gap: 5px}
+.lessonYard .lessonPedals button, .lessonRoad .pedals button {font-weight: 650}
+.lessonYard [data-key=arrowup], .lessonRoad [data-key=arrowup], .lessonStreet .touch [data-key=arrowup] {background: #d2f477; color: #192a20; border-color: #d2f477}
+@media (min-width: 701px) and (not (any-pointer: coarse)) {
+  .lessonYard[data-map-side=right] #view #map, .lessonRoad[data-map-side=right] .view #map, .lessonStreet[data-map-side=right] .screen .map {left: auto; right: 9px}
+  .lessonYard[data-map-side=right] #view #meters, .lessonRoad[data-map-side=right] .view .instruments, .lessonStreet[data-map-side=right] .screen .speed {right: auto; left: 9px}
+}
+@media (any-pointer: coarse), (max-width: 700px) {
+  .lessonYard .controls {display: contents}
+  .lessonYard .lessonPedals, .lessonRoad .pedals {display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 5px}
+  .lessonYard .lessonSwitches {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px}
+  .lessonYard .controls .lessonSwitches button {grid-column: auto}
+  .lessonYard .lessonPedals button, .lessonRoad .pedals button, .lessonStreet .screen .touch {min-height: var(--pedal-height)}
+  body[data-steering=right] :is(.lessonPedals, .pedals, .touch) :is([data-key=arrowleft],[data-key=arrowright]) {order: 2}
+  .lessonStreet[data-steering=right] .touch :is(#blinkLeft,#blinkMobile) {order: 1}
+  .lessonStreet .screen .touch {gap: 5px; height: var(--pedal-height)}
+  .lessonStreet .screen .touch button {font-size: 13px; padding-inline: 1px}
+  .lessonStreet .screen .speed, .lessonStreet .screen .map {bottom: calc(var(--pedal-height) + 15px)}
+  .lessonStreet .screen .liveHint {bottom: calc(var(--pedal-height) + 62px); max-width: calc(100% - var(--lesson-map) - 28px)}
+}
+@media (max-width: 700px) and (orientation: portrait) {
+  .lessonYard main, .lessonRoad main {display: flex; flex-direction: column; gap: 7px; padding: 8px}
+  .lessonYard main > header, .lessonRoad main > header {margin: 0}
+  .lessonYard #view, .lessonRoad .view {order: 1; min-height: 200px; height: clamp(200px, 40dvh, 400px)}
+  .lessonYard .lessonPedals, .lessonRoad .pedals {order: 2; margin: 0}
+  .lessonYard .panel, .lessonRoad .dash {order: 3; margin: 0}
+  .lessonYard .lessonSwitches, .lessonRoad #feedback {order: 4}
+  .lessonYard footer, .lessonRoad :is(.controls,details) {order: 5}
+  .lessonYard #view #map, .lessonRoad .view #map, .lessonStreet .screen .map canvas {max-width: 29vw}
+}
+@media (orientation: landscape) and (max-height: 540px) and (min-width: 520px) {
+  .lessonYard .controls {display: contents}
+  .lessonYard .lessonPedals, .lessonYard .lessonSwitches {display: grid; grid-template-columns: repeat(2,minmax(0,1fr))}
+  .lessonYard .lessonPedals {grid-template-columns: repeat(4,minmax(0,1fr))}
+  .lessonYard #view {grid-row: 2 / 5; height: calc(100dvh - 80px)}
+  .lessonRoad .view {height: calc(100dvh - 96px)}
+  .lessonYard .lessonPedals {grid-column: 2; grid-row: 2}
+  .lessonYard .panel {grid-column: 2; grid-row: 3}
+  .lessonYard .lessonSwitches {grid-column: 2; grid-row: 4}
+  .lessonRoad .pedals {grid-row: 2}
+  .lessonRoad .dash {grid-row: 3}
+}
+@media (any-pointer: coarse) and (orientation: landscape) and (max-height: 540px) {
+  .lessonStreet header {height: 44px}
+  .lessonStreet main {padding-block: 6px}
+  .lessonStreet #courseSelect:disabled {display: none}
+  .lessonStreet .grid {grid-template-columns: minmax(0,1fr)}
+  .lessonStreet .screen:not(:fullscreen) {height: calc(100dvh - 56px); min-height: 0}
+  .lessonStreet .cover {padding: 12px 20px}
+  .lessonStreet .cover h1 {font-size: clamp(32px,12dvh,52px)}
+}

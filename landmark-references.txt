@@ -1,0 +1,1074 @@
+TƯ LIỆU DỰNG MÔ HÌNH ĐỊA DANH VIỆT NAM
+
+Văn Miếu – Quốc Tử Giám
+Mặt bằng công trình, đường đi và cây lấy theo hình học OpenStreetMap. Sơ đồ của Trung tâm Hoạt động Văn hóa Khoa học Văn Miếu – Quốc Tử Giám xác định tên các khu tham quan. 82 bia dùng số đo và thứ tự nhà che trong phụ lục 1–2 của Đào Thị Thúy Anh (2017), trang 165–185. Khoảng cách giữa hai bia liền nhau trong cảnh được chia theo chiều dài nhà che. Tư liệu không ghi tọa độ riêng của từng bia.
+https://vanmieu.gov.vn/vi/introduction/visitor-information
+https://vanmieu.gov.vn/vi/doctoral-stelae-garden
+https://www.openstreetmap.org/way/1582902103
+https://www.slideshare.net/slideshow/luan-an-nghe-thuat-tao-hinh-bia-tien-si-o-van-mieu-quoc-tu-giam/216479471
+
+Bản quét và ảnh thực địa
+Tác giả, giấy phép, ngày ghi hình và các bước tối ưu ba bản quét ở Mỹ Sơn và đền Ngọc Sơn được ghi trong tệp đi kèm. Ở Huế, người xem mở các bản ghi hình do CyArk công bố. Từng tour ảnh thiên nhiên có đường dẫn tới đơn vị quay chụp ngay trong trình xem.
+landmark-scans/CREDITS.txt
+https://www.cyark.org/projects/tomb-of-tu-duc-complex-of-hue-monuments
+
+Đèn đường và cọc chắn
+Vị trí lấy từ các nút OpenStreetMap trong vùng 550 m quanh điểm tham quan. Bản đồ đánh dấu các nút này. Cảnh lái dựng những đèn hoặc cọc có chiều cao được ghi tại chính nút đó.
+https://download.geofabrik.de/asia/vietnam.html
+https://www.openstreetmap.org/copyright
+
+Các liên kết ảnh của atlas được đối chiếu theo đối tượng OpenStreetMap, thuộc tính hình ảnh P18 của Wikidata và Wikimedia Commons. Thông tin kiến trúc dùng các thẻ trên đúng đường bao công trình. Hình thu nhỏ trong danh sách mô hình là ảnh kết xuất của trò chơi.
+https://www.openstreetmap.org/copyright
+https://www.wikidata.org/wiki/Property:P18
+
+Thác Bản Giốc, Pongour và Dray Nur
+Đối chiếu cụm thác tách đôi qua doi cây ở Cao Bằng, các bậc đá xòe ở Lâm Đồng và vách dài trên sông Sêrêpốk.
+https://vietnam.travel/vi/things-to-do/ban-gioc-waterfall-majestic-beauty-northern-border/
+https://vietgoing.com/article/329-cac-diem-du-lich-o-huyen-duc-trong-lam-dong.html
+https://vhttdl.daklak.gov.vn/Articles/Detail/1435
+
+Tràng An, Hạ Long, Phong Nha và chợ nổi Cái Răng
+Ảnh từ trên cao cho thấy cách thuyền tập trung ở bến Tràng An. Ảnh thực địa giúp đối chiếu chân đá Hòn Trống Mái, cửa động ven sông Son và cây bẹo trên các ghe ở Cái Răng.
+https://dantri.com.vn/du-lich/toan-canh-trang-an-dia-diem-tong-thong-my-muon-den-tham-nhin-tu-tren-cao-20190307143029291.htm
+https://halongbay.com.vn/vi/p/610-hon-trong-mai-bieu-tuong-doc-dao-cua-vinh-ha-long
+https://plo.vn/trai-nghiem-di-thuyen-10-km-ngam-ky-quan-de-nhat-dong-phong-nha-tien-son-post832221.html
+https://canthotourism.vn/vi/chocairang
+
+Ngọ Môn, Mỹ Sơn, Dinh Độc Lập và hải đăng Kê Gà
+Đối chiếu màu ngói lưu ly và nền đài chữ U, chi tiết cửa sa thạch và mái tháp Chăm, nhịp rèm hoa đá và mặt bằng tháp đèn tám cạnh.
+https://aluoi3.hue.gov.vn/Du-khach/Thong-tin-du-khach/Kham-pha-Hue/tb/Ngo-Mon-546198
+https://whc.unesco.org/en/list/949/gallery/
+https://dsvh.gov.vn/di-tich-kien-truc-nghe-thuat-khu-den-thap-my-son-2943
+https://dinhdoclap.gov.vn/kien-truc-dinh-doc-lap/
+https://www.openstreetmap.org/way/1272874768
+
+Đại học Bách khoa Hà Nội
+Sơ đồ của trường và hình học OpenStreetMap định vị C1, đài phun nước, các dãy giảng đường, thư viện Tạ Quang Bửu và các nhánh đường nội bộ. Ảnh của trường dùng để đối chiếu mặt đứng C1, biểu tượng I ♥ BK, Khối đá trắng trước đài phun nước, cầu thang đỏ C9, mặt đứng và đồng hồ thư viện, cùng các gân bê tông dưới vòm Parabol. Kích thước chi tiết và cây xanh được ước lượng từ ảnh. Cổng trong mô phỏng đặt lùi khoảng 20 m so với điểm cổng cũ, theo phương án trường công bố tháng 11/2026. Ảnh xem trước là hình kết xuất từ mô hình.
+https://hust.edu.vn/uploads/sys/quality-assurance/2019/05/cea-00-02-map-of-hust-da-chuyen-doi.399630.20688.pdf
+https://library.hust.edu.vn/vi/node/826
+https://library.hust.edu.vn/en/node/44
+https://hust.edu.vn/vi/news/tin-tuc-su-kien/chao-mung-ky-niem-70-nam-thanh-lap-dai-hoc-bach-khoa-ha-noi-70-nam-qua-cac-bieu-tuong-vuot-thoi-gian-655996.html
+https://ts.hust.edu.vn/tin-tuc/co-so-vat-chat-truong-dai-hoc-bach-khoa-ha-noi
+https://hust.edu.vn/vi/news/hoat-dong-chung/di-doi-cong-parabol-bao-ton-bieu-tuong-dai-hoc-bach-khoa-ha-noi-656109.html
+https://www.openstreetmap.org/#map=18/21.00568/105.84346
+Vị trí cây, lối bộ và thảm cỏ trong bach-khoa-grounds.js dựa trên OpenStreetMap, © OpenStreetMap contributors, ODbL 1.0.
+https://www.openstreetmap.org/copyright
+
+Kỳ Đài, Huế
+Góc chụp từ sông Hương về phía Ngọ Môn dùng để đối chiếu các mặt tường vát, mũi nhô của pháo đài và tỷ lệ cột cờ.
+https://dantri.com.vn/thoi-su/noi-ghi-dau-nhung-khoanh-khac-chuyen-dong-lich-su-20250901183433824.htm
+
+Chợ Bến Thành, TP. Hồ Chí Minh
+Ảnh sau đợt chỉnh trang tháng 1 năm 2026 dùng để đối chiếu mái chữ thập, sáu dãy mái thông gió, góc ngoài bo tròn và mặt tiền cửa Nam.
+https://www.vietnam.vn/en/cho-ben-thanh-thay-ao-moi-sau-6-ngay-trung-tam-tp-hcm-ruc-ro-don-tet
+https://dantri.com.vn/thoi-su/song-nuoc-bap-benh-truoc-cho-ben-thanh-sau-10-ngay-chinh-trang-20260128124804170.htm
+Vị trí cửa Đông (Phan Bội Châu), cửa Tây (Phan Chu Trinh) và cửa Bắc (Lê Thánh Tôn) lấy từ ba nút trên đường bao chợ của OpenStreetMap. Mặt đứng hai cửa bên, mảng gốm và ô thông gió được giản lược bằng hình khối. Hàng vòm thấp, biển tên và quầy hoa cửa Bắc đối chiếu ảnh thực địa tháng 12/2023.
+https://www.openstreetmap.org/way/39514795
+https://csdl.vietnamtourism.gov.vn/dest/?item=592
+https://tuoitre.vn/cho-ben-thanh-duong-nguyen-hue-bat-dau-thay-ao-moi-se-xong-truoc-23-thang-chap-20260119112453154.htm
+https://tapchimythuat.vn/tim-lai-tac-gia-phu-dieu-cho-ben-thanh/
+https://commons.wikimedia.org/wiki/File:2023-12-10_B%E1%BA%BFn_Th%C3%A0nh_Market_(Ch%E1%BB%A3_B%E1%BA%BFn_Th%C3%A0nh)_05.jpg
+
+Nhà thờ Con Gà, Đà Nẵng
+Ảnh chính diện dùng để đối chiếu tỉ lệ tầng chuông, mặt đồng hồ, cửa hoa hồng, diềm vòm nhọn và màu tháp.
+https://danangfantasticity.com/en/culture-en/danang-cathedral
+https://www.expedia.co.kr/Da-Nang-Cathedral-Da-Nang-City-Centre.d553248621526918266.Place-To-Visit
+
+
+Tháp Rùa, Hà Nội
+https://kienthuc.net.vn/he-lo-hinh-anh-can-canh-ben-trong-thap-rua-ho-guom-post997231.html
+https://crystalbay.com/35-thap-rua-ho-guom-tho-ai-n55054.html
+Góc nhìn cao và cận cảnh dùng để đối chiếu nhịp cửa vòm mở, lan can thấp, tầng áp mái, các sống ngói và đầu đao.
+
+Nhà thờ đá Sa Pa
+https://clublog.club-t.com/_ct/17777960
+https://sapa-tourism.com/sapa-stone-church-the-symbol-of-the-city-in-the-mist-2/
+Góc chính diện dùng để đối chiếu đá ghép, cổng vòm nhọn, cặp khe chuông dài, chóp hồi và thánh giá.
+
+Bảo tàng Quảng Ninh, Hạ Long
+https://vinpearl.com/en/quang-ninh-museum
+https://vov.vn/du-lich/anh-cua-ban/co-gi-ben-trong-vien-ngoc-den-ben-bo-vinh-ha-long-post1007570.vov
+Ảnh lối vào dùng để đối chiếu độ cao hai khối kính, lưới tấm kính, vị trí cửa, nhịp bậc thềm và dòng chữ trắng cao, hẹp trên mặt tiền.
+
+Hình khối và họa tiết được dựng trong game. Các trang trên cung cấp ảnh tham khảo.
+
+Tư liệu ảnh đối chiếu – mô hình 3D do trò chơi dựng
+
+Ga Đà Lạt
+Ảnh chính diện của Dân Việt dùng để đối chiếu ba mảng tam giác viền đỏ, đồng hồ, tên ga và ô kính màu.
+https://thegioitiepthi.danviet.vn/ga-da-lat-chay-cac-chuyen-tau-co-phuc-vu-du-khach-den-voi-cao-nguyen-20240411210115688-d26878.html
+Góc trên cao của Người Đô Thị dùng để đối chiếu hai cánh nhà ga, mái chính chạy ngang và đôi mái hiên tròn phía trước.
+https://nguoidothi.net.vn/ga-da-lat-nhin-tu-tren-cao-28096.html
+
+Nhà rông Kon Klor
+Bộ ảnh trong bài của MIA.vn dùng để đối chiếu dáng mái tranh thu nhỏ về đỉnh, đường nóc hơi cong, dãy cột gỗ, diềm hoa văn và cặp cầu thang ở mặt trước.
+https://mia.vn/cam-nang-du-lich/ghe-nha-rong-kon-klor-chiem-nguong-net-dep-van-hoa-mien-cao-dac-sac-7869
+
+Tháp Nghinh Phong
+Ảnh mặt trước của Dân Việt và góc nhìn từ phía biển của MIA.vn dùng để đối chiếu hai khối trụ cao lệch nhau, các cụm cột lục giác bên ngoài, khe gió và thềm đá.
+https://etime.danviet.vn/thap-nghinh-phong-bieu-tuong-moi-cua-kinh-te-du-lich-phu-yen-20231218103903301-d116297.html
+https://mia.vn/cam-nang-du-lich/chiem-nguong-ve-dep-my-mieu-dam-net-van-hoa-nghe-thuat-tai-quang-truong-nghinh-phong-phu-yen-2150
+
+Tỷ lệ và chi tiết trang trí được ước lượng từ ảnh. Các họa tiết nổi trong khe tháp là diễn giải của mô hình. Ảnh tham khảo chỉ dùng để đối chiếu, không được đóng gói cùng game.
+
+Ảnh đối chiếu ngoại thất và tư liệu kiến trúc
+
+Tháp Bà Po Nagar, Nha Trang
+- Trung tâm Xúc tiến Đầu tư, Thương mại và Du lịch Khánh Hòa. Mặt bằng hai cao độ, Mandapa với 10 cột lớn và 12 cột nhỏ, cầu thang thẳng và mặt đứng tháp chính.
+  https://dulichso.khanhhoa.gov.vn/article/thap-ba-po-nagar-77f
+- Sở Văn hóa, Thể thao và Du lịch Khánh Hòa. Tên và chiều cao tham khảo của bốn tháp.
+  https://dulich.khanhhoa.gov.vn/tin-tuc-su-kien/tu-hao-di-san-van-hoa-nghin-nam.html
+- Ảnh chụp các tháp của Vietnam Life và Traveloka. Đối chiếu gờ gạch, cửa giả, khối mái tròn tháp Nam và mái giật cấp của tháp chính.
+  https://vietnamlife.asia/po-nagar-temple/
+  https://ik.imagekit.io/tvlk/blog/2022/07/thap-ba-Ponagar-1.jpg
+
+Chùa Dơi, Sóc Trăng
+- Ảnh Đất Việt Tour và Tour Du Lịch Bến Tre. Mặt hồi vàng, chân tường xanh, hai cửa dẫn vào chính điện, bố cục tranh Phật ở giữa và hàng cột bao quanh.
+  https://datviettour.com.vn/tin-tuc/chua-doi-net-dep-kien-truc-viet-nam
+  https://www.tourdulichbentre.com/du-lich-chua-doi-soc-trang
+
+Dinh Cậu, Phú Quốc
+- Phóng sự ảnh “Ngôi đền nằm cạnh ngọn hải đăng ở Phú Quốc”, chuyên trang Thế Giới Ảnh của Tạp chí Diễn đàn Doanh nghiệp, dẫn nguồn Zing, 13/06/2023. Góc trên cao và góc từ bãi đá cho thấy thềm, hai mái, gành đá, lối lên và hải đăng cạnh dinh.
+  https://thegioianh.diendandoanhnghiep.vn/ngoi-den-nam-canh-ngon-hai-dang-o-phu-quoc-6607.html
+
+Các mô hình, phù điêu và tranh trang trí trong game được dựng lại bằng mã. Chi tiết màu sắc và tỷ lệ chưa có số đo là ước lượng từ ảnh ngoại thất.
+
+Gành Đá Đĩa, Phú Yên
+Bề mặt cột bazan xếp tổ ong, các bậc giật xuống biển, cạnh đá sẫm và mặt khô bạc. Đối chiếu ảnh nhìn từ trên cao và mô tả di sản.
+https://www.dulichvn.org.vn/index.php/item/ngam-nhung-diem-du-lich-bien-qua-de-cu-top-7-canh-dep-bat-ngo-nhin-tu-khong-trung-62846
+https://dsvh.gov.vn/ganh-da-dia-tinh-phu-yen-3307
+
+Hòn Chồng, Nha Trang
+Các phiến đá ven biển và tảng granit khắc lõm hình bàn tay. Biên dạng, vệt phong hóa và dấu tay được diễn giải theo ảnh.
+https://tcdulichtphcm.vn/du-khao/ra-hon-chong-xem-dau-tay-khong-lo-bi-an-in-tren-vach-da-c14a59017.html
+
+Đá Ba Chồng, Định Quán
+Ba tảng đá lớn chồng lệch cạnh Quốc lộ 20. Tỷ lệ và các khe tiếp xúc được ước lượng theo ảnh ngoại thất.
+https://commons.wikimedia.org/wiki/File:%C4%90%C3%A1_Ba_Ch%E1%BB%93ng_in_%C4%90%E1%BB%8Bnh_Qu%C3%A1n.jpg
+https://hvhnt.dongnai.gov.vn/Pages/newsdetail.aspx?CatId=100&NewsId=4620
+
+Chùa Cầu, Hội An — bộ ảnh sau đợt trùng tu năm 2024 cho thấy các gian hai đầu sơn đỏ, hàng cột gỗ giữa cầu, mái ngói ba nhịp và gian thờ nối về bờ bắc. Đường dẫn trong game nằm trên Nguyễn Phúc Chu bên kia sông.
+https://en.baodanang.vn/new-appearance-of-the-japanese-covered-bridge-3139049.html
+https://www.openstreetmap.org/way/631074476
+
+Cổng Nam Thành Nhà Hồ, Thanh Hóa — mô hình dựng ba vòm cuốn chạy qua toàn chiều sâu của cổng, các viên đá nêm quanh vòm và các hàng đá khối so le. Dùng trục cổng trên OpenStreetMap và điểm xuất phát trên Đường Thành.
+https://whc.unesco.org/en/list/1358/
+https://vinwonders.com/vi/wonderpedia/news/thanh-nha-ho-thanh-hoa/
+https://www.openstreetmap.org/way/641694093
+
+Tháp Phổ Minh, Nam Định — dựng 14 tầng vuông thu nhỏ dần, hai tầng đá phía dưới, diềm mái, ô cửa và hai trụ đá trước tháp. Vị trí tháp ước lượng trong sân phía trước chùa theo ảnh vệ tinh và ranh khu di tích. Chiều cao mô hình khoảng 19,5 m.
+https://dantri.com.vn/doi-song/thap-pho-minh-dau-tich-hao-khi-dong-a-20171212070120584.htm
+https://www.openstreetmap.org/way/1151575774
+
+Tháp Phước Duyên, chùa Thiên Mụ, Huế — bảy tầng bát giác, diềm ngói tách từng tầng, dãy ô vòm, trụ trang trí và chóp tháp. Điểm xuất phát trên đường Nguyễn Phúc Nguyên, phía sông Hương.
+https://timtour.vn/kham-pha-chua-thien-mu-net-dep-tam-linh-va-van-hoa-o-hue
+https://www.openstreetmap.org/way/205795043
+
+Các mô hình được dựng cho trò chơi từ việc đối chiếu ảnh. Chi tiết bề mặt, sắc vật liệu và các phần khuất được diễn giải theo tỷ lệ ước tính.
+
+Tòa Thánh Tây Ninh — so sánh ảnh chính diện và ảnh từ trên cao để dựng hai gác chuông, các lớp mái, mắt Thiên Nhãn, hành lang và khối bát giác phía sau.
+https://www.greensm.com/vn-vi/news/toa-thanh-tay-ninh
+https://baobinhphuoc.com.vn/news/19/94114/toa-thanh-lon-nhat-cua-dao-cao-dai-nhin-tu-tren-cao
+
+Nhà hát Cao Văn Lầu — ảnh toàn cảnh và ảnh nhìn từ trên cao thể hiện ba mái nón nghiêng, vành khâu đồng tâm và kết cấu kính bên dưới.
+https://vov.vn/van-hoa/di-san/nha-hat-3-non-la-cong-trinh-kien-truc-van-hoa-doc-dao-giua-long-mien-tay-post1014124.vov
+https://toquoc.vn/o-bac-lieu-co-mot-nha-hat-kien-truc-vo-cung-dac-biet-lay-cam-hung-tu-bieu-tuong-nguoi-viet-nam-20220927183232983.htm
+
+Tháp Vĩnh Hưng — dựng thân tháp gạch thu nhỏ dần theo chiều cao, lòng tháp, vết khuyết dọc mặt trước và bậc thềm theo ảnh khảo tả di tích.
+https://mientay.giadinhonline.vn/thap-co-nghin-nam-tai-bac-lieu-minh-chung-mot-thoi-vang-son-cua-nen-van-hoa-oc-eo-d4832.html
+https://thayungkhiem.vn/en/van-dao/places/thap-vinh-hung
+
+Mô hình là diễn giải hình khối từ ảnh. Tỷ lệ chi tiết, màu sắc và cao độ là ước lượng; ảnh chỉ dùng tham khảo, không nhúng vào trò chơi.
+
+Cột cờ Lũng Cú
+https://tgroup.vn/tours/tour-ha-giang-kham-pha-quan-ba-dong-van-lung-cu-ngoi-thuyen-tren-song-nho-que-chiem-nguong-hem-vuc-tu-san
+https://worldmatetravel.com/travel-guide/lung-cu-flag-tower-vietnam%E2%80%99s-northernmost-symbol-of-national-pride
+https://www.openstreetmap.org/way/504649258
+
+Tháp Đôi
+https://benthanhtourist.com/tour/du-lich-quy-nhon-ky-co-eo-gio-bao-tang-quang-trung
+https://dulichquynhon.binhdinh.gov.vn/en/thapdoiquynhon
+https://www.openstreetmap.org/node/1534828632
+
+Cổng Tam Quan
+https://mia.vn/cam-nang-du-lich/du-lich-rach-gia-12808
+https://dulich.petrotimes.vn/cong-lang-tam-quan-doc-dao-nhat-viet-nam-561919.html
+https://www.openstreetmap.org/node/5563291701
+
+OpenStreetMap contributors (ODbL) — https://www.openstreetmap.org/copyright
+
+Nhà Bá Kiến — Lý Nhân
+Ở làng Đại Hoàng xưa, mái ngói thấp che ba gian nhà gỗ lim. Sau hàng cửa bức bàn là bốn bộ khung với mười sáu cột kê trên chân đá xanh.
+https://paivietnam.vn/en/locations/all-locations/nha-ba-kien-2034
+https://nhandan.vn/tham-nha-ba-kien-post764631.html
+https://www.google.com/maps?cid=790440860444881714
+
+Nghi môn ngoại đền Trần Thương — Lý Nhân
+Ba cửa vòm mở vào đường chính đạo của đền thờ Trần Hưng Đạo. Nhìn lên cổng giữa sẽ thấy gác chuông, các tầng mái đao và đôi rồng chầu mặt nguyệt.
+https://baoxuan.vov.vn/van-hoa/hanh-huong-ve-kho-luong-huyen-thoai-tran-thuong-dau-nam-binh-ngo-post1269859.vov
+https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-den-tran-thuong-1313
+https://www.openstreetmap.org/?mlat=20.57518&mlon=106.106185#map=19/20.57518/106.106185
+
+Chùa Địa Tạng Phi Lai — Thanh Liêm
+Từ lối vào Ninh Trung, nhìn lên chính điện tựa núi Phi Lai. Hai bên thềm có voi đá quỳ và những khoảng sân sỏi trắng xen lối đi bằng phiến đá.
+https://vietnam.vnanet.vn/vietnamese/long-form/dia-tang-phi-lai-tu-diem-du-lich-van-hoa-tam-linh-297867.html
+https://vietnamtourism.gov.vn/post/47997
+https://www.openstreetmap.org/?mlat=20.44505&mlon=105.95182#map=19/20.44505/105.95182
+
+Chùa Bà Đanh — Kim Bảng
+Chùa Bà Đanh, tên chữ Bảo Sơn Tự, nằm bên sông Đáy. Tam quan có ba bộ cửa gỗ, gác chuông phía trên và đôi rồng chầu mặt nguyệt trên bờ nóc.
+https://dantri.com.vn/doi-song/chua-ba-danh-ngoi-chua-menh-danh-de-nhat-vang-khach-2017111007051498.htm
+https://csdl.vietnamtourism.gov.vn/dest/?item=81
+https://www.openstreetmap.org/?mlat=20.56927&mlon=105.85272#map=19/20.56927/105.85272
+
+Vương cung thánh đường Sở Kiện — Thanh Liêm
+Ở Kẻ Sở, hai tháp chuông đỉnh bằng kẹp lấy mặt tiền Gothic. Phía trên ba cửa vòm nhọn là ô hoa hồng ở giữa và hai mặt đồng hồ hai bên.
+https://baoquangninh.vn/ve-dep-thanh-duong-hon-140-tuoi-cach-ha-noi-70km-goc-chup-nao-cung-nhu-troi-au-3272692.html
+https://www.vietnamplus.vn/vuong-cung-thanh-duong-so-kien-nha-tho-lau-doi-nhat-ha-nam-post589755.vnp
+https://www.openstreetmap.org/way/1177046931
+
+Nhà khách Thủy Đình – Tam Chúc — Kim Bảng
+Từ ĐH.05 nhìn qua hồ Tam Chúc, hai cầu đi bộ dẫn tới tòa Thủy Đình. Dưới ba tầng mái cong là Trung tâm Hội nghị quốc tế, nơi khai mạc Đại lễ Vesak năm 2019.
+https://catbaexpress.com/khu-du-lich-chua-tam-chuc-ha-nam.html
+https://nhandan.vn/ha-nam-san-sang-cac-dieu-kien-cung-ruoc-ton-tri-xa-loi-duc-phat-post879333.html
+https://www.openstreetmap.org/way/1346643096
+
+Quần thể Tam Chúc
+
+Cổng Tam Quan nội
+Từ bến hồ nhìn vào, lầu giữa nổi lên với ba lớp mái cong. Hai lầu bên thấp hơn nối với lầu giữa bằng hành lang gỗ mở ra sân cột kinh.
+https://pystravel.vn/tin/17354-ban-do-chua-tam-chuc.html
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1386126630
+
+Vườn Cột Kinh
+Hai cụm cột đá mở một lối giữa hướng về điện Quan Âm. Mỗi cột vươn lên từ đài sen, thân sáu cạnh mang chữ và kết thúc bằng một nụ sen đá.
+https://danviet.vn/kham-pha-vuon-cot-kinh-bang-da-doc-dao-o-ngoi-chua-lon-nhat-the-gioi-77771055006-d789265.html
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1518302470
+
+Điện Quan Âm
+Qua Vườn Cột Kinh, những bậc đá dẫn lên điện thờ Quan Âm. Từ hiên điện, trục bậc thềm nhìn thẳng ra sân cột kinh và mặt hồ.
+https://thesmartlocal.com/vietnam/tam-chuc-pagoda/
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1386126640
+
+Điện Pháp Chủ
+Điện Pháp Chủ nằm ở giữa trục hành lễ. Dưới hai tầng mái cong là pho tượng Phật Thích Ca và những phù điêu kể về cuộc đời Đức Phật.
+https://thesmartlocal.com/vietnam/tam-chuc-pagoda/
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1386126642
+
+Điện Tam Thế
+Điện Tam Thế có ba tầng mái và thờ ba pho Phật tượng trưng cho quá khứ, hiện tại và tương lai. Trước bậc thềm là chiếc vạc đồng lớn.
+https://thesmartlocal.com/vietnam/tam-chuc-pagoda/
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1386126641
+
+Chùa Ngọc
+Trên đỉnh núi Thất Tinh, chùa Ngọc có ba tầng mái cong. Thân tháp ghép từ các khối granit đỏ do nghệ nhân Ấn Độ chế tác, phía trước mở ra hồ Tam Chúc.
+https://dantri.com.vn/du-lich/doc-dao-ngoi-chua-co-pho-tuong-phat-hong-ngoc-nang-4-tan-20190427142245497.htm
+https://bnews.vn/photo/ve-dep-chua-ngoc-o-trung-tam-van-hoa-phat-giao-tam-chuc/122136/trang-1.html
+https://www.openstreetmap.org/way/1518302477
+
+Đình Tam Chúc
+Đình nằm trên một đảo giữa hồ Lục Nhạc. Cầu đi bộ gấp khúc năm đoạn nối đảo đình với đảo Cò. Qua tán cây ven đảo có thể thấy tiền đường, hậu cung và sân lát gạch.
+https://ngaynay.vn/phatgiao/canh-sac-chua-tam-chuc-vinh-ha-long-tren-can-post100706.html
+https://vietnamtourism.gov.vn/en/printer/15748?type=1
+https://www.openstreetmap.org/way/1517604966
+
+Lối đi bộ, đường bậc, bãi cỏ và vùng cây được đối chiếu với dữ liệu OpenStreetMap, © OpenStreetMap contributors, ODbL 1.0. Ranh sân lát đá trước ba điện được ước lượng từ ảnh trên cao.
+https://www.openstreetmap.org/#map=17/20.5532/105.7960
+
+Nghệ An
+
+Cửa Tiền Thành cổ Vinh, Vinh
+Mô hình dựng cổng vòm đá ong gạch vồ kiểu Vauban, hai cánh tường có lỗ châu mai, cầu qua hào và vọng lâu hai tầng mái đao theo ảnh tư liệu Thành cổ Vinh.
+https://baonghean.vn/cong-thanh-co-vinh-lan-dau-tien-dep-lung-linh-duoi-anh-den-10226330.html
+https://www.openstreetmap.org/way/1525796404
+
+Nhà Bác Hồ ở Làng Sen, Nam Đàn
+Ngôi nhà tranh năm gian mái rạ, vách liếp tre, nhà ngang, giếng nước, hàng cau và hàng rào dâm bụt tại khu di tích Kim Liên.
+https://baonghean.vn/binh-yen-nhung-nep-nha-tranh-noi-que-bac-10198832.html
+https://vi.wikipedia.org/wiki/Khu_di_t%C3%ADch_l%E1%BB%8Bch_s%E1%BB%AD_Kim_Li%C3%AAn
+https://www.openstreetmap.org/way/241936043
+
+Tam Quan Đền Cuông, Diễn Châu
+Cổng tam quan ba tầng lầu cổ kính dưới chân núi Mộ Dạ bên Quốc lộ 1A, dựng kèm rễ cây si cổ thụ và cặp trụ biểu.
+https://baonghean.vn/ve-dep-co-kinh-cua-den-thieng-tren-nui-mo-da-10269873.html
+https://visitnghean.gov.vn/diem-tham-quan/den-cuong
+
+Đền Ông Hoàng Mười, Hưng Nguyên
+Nghi môn tứ trụ, sân gạch đỏ, tam quan hai tầng mái cong và hai lầu bát giác của Mỏ Hạc Linh Từ ven nhánh sông Lam.
+https://baonghean.vn/hang-van-nguoi-chiem-bai-den-ong-hoang-muoi-nhung-ngay-dau-nam-10268484.html
+https://www.openstreetmap.org/node/6322104886
+
+Cột mốc Km 0 Đường Hồ Chí Minh, Tân Kỳ
+Quảng trường bát giác lát đá, cột mốc Km 0 đá granit đầu đỏ, phù điêu Trường Sơn, cột cờ và nhà bia cạnh Đường Hồ Chí Minh.
+https://baonghean.vn/cot-moc-so-0-noi-bat-dau-con-duong-huyen-thoai-10295387.html
+https://www.openstreetmap.org/node/9331310775
+
+Hà Tĩnh và Quảng Trị
+
+Tháp Chuông Ngã ba Đồng Lộc, Can Lộc
+Tháp cao 36,6 m, gồm bảy tầng với tám mái ngói. Đại hồng chung cao 3,7 m, đường kính 1,95 m được treo ở tầng bảy.
+https://bvhttdl.gov.vn/ha-tinh-khanh-thanh-thap-chuong-dong-loc-1514.htm
+https://congdoanvietnam.vn/quy-tam-long-vang/thap-chuong-dong-loc-cong-trinh-cua-long-tri-an-46569.tld
+https://www.openstreetmap.org/node/4409284591
+
+Khu lưu niệm Đại thi hào Nguyễn Du, Nghi Xuân
+Cổng tam quan, cặp trụ biểu, bình phong đá và nhà thờ cổ năm gian mái ngói cong tại Tiên Điền.
+https://hatinhtourism.vn/khu-luu-niem-dai-thi-hao-nguyen-du
+https://www.openstreetmap.org/node/7261144420
+
+Quảng Bình Quan, Đồng Hới
+Cổng thành gạch cổ xây năm 1639 với cửa vòm cuốn, tường lỗ châu mai và vọng lâu hai tầng mái đao tại trung tâm Đồng Hới.
+https://quangbinhtourism.vn/quang-binh-quan/
+https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_B%C3%ACnh_Quan
+
+Kỳ đài & Cầu Hiền Lương, Vĩnh Linh
+Kỳ đài giới tuyến Vĩ tuyến 17 với lá cờ Tổ quốc tung bay bên sông Bến Hải cùng nhịp cầu giàn thép hai màu xanh – vàng lịch sử.
+https://vinwonders.com/vi/wonderpedia/news/cau-hien-luong-song-ben-hai/
+https://www.openstreetmap.org/node/1016631030
+
+Thành cổ Quảng Trị, Quảng Trị
+Đài tưởng niệm mang hình nấm mộ chung với bốn lối lên tầng dâng hương và cây đèn thờ. Cổng Tiền mở về phía nam, có vòm gạch và vọng lâu. Đài và cổng có vị trí riêng trên bản đồ.
+https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975
+https://www.openstreetmap.org/node/3141269667
+https://www.openstreetmap.org/way/1137794040
+
+Chứng tích Nhà thờ Tam Tòa, Đồng Hới
+Tháp chuông gạch đỏ kiến trúc Bồ Đào Nha và tàn tích tường giáo đường bên bờ sông Nhật Lệ.
+https://quangbinhtourism.vn/nha-tho-tam-toa/
+https://www.openstreetmap.org/way/343077412
+
+Nam Trung Bộ và Tây Nguyên
+
+Chùa Thiên Ấn, Quảng Ngãi
+Cổng tam quan, chính điện hai tầng mái cong và lầu chuông thần lục giác trên đỉnh núi Thiên Ấn bên sông Trà Khúc.
+https://vinwonders.com/vi/wonderpedia/news/chua-thien-an-quang-ngai/
+https://vi.wikipedia.org/wiki/Ch%C3%B9a_Thi%C3%AAn_%E1%BA%A4n
+
+Chùa Minh Thành, Pleiku
+Bảo tháp Xá Lợi chín tầng sơn son thếp vàng, chính điện hai tầng mái đao và cầu đá qua hồ sen tại Pleiku, Gia Lai.
+https://vinwonders.com/vi/wonderpedia/news/chua-minh-thanh-gia-lai/
+https://vi.wikipedia.org/wiki/Ch%C3%B9a_Minh_Th%C3%A0nh
+
+Bảo tàng Thế giới Cà phê, Buôn Ma Thuột
+Năm khối mái vòm uốn cong ốp đá bazan lấy cảm hứng từ nhà dài Ê Đê cùng mặt tiền kính uốn lượn và quảng trường đá.
+https://baotangthegioicaphe.com/
+https://www.openstreetmap.org/way/1545026830
+
+Tháp Po Klong Garai, Phan Rang
+Cụm ba tháp gạch Chăm Pa trên đồi Trầu gồm Tháp Chính Kalan có vòm cửa mũi giáo, Tháp Cổng và Tháp Lửa mái hình thuyền.
+https://vinwonders.com/vi/wonderpedia/news/thap-po-klong-garai-ninh-thuan/
+https://www.openstreetmap.org/way/804729100
+
+Tháp Trầm Hương, Nha Trang
+Tháp biểu tượng màu hồng cam bên đường Trần Phú với năm cánh buồm cách điệu và đỉnh búp sen trầm hương.
+https://vinwonders.com/vi/wonderpedia/news/thap-tram-huong-nha-trang/
+https://vi.wikipedia.org/wiki/Th%C3%A1p_Tr%E1%BA%A7m_H%C6%B0%C6%A1ng
+
+Trường Dục Thanh, Phan Thiết
+Ngôi trường gỗ mái ngói âm dương năm 1907, nhà Ngọa Du Sào, cổng trường, giếng nước và cây khế cổ tại Phan Thiết.
+https://vinwonders.com/vi/wonderpedia/news/truong-duc-thanh-phan-thiet/
+https://www.openstreetmap.org/way/261710309
+
+Đà Nẵng
+
+Cầu Rồng, Đà Nẵng
+Thân vòm ống thép vàng năm nhịp uốn lượn dọc dải phân cách giữa cầu bắc qua sông Hàn, đầu rồng thời Lý quay hướng đông và đuôi cách điệu hoa sen.
+https://danangfantasticity.com/en/attractions/dragon-bridge
+https://www.openstreetmap.org/way/694831926
+
+Hải Vân Quan, Đèo Hải Vân
+Hai cổng vòm gạch đá mang biển Hải Vân Quan và Thiên hạ đệ nhất hùng quan, tường thành lỗ châu mai và bậc thang đá trên đỉnh đèo.
+https://vnexpress.net/hai-van-quan-sau-gan-3-nam-trung-tu-4775142.html
+https://vi.wikipedia.org/wiki/H%E1%BA%A3i_V%C3%A2n_Quan
+
+Chùa Linh Ứng Bãi Bụt, Sơn Trà
+Quần thể gồm đài sen trắng, tượng Quan Âm hướng vịnh, tháp Xá Lợi chín tầng bát giác và cổng tam quan mái ngói men xanh.
+https://danangfantasticity.com/en/culture-en/linh-ung-pagoda-on-son-tra-peninsula
+https://www.openstreetmap.org/way/420947244
+
+Hội quán Phúc Kiến, Hội An
+Cổng tam quan hồng son ba cửa vòm, đèn lồng đỏ và ba tầng mái ngói ống men xanh với lưỡng long tranh châu.
+https://vinwonders.com/vi/wonderpedia/news/hoi-quan-phuc-kien-hoi-an/
+https://vi.wikipedia.org/wiki/H%E1%BB%99i_qu%C3%A1n_Ph%C3%BAc_Ki%E1%BA%BFn
+
+Huế
+
+Ngọ Môn – Đại Nội Huế, Huế
+Nền đài hình chữ U năm cửa, cầu Kim Thủy phía trước và Lầu Ngũ Phụng hai tầng mái hoàng lưu ly (giữa) cùng thanh lưu ly (hai cánh).
+https://whc.unesco.org/en/list/678/
+https://vi.wikipedia.org/wiki/Ng%E1%BB%8D_M%C3%B4n_(Hu%E1%BA%BF)
+
+Cầu Trường Tiền, Huế
+Sáu vài mười hai nhịp vòm giàn thép hình vành lược và bảy trụ đá bắc qua sông Hương theo đúng trục cầu trên OpenStreetMap.
+https://vinwonders.com/vi/wonderpedia/news/cau-truong-tien-hue/
+https://www.openstreetmap.org/node/14379527273
+
+Phu Văn Lâu, Huế
+Lầu hai tầng mười sáu cột sơn son mái ngói hoàng lưu ly, lan can đá và cặp nhà bia trước Kỳ Đài bên đường Lê Duẩn.
+https://visithue.vn/diem-den/phu-van-lau
+https://www.openstreetmap.org/way/531031520
+
+Cầu Ngói Thanh Toàn, Hương Thủy
+Cầu gỗ cổ bảy gian thượng gia hạ kiều, mái ngói ống tráng men, bục ngồi hai bên và gian thờ ở giữa.
+https://visithue.vn/diem-den/cau-ngoi-thanh-toan
+https://vi.wikipedia.org/wiki/C%E1%BA%A7u_ng%C3%B3i_Thanh_To%C3%A0n
+
+Lăng Khải Định, Huế
+Ứng Lăng trên triền núi Châu Chữ với các bậc tam cấp rồng chầu, tứ trụ biểu, sân Bái Đính, nhà bia Bi Đình bát giác và cung Thiên Định.
+https://vietnamtourism.vn/index.php/tourism/items/462/4
+https://www.openstreetmap.org/way/242940960
+https://www.openstreetmap.org/way/175035807
+
+Bảo tàng Chiến thắng lịch sử Điện Biên Phủ và dinh thự họ Vương
+Đối chiếu khối mái, nhịp mặt đứng và cách bố trí các sân qua ảnh của bảo tàng, cơ quan báo chí và Viện Kiến trúc Quốc gia.
+https://media.chinhphu.vn/an-tuong-tranh-panorama-tai-hien-chien-thang-dien-bien-102220506095448722.htm
+https://vienkientrucquocgia.gov.vn/nhung-vien-ngoc-kien-truc-tren-con-duong-to-lua-ha-giang/
+
+Bưu điện Trung tâm Sài Gòn, Cột cờ Mũi Cà Mau và Bàu Trắng
+https://hello.hochiminhcity.gov.vn/vi/discover/buu-dien-thanh-pho
+https://muicamau.camau.gov.vn/du-lich/bieu-tuong-cot-co-ha-noi-tai-mui-ca-mau/
+https://scov.gov.vn/dat-nuoc-con-nguoi/dat-nuoc-viet-nam/ho-nuoc-hung-vi-giua-doi-cat-o-binh-thuan.html
+
+Đồi chè Tân Cương, vườn quýt hồng Lai Vung và rừng tràm U Minh Thượng
+https://thainguyen.gov.vn/di-tich-danh-lam-thang-canh/diem-du-lich-cong-dong-xa-tan-cuong-296597
+https://dulich.dongthap.gov.vn/vi/detailnews/?id=news_619&t=lai-vung-them-mot-diem-tham-quan-vuon-quyt-hong-di-vao-hoat-dong
+https://sdl.angiang.gov.vn/vung-u-minh-thuong-diem-du-lich-sinh-thai-hap-dan
+
+Hệ thống đèn biển
+Hình dáng, màu sơn, vị trí và chiều cao tháp dựa trên danh mục đèn biển, thông báo hàng hải và ảnh từng trạm. Từng mô hình lưu liên kết đối chiếu của trạm đó.
+https://www.vimawa.gov.vn/vi/noi-dung/hien-trang-he-thong-den-bien
+https://www.ibiblio.org/lighthouse/vnmn.htm
+
+Quần thể di sản và ảnh thực địa
+Atlas liên kết các điểm thành phần để có thể ngắm từng địa điểm theo tọa độ. Mỗi ảnh thực địa có tên tác giả, giấy phép và liên kết tới ảnh gốc ngay trong trình xem ảnh.
+https://whc.unesco.org/en/statesparties/vn/
+
+Đoan Môn, điện Kính Thiên, Khuê Văn Các và Chùa Một Cột
+https://hoangthanhthanglong.vn/doan-mon/
+https://trungbayonline.hoangthanhthanglong.vn/BaoVatQuocGia/detailBacKinhThien
+https://www.vanmieu.gov.vn/vi/visit/architecture/khue-van-pavilion
+https://csdl.vietnamtourism.gov.vn/dest/?item=54
+
+Cầu Vàng Bà Nà, Lăng Chủ tịch Hồ Chí Minh và Nhà thờ Đức Bà Sài Gòn
+https://danangfantasticity.com/en/cau-vang-thuong-hieu-moi-cua-du-lich-da-nang
+https://btllang.mod.gov.vn/tin-tuc/tin-tu-bo-tu-lenh-lang/4161-qua-trinh-xay-dung-lang-chu-tich-ho-chi-minh-cong-trinh-dac-biet-co-y-nghia-chinh-tri-van-hoa.html
+https://tgpsaigon.net/bai-viet/vuong-cung-thanh-duong-duc-ba-sai-gon-37259
+
+Quảng trường Ba Đình và mặt chính Lăng Chủ tịch Hồ Chí Minh
+Ảnh chụp từ quảng trường cho thấy đoạn hàng rào hoa sắt trước thảm cỏ và các trụ đá nối dây xích quanh bồn hoa cột cờ. Tỷ lệ hoa văn, tán cây và bồn hoa trong cảnh được dựng theo ảnh. Ranh thảm cỏ và các lối đi lấy từ bản đồ, chiều rộng lối ngang dọc theo tư liệu của đơn vị quản lý.
+https://commons.wikimedia.org/wiki/File:L%C4%83ng_B%C3%A1c_-_NKS.jpg
+https://thanglong.baochinhphu.vn/le-thuong-co-dac-biet-trong-sang-quoc-khanh-tai-quang-truong-ba-dinh-103260902113729279.htm
+https://btllang.mod.gov.vn/tu-lieu/quang-truong-ba-dinh.html
+Thuyết minh quy hoạch kèm Quyết định 1086/QĐ-TTg ghi cao độ các ô cỏ hiện có khoảng 7,80–8,15 m. Địa hình mô phỏng dùng khoảng này để loại ảnh hưởng mái nhà trong dữ liệu độ cao, chuyển tiếp dần sang đường phố xung quanh.
+https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/6/doc062025-06202025053320.pdf
+https://btllang.mod.gov.vn/tin-tuc/tin-tu-bo-tu-lenh-lang/565-quang-truong-ba-dinh-va-lang-chu-tich-ho-chi-minh-khong-gian-thieng-lieng-cua-thu-do-ha-noi-va-cua-ca-nuoc.html
+
+Khuôn viên tưởng niệm và nghĩa trang
+Các ranh khuôn viên công cộng có trong bộ dữ liệu memorial-grounds-data.js lấy từ OpenStreetMap (ODbL 1.0). Từng bản ghi lưu mã đối tượng và phiên bản. Đường, cây và nhà có dữ liệu riêng vẫn theo bản đồ.
+https://www.openstreetmap.org/copyright
+
+Mở rộng cụm địa danh Nghệ An (15 công trình mới) — Quảng trường Hồ Chí Minh (TP. Vinh), Bảo tàng Xô Viết Nghệ Tĩnh, Cửa Tả và Cửa Hữu Thành cổ Vinh, Đền thờ Hoàng đế Quang Trung, Chùa Đại Tuệ, Khu lăng mộ Bà Hoàng Thị Loan, Quê ngoại Hoàng Trù, Đền Cờn, Cầu Cửa Hội, Cầu Bến Thủy, Nhà thờ chính tòa Xã Đoài, Đình Trung Cần, Khu di tích Truông Bồn và Bảo tàng Quân khu 4. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://dulichnghean.gov.vn/
+
+Cụm địa danh Thanh Hóa (7 công trình mới) — Cầu Hàm Rồng, Chính điện Lam Kinh, Đền Bà Triệu, Đền Độc Cước Sầm Sơn, Hòn Trống Mái Sầm Sơn, Tượng đài Lê Lợi và Thái Miếu nhà Hậu Lê. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://dsvh.gov.vn/
+
+Mở rộng cụm địa danh Đà Nẵng & Quảng Nam cũ (14 công trình mới) — Cầu Sông Hàn, Cầu Trần Thị Lý, Cầu Thuận Phước, Bảo tàng Điêu khắc Chăm Đà Nẵng, Thành Điện Hải, Nhà Trưng bày Hoàng Sa, Chùa Tam Thai – Ngũ Hành Sơn, Đình Túy Loan, Đình Bồ Bản, Hội quán Triều Châu, Chợ Hội An, Tháp Bằng An, Tháp Chăm Khương Mỹ và Tháp Chăm Chiên Đàn. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://danangfantasticity.com/
+https://hoianheritage.net/
+
+Mở rộng cụm địa danh Huế (13 công trình mới) — Điện Thái Hòa, Hiển Lâm Các & Cửu Đỉnh, Cửa Hiển Nhơn, Lăng Minh Mạng, Lăng Tự Đức, Trường THPT Chuyên Quốc Học Huế, Nhà thờ chính tòa Phủ Cam, Nhà thờ Dòng Chúa Cứu Thế Huế, Chợ Đông Ba, Hổ Quyền, Chùa Từ Hiếu, Chùa Báo Quốc và Tàng Thư Lâu. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://hueworldheritage.org.vn/
+
+Mở rộng cụm địa danh Hà Tĩnh & Quảng Trị / Quảng Bình cũ (8 công trình mới) — Chùa Hương Tích (Can Lộc), Đền Chợ Củi, Đền Võ Miếu Hà Tĩnh, Tượng đài Xô Viết Nghệ Tĩnh (Can Lộc), Cầu Nhật Lệ, Tượng đài Mẹ Suốt, Địa đạo Vịnh Mốc và Thánh địa La Vang. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://dsvh.gov.vn/
+
+Mở rộng cụm địa danh Nam Trung Bộ & Tây Nguyên (17 công trình mới) — Khu chứng tích Sơn Mỹ, Nhà thờ Gỗ Kon Tum, Cầu treo Kon Klor, Tháp Bánh Ít, Tháp Dương Long, Bảo tàng Quang Trung, Quảng trường Đại Đoàn Kết (Pleiku), Tượng đài Chiến thắng Buôn Ma Thuột, Tháp Nhạn Tuy Hòa, Nhà thờ Mằng Lăng, Nhà thờ Núi Nha Trang, Chùa Long Sơn – Kim Thân Phật Tổ, Tháp Pô Sah Inư, Tháp Nước Phan Thiết, Quảng trường Lâm Viên Đà Lạt, Nhà thờ Con Gà Đà Lạt và Cao đẳng Sư phạm Đà Lạt. Tọa độ OpenStreetMap (ODbL 1.0); mô hình 3D dựng thủ tục bằng Three.js.
+https://www.openstreetmap.org/copyright
+https://dsvh.gov.vn/
+
+
+Mở rộng Nghệ An đợt 3: Chợ Vinh, Ga Vinh, Chùa Cần Linh, Đền Hồng Sơn, Quảng trường Bình Minh Cửa Lò, Đền Nguyễn Xí, Đền Vua Mai Hắc Đế, Khu lưu niệm Phan Bội Châu, Đền Quả Sơn, Đền Bạch Mã, Tượng đài Xô Viết Nghệ Tĩnh Thái Lão và Cầu Yên Xuân
+Đối chiếu vị trí OpenStreetMap và hình khối kiến trúc đặc trưng xứ Nghệ (tháp đồng hồ Chợ Vinh, mái đón Ga Vinh, Hoa Cúc Biển Cửa Lò, tứ đại đền thiêng xứ Nghệ, nhà tranh cụ Phan Bội Châu và cầu giàn thép Yên Xuân qua sông Lam).
+https://visitnghean.gov.vn/
+https://dsvh.gov.vn/
+https://vi.wikipedia.org/wiki/C%E1%BA%A7u_Y%C3%AAn_Xu%C3%A2n
+
+
+Mở rộng Đà Nẵng – Quảng Nam & Huế đợt 3: Nhà hát Trưng Vương, Bảo tàng Đà Nẵng (42 Bạch Đằng), Cá Chép Hóa Rồng & Cầu Tình Yêu, Cung Thể thao Tiên Sơn, Hội quán Quảng Đông, Nhà cổ Tấn Ký, Tượng đài Mẹ Việt Nam Anh hùng Nguyễn Thị Thứ, Bảo tàng Mỹ thuật Đà Nẵng, Cung An Định (Khải Tường Lâu), Lăng Gia Long, Lăng Đồng Khánh, Chùa Diệu Đế Quốc Tự, Ga Huế và Đàn Nam Giao
+Đối chiếu tọa độ công trình trên OpenStreetMap và đặc trưng kiến trúc đô thị – di sản miền Trung (Tòa Đốc lý 1898, nhà thi đấu "Đĩa bay" Tiên Sơn, Khải Tường Lâu khảm sành sứ, nhà ga 1906 tường hồng phấn, Viên Đàn – Phương Đàn Đàn Nam Giao và tượng đài đá hoa cương Mẹ Thứ).
+https://danangfantasticity.com/
+https://hoianheritage.net/
+https://hueworldheritage.org.vn/
+https://vi.wikipedia.org/wiki/Cung_An_%C4%90%E1%BB%8Bnh
+
+
+Mở rộng Thanh Hóa, Hà Tĩnh & Quảng Trị (Quảng Bình) đợt 3: Bảo tàng tỉnh Thanh Hóa, Đền Sòng Sơn, Đàn Tế Nam Giao Thành Nhà Hồ, Nhà thờ Chính tòa Thanh Hóa, Chùa Cầm Sơn, Khu lưu niệm Hà Huy Tập, Khu di tích Hải Thượng Lãn Ông, Sân bay Tà Cơn Khe Sanh, Bảo tàng Tổng hợp Quảng Bình – Quảng Trị và Hoành Sơn Quan (Đèo Ngang)
+Tại Bảo tàng tỉnh Thanh Hóa, ba nhà trưng bày và hai hành lang nối được dựng theo đường bao OpenStreetMap. Ảnh tại 206 Trường Thi dùng để đối chiếu hai vế thang, mặt tiền vàng nhạt, nhịp cửa sổ và hàng vòm bên sân. Chiều cao và cây xanh được ước lượng từ ảnh.
+https://csdl.vietnamtourism.gov.vn/vcgt/?item=177
+https://visitthanhhoa.com/vi/bao-tang-thanh-hoa
+https://www.openstreetmap.org/way/762771467
+https://www.openstreetmap.org/way/1021330358
+Đối chiếu tọa độ OpenStreetMap và hình khối kiến trúc đặc trưng Bắc Trung Bộ (Đàn tế đá xanh Tây Đô & Giếng Vua, đường băng ghi sắt cùng máy bay C-130 & trực thăng UH-1 tại Tà Cơn, cửa ải đá Hoành Sơn Quan 1833 trên đỉnh Đèo Ngang).
+https://thanhnhaho.vn/
+https://hatinh.gov.vn/
+https://vi.wikipedia.org/wiki/S%C3%A2n_bay_T%C3%A0_C%C6%A1n
+https://vi.wikipedia.org/wiki/Ho%C3%A0nh_S%C6%A1n_Quan
+
+
+Mở rộng Nam Trung Bộ & Tây Nguyên đợt 3: Cổng Tò Vò Lý Sơn, Bảo tàng Tổng hợp Quảng Ngãi, Tháp Cánh Tiên, Tháp Bình Lâm, Tượng đài Trần Hưng Đạo Quy Nhơn, Biệt điện Bảo Đại Buôn Ma Thuột, Chùa Thanh Lương Tuy An, Viện Hải dương học Nha Trang, Tháp Po Rome, Chùa Linh Phước (Chùa Ve Chai), Thiền viện Trúc Lâm Đà Lạt và Dinh III Bảo Đại Đà Lạt
+Đối chiếu tọa độ OpenStreetMap và đặc trưng địa mạo – kiến trúc Nam Trung Bộ & Tây Nguyên (vòm đá bazan Cổng Tò Vò Lý Sơn, chùa san hô – gáo dừa & Hồ Vô Cực Thanh Lương, kiến trúc tháp Chăm Cánh Tiên – Bình Lâm – Po Rome, nhà sàn Biệt điện Bảo Đại Buôn Ma Thuột, Chùa Ve Chai khảm sành sứ, Thiền viện Trúc Lâm và biệt điện Art Deco Dinh III Đà Lạt).
+https://vietnamtourism.gov.vn/
+https://vi.wikipedia.org/wiki/Ch%C3%B9a_Linh_Ph%C6%B0%E1%BB%9Bc
+https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_H%E1%BA%A3i_d%C6%B0%C6%A1ng_h%E1%BB%8Dc
+https://vi.wikipedia.org/wiki/Dinh_III_(%C4%90%C3%A0_L%E1%BA%A1t)
+
+Nhà thờ gỗ Kon Tum và Điện Thái Hòa
+Ảnh chụp dùng để đối chiếu hàng hiên mái ngang, nhịp vòm và kính tròn trên mặt tiền nhà thờ, cùng sắc ngói, hai chái và hàng cửa khuất dưới mái điện. Chi tiết được dựng ở tỷ lệ gần đúng.
+https://tamviet.tienphong.vn/can-canh-thanh-duong-go-kon-tum-co-mot-khong-hai-tren-the-gioi-post1349875.tpo
+https://commons.wikimedia.org/wiki/File:Dien_Thai_Hoa.jpg
+
+Tượng đài Mẹ Suốt và Khu chứng tích Sơn Mỹ
+Ảnh chính diện dùng để đối chiếu hướng mái chèo, hai bàn tay của Mẹ Suốt, chất đá sáng và cụm nhân vật thấp bao quanh người mẹ bồng con ở Sơn Mỹ.
+https://dulichquangtri.vn/diem-du-lich/tuong-dai-me-suot/
+https://vovworld.vn/vi-VN/media/chung-tich-son-my-sau-50-nam-tham-sat-my-lai-1558953.vov5
+
+Tượng đài Lê Lợi, Ngã ba Nghèn và tượng đài Bác Hồ ở Pleiku, Vinh
+Đối chiếu đá núi Nhồi và dáng gươm ở Thanh Hóa, cờ đá vươn cao trên nhóm tượng ở Can Lộc, tay vẫy chào bằng đồng ở Pleiku và dáng bước đi trên nền đồi cây ở Vinh.
+https://vnexpress.net/thanh-hoa-tu-bo-xong-tuong-dai-da-xanh-lon-nhat-tinh-3914113.html
+https://baohatinh.vn/sang-mai-co-hong-mua-thu-ay-post100273.html
+https://baochinhphu.vn/ket-luan-cua-ban-bi-thu-trung-uong-dang-ve-viec-xay-dung-tuong-dai-bac-ho-tai-gia-lai-10240252.htm
+https://dantri.com.vn/thoi-su/hanh-trinh-don-tuong-bac-ho-ve-voi-dong-bao-gia-lai-20200518150951159.htm
+https://visitnghean.gov.vn/diem-tham-quan/quang-truong-ho-chi-minh-va-tuong-dai-bac-ho
+
+Tượng đài Mẹ Việt Nam Anh hùng, Trần Hưng Đạo, Quan Âm Bãi Bụt và Kim Thân Phật Tổ
+Ảnh tư liệu dùng để dựng khối chân dung nổi giữa vách đá ở Tam Kỳ, thế chân trụ và tay chỉ của Trần Hưng Đạo ở Quy Nhơn, dáng đứng hướng biển ở Sơn Trà và thế ngồi trên đài sen ở Nha Trang. Chi tiết chân dung, nếp áo và mặt bằng được ước lượng.
+https://baochinhphu.vn/quang-nam-hoan-thanh-tuong-dai-ba-me-viet-nam-anh-hung-102178927.htm
+https://dulichquynhon.binhdinh.gov.vn/vi/tuongtranhungdao
+https://gialai.dcs.vn/van-hoa-xa-hoi/-/view-content/416785/tuong-dai-tran-hung-dao-bieu-tuong-uy-nghiem-noi-cua-bien-quy-nhon
+https://danangfantasticity.com/en/kham-pha/chua-linh-ung-bai-but-da-nang
+https://dulichso.khanhhoa.gov.vn/article/chua-long-son-b4e
+
+Sân chùa và các tầng địa hình ở Bãi Bụt, Trại Thủy, Bánh Ít
+Vị trí tương đối, hướng và mặt bằng các công trình dựa theo OpenStreetMap. Độ cao nền lấy mẫu từ địa hình của cảnh. Chiều cao mái và chi tiết chạm khắc được ước lượng từ ảnh.
+Bãi Bụt — điện chính, nhà sau, cổng đá hai tầng và tháp Xá Lợi chín mái lục giác. Mười sáu vị trí tượng La Hán có tọa độ riêng trên bản đồ. Bản dựng ẩn các tượng trong sân vì các tọa độ này chưa xác định được danh tính của từng pho.
+https://www.openstreetmap.org/way/486703075
+https://www.openstreetmap.org/way/420947240
+https://www.openstreetmap.org/way/486703070
+https://www.openstreetmap.org/way/486703057
+https://csdl.vietnamtourism.gov.vn/dest/?item=954
+https://sunworld.vn/vi/banahills/check-in/chua-linh-ung-bai-buthtml
+Long Sơn — ảnh toàn cảnh của Nền tảng du lịch số Khánh Hòa cho thấy chánh điện và tượng trắng nằm trên hai tầng đồi, ở giữa là tuyến bậc và gác chuông.
+https://dulichso.khanhhoa.gov.vn/article/chua-long-son-b4e
+https://www.openstreetmap.org/way/196896036
+https://www.openstreetmap.org/way/196896037
+https://www.openstreetmap.org/way/1343540992
+Bánh Ít — tháp chính, tháp mái yên ngựa, tháp cổng và tháp cúng nằm trên các nền riêng. Cổng mở xuyên theo trục lên đồi phía đông.
+https://dsvh.gov.vn/Upload/files/Thap%20Cham%20Binh%20Dinh.pdf
+https://www.openstreetmap.org/way/677227553
+https://www.openstreetmap.org/way/677227549
+https://www.openstreetmap.org/way/677227554
+https://www.openstreetmap.org/way/677227555
+
+Thành Nhà Hồ và đàn Nam Giao Tây Đô
+Bốn vòm cổng và trục tường theo mặt bằng OpenStreetMap. Kích thước cửa đá, nền đàn và Giếng Vua dựa trên tư liệu của Trung tâm Bảo tồn Di sản Thành Nhà Hồ. Hình dáng đoạn lũy đất được diễn giải tại vị trí của thành phần La Thành trong hồ sơ UNESCO.
+https://whc.unesco.org/en/list/1358/maps/
+https://thanhnhaho.vn/NewsDetail.aspx?Id=12784
+https://thanhnhaho.vn/NewsDetail.aspx?Id=12788
+
+Hoàng thành Thăng Long
+Ba tầng đế và thân bát giác của Kỳ Đài dựa trên số đo được công bố. Hậu Lâu và Bắc Môn lấy trục từ mặt bằng hiện trạng. Nền móng và giếng dưới mái che ở 18 Hoàng Diệu minh họa những loại di tích đã tìm thấy tại khu khai quật.
+https://scov.gov.vn/dat-nuoc-con-nguoi/1000-nam-thang-long-ha-noi/cot-co-ha-noi-bieu-tuong-hung-thieng.html
+https://hoangthanhthanglong.vn/cua-bac-thanh-ha-noi-thoi-nguyen/
+https://hoangthanhthanglong.vn/lau-tinh-bac-hau-lau/
+https://hoangthanhthanglong.vn/di-tich-khao-co-hoc-18-hoang-dieu/
+
+Vịnh Hạ Long và Cát Bà
+Mặt bằng và mặt cắt hang Trinh Nữ theo Hình 17 trong khảo sát địa chất đính kèm hồ sơ UNESCO. Hai cửa hang Trống và sàn tham quan dựa trên ảnh của Ban Quản lý Vịnh Hạ Long. Bản đồ ghi riêng hai cửa hang trên đảo Bồ Hòn.
+https://whc.unesco.org/uploads/nominations/672bis.pdf#page=158
+https://halongbay.com.vn/en/p/652-hang-trong-ky-quan-giua-long-ky-quan-vinh-ha-long
+
+Điểm dừng xe tại Bến Bèo nằm trên phố Cái Bèo, ở lối vào bãi xe. Mốc ngắm vịnh Lan Hạ trong game nằm trên đảo Cát Dứa. Các ảnh cầu của Hải Phòng cho phép chọn riêng làng chài, bãi Vạn Bội, đảo Năm Cát và đảo Cát Dứa.
+https://www.openstreetmap.org/way/1570367233
+https://www.openstreetmap.org/way/1275176935
+https://www.openstreetmap.org/node/6293770430
+https://vr360dulich.haiphong.gov.vn/teracom-vr360/Vinh-Lan-Ha/index.htm
+
+Làng chài Cái Bèo
+Bố trí các bè và mái nhà ở hai bên mũi đảo được giản lược từ ảnh “Cat Ba island fishing village” của Kris Martyn, chụp ngày 1/7/2017. Sơ đồ bố trí phỏng theo ảnh được chia sẻ theo CC BY-SA 4.0. Vị trí và các ô lồng là xấp xỉ theo thời điểm ảnh chụp.
+https://commons.wikimedia.org/wiki/File:Cat_Ba_island_fishing_village.jpg
+https://creativecommons.org/licenses/by-sa/4.0/
+https://haiphongnews.gov.vn/vn/du-lich/song-cham-o-lang-chai-cai-beo-ct133.html
+
+Đầm Ô Loan, Tuy An
+Ảnh “Đầm Ô Loan, An Hiệp, Tuy An, Phú Yên.jpeg” của Linhcandng được chia sẻ theo CC BY-SA 3.0. Mặt bảng chữ trên bia trong cảnh 3D dùng một phần ảnh đã cắt và chỉnh phối cảnh, cùng giấy phép. Ảnh đầy đủ và thông tin tác giả có trong mục ảnh thực địa. Bia nằm trên đèo Quán Cau, ở phía tây đầm.
+https://commons.wikimedia.org/wiki/File:Đầm_Ô_Loan,_An_Hiệp,_Tuy_An,_Phú_Yên.jpeg
+https://creativecommons.org/licenses/by-sa/3.0/
+https://daklakvrtour.com/dam-o-loan.html
+https://vietnamtourism.vn/index.php/tourism/items/2809/2
+
+Đầm Cù Mông, Sông Cầu
+Ghim n4472649089 nằm giữa các bè ở đầu bắc đầm Cù Mông. Vị trí và hướng của các cụm ô lồng trong cảnh lấy theo ảnh nhìn từ trên cao. Kích thước từng ô, các khung nổi và mái chòi được giản lược. Ảnh 360° của tỉnh mở ở cầu Bình Phú, từ đó có thể chọn phía bắc đầm.
+https://daklakvrtour.com/dam-cu-mong.html
+https://www.arcgis.com/apps/mapviewer/index.html?basemap=satellite&center=109.2149,13.625206&level=18
+
+Bãi Môn, hải đăng Đại Lãnh và mỏm Rạng Đông
+Đường vào khu vé theo đoạn đường dịch vụ nối Quốc lộ 29 với bãi xe trước cầu bộ. Các điểm ảnh trên đường bậc, sân trạm, hai phía ban công và sân bia giúp xác định hướng ngắm. Nhà trạm có hành lang vòm và sân thượng lát gạch dọc theo sườn phía tây nam tháp. Mặt bia, đĩa mặt trời, sân cờ và chòi nghỉ được đối chiếu với ảnh tại mỏm. Cao độ khoảng 33 m ở chân bia được nội suy từ lưới địa hình 15 m. Hình dáng cửa suối Bãi Môn thay đổi theo mùa.
+https://www.openstreetmap.org/way/770106904
+https://www.openstreetmap.org/relation/12341630
+https://daklakvrtour.com/mui-dien-bai-mon.html
+https://daklakvrtour.com/tour/332/index.html
+https://registry.opendata.aws/terrain-tiles/
+
+Bãi Hương và Hòn Nưa
+Ảnh vệ tinh tháng 7/2023 và tháng 3/2025 cho thấy cầu dẫn xuống bè ở cùng đoạn bờ Bãi Hương. Bố cục bè trong mô hình theo ảnh tháng 3/2025. Từ chỗ dừng trên QL29 đến bãi phía tây Hòn Nưa khoảng 7,26 km đường chim bay. Đường bờ đảo, bãi cát và ghềnh đông bắc được đối chiếu riêng. Vị trí thuyền, mực triều và các khe đá nhỏ là phần mô phỏng.
+https://www.arcgis.com/home/item.html?id=356472a9dc3942a28c6c0ad2294d0751
+https://www.arcgis.com/home/item.html?id=83b1b21c156f4c62a6dc0d90b088879c
+https://www.openstreetmap.org/way/50540459
+https://daklakvrtour.com/hon-nua.html
+
+Chùa Thanh Lương
+Chính điện, điện Quan Âm Linh Ứng, hồ Long Thủy và hồ Long Ẩn theo bốn đường bao trên bản đồ. Chính điện hướng về hồ Long Thủy và thủy tạ. Tượng Quan Âm Nam Hải giữa hồ Long Ẩn được đối chiếu với ảnh ở hai khoảng cách; khảo sát kiến trúc ghi chiều cao khoảng 7 m. Xe dừng trong sân phía nam.
+https://daklakvrtour.com/chua-thanh-luong.html
+https://lyluanphebinh.vn/tin-tuc/nghien-cuu-trao-doi/2565/kien-truc-dieu-khac-doc-dao-cua-chua-thanh-luong-o-tuy-hoa-phu-yen
+https://www.openstreetmap.org/way/903827683
+https://www.openstreetmap.org/way/903834501
+https://www.openstreetmap.org/way/903834502
+
+Đền thờ Lương Văn Chánh
+Cảnh chính điện, cây bồ đề, cổng cổ và tam quan theo ảnh chụp trong các năm 2024 và 2025. Từ cổng ngoài, trục đền đi về phía tây bắc. Trong ảnh 360° của tỉnh, khu mộ cách đền khoảng 500 m và có điểm chụp riêng. Mô hình thể hiện khu đền trước đợt chỉnh trang khởi công năm 2026.
+https://daklakvrtour.com/den-tho-luong-van-chanh.html
+https://www.vietnamplus.vn/phu-yen-cay-bo-de-200-tuoi-duoc-cong-nhan-la-cay-di-san-post277492.vnp
+
+Gành Đá Đĩa
+Đường bao khối bazan và hai lối xuống theo bản đồ. Mũi phía nam có những bậc cột gần thẳng đứng, mũi phía bắc có các bó cột uốn nghiêng. Góc trên cao theo vị trí chụp của tỉnh. Các góc ở mặt đá lấy địa vật làm mốc. Mực nước, khe nhỏ và đường nứt của từng cột là phần mô phỏng.
+https://dsvh.gov.vn/ganh-da-dia-tinh-phu-yen-3307
+https://daklakvrtour.com/ganh-da-dia.html
+https://www.openstreetmap.org/way/1229067977
+https://commons.wikimedia.org/wiki/File:Basalt_rocks_at_G%C3%A0nh_%C4%90%C3%A1_%C4%90%C4%A9a.jpg
+
+Núi Nhạn, Tuy Hòa
+Tháp Nhạn có cửa ở mặt đông, năm trụ ốp trên mỗi mặt và ba tầng mái thu dần. Ảnh bên trong ghi lại gian thờ Thiên Y A Na. Trên cùng ngọn núi, đài tưởng niệm thể hiện đàn chim nhạn theo thiết kế của kiến trúc sư Lê Hiệp. Xe dừng ở lối lên núi phía đường Lê Trung Kiên.
+https://dsvh.gov.vn/thap-nhan-3238
+https://phuyen.baodaklak.vn/93/12475/khanh-thanh-dai-tuong-niem-nui-nhan.html
+https://www.tapchikientruc.com.vn/chuyen-muc/kientruc-xahoi/nhung-cau-chuyen-kien-truc-dang-de-suy-ngam.html
+
+Tháp Nghinh Phong
+Hai cụm cột đá bên bờ biển Tuy Hòa có tổng cộng 100 cột. Trụ chính của hai cụm cao lần lượt 35 m và 30 m. Ảnh toàn cảnh, khe đón gió và cảnh đêm dùng để đối chiếu bố cục. Chiều cao các cột thấp và nét phù điêu là phần mô phỏng.
+https://vietnamtourism.gov.vn/en/printer/19357?type=1
+https://daklakvrtour.com/thap-nghinh-phong.html
+
+Hải đăng Gành Đèn
+Tháp đỏ trắng, sàn đèn và tấm pin đối chiếu với ảnh chụp tại hải đăng. Từ đường dân cư, lối đến trạm đèn đi bộ qua bãi đá. Tuyến đi từ Gành Đá Đĩa dùng bãi đỗ của thắng cảnh.
+https://vov.vn/du-lich/nhung-con-mat-cua-bien-728528.vov
+https://daklakvrtour.com/ganh-da-dia.html
+https://www.openstreetmap.org/way/800155655
+https://www.openstreetmap.org/way/1241373880
+
+Bảo tàng Phú Yên
+Đường bao bản đồ là cả khu đất bảo tàng. Nhà trưng bày có hai cánh dài và sảnh quay ra sân phía tây bắc. Ảnh chính diện, ảnh cánh tây nam và ảnh 360° bên trong ghi lại ba góc riêng. Mái đo từ ảnh vệ tinh, còn cao độ theo tỷ lệ trong ảnh. Xe dừng tại cổng 151 Trần Phú. Đây là cơ sở 2 của Bảo tàng Đắk Lắk sau quyết định hợp nhất năm 2026.
+https://dsvh.gov.vn/khanh-thanh-bao-tang-phu-yen-va-may-nhiem-vu-can-tiep-tuc-giai-quyet-403
+https://daklakvrtour.com/bao-tang-phu-yen.html
+https://phuyen.baodaklak.vn/kinh-te/202505/kien-truc-doc-dao-cua-bao-tang-phu-yen-8121581/
+https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/11.2026/3709_Q%C4%90_UBND.pdf
+
+Vịnh Xuân Đài
+Đường bờ vịnh lấy theo bản đồ. Hai máy ảnh trên cao của tỉnh có tọa độ riêng ở Vũng Sứ và Vũng Chào. Cảnh Vũng Sứ nhìn về bãi thúng ở Dân Phú 2 dưới chùa Liên Phú. Cảnh Vũng Chào nhìn xuống doi cây và bãi triều. Người đến thẳng Vũng Chào có điểm dừng riêng ở sân cảng cá. Số thúng và mực triều thay đổi theo thời điểm.
+Địa hình lấy mẫu từ Mapzen Terrain Tiles. Tâm, trục và kích thước mái nhà được rút gọn từ đường bao Google Open Buildings v3 (Google Research, CC BY 4.0). Cao độ mái và màu nhà được ước lượng theo ảnh hiện trường.
+https://registry.opendata.aws/terrain-tiles/
+https://sites.research.google/gr/open-buildings/
+https://creativecommons.org/licenses/by/4.0/
+https://daklakvrtour.com/vinh-xuan-dai.html
+https://daklakvrtour.com/chua-lien-phu.html
+https://www.openstreetmap.org/relation/16028816
+https://www.openstreetmap.org/way/800191922
+
+Thác Cây Đu
+Ghim du lịch nằm trong vườn phía nam thác. Sáu ảnh 360° dùng chung một cặp tọa độ mẫu. Vị trí thác được đối chiếu bằng vũng dưới chân thác, hai gờ đá và tấm ván qua dòng thoát trên ảnh vệ tinh và ảnh chụp ngày 22/6/2025. Bề mặt nước mô phỏng mùa nước thấp trong ảnh. Xe dừng trên ĐT.644 cạnh lối rẽ.
+https://daklakvrtour.com/thac-cay-du.html
+https://phuyen.baodaklak.vn/141/220676/vi-vu-o-thac-cay-du.html
+https://www.openstreetmap.org/node/5841472185
+https://www.openstreetmap.org/way/1448358262
+
+Đôi bờ Hiền Lương – Bến Hải
+Cầu gỗ lịch sử có bảy nhịp. Hai mố, sáu trụ giữa sông, cổng chào bờ bắc, Kỳ đài và khu tượng mẹ con bên hồ bờ nam được đối chiếu riêng. Mặt ván và màu hai nửa cầu theo hồ sơ tu bổ 2025–2026. Cầu Quốc lộ 1 chở xe nằm bên cạnh cầu lịch sử. Ở bờ bắc, xe dừng trên đường nhánh ven sân Kỳ đài. Khi chọn thẳng tượng đài bờ nam, xe dừng trên đường dẫn vào khu tưởng niệm.
+https://dsvh.gov.vn/di-tich-lich-su-doi-bo-hien-luong-ben-hai-2974
+https://nhandan.vn/anh-di-doc-doi-bo-hien-luong-ben-hai-70-nam-sau-hiep-dinh-geneva-post822694.html
+https://baotintuc.vn/van-hoa/hoan-thanh-tu-bo-ton-tao-di-tich-doi-bo-hien-luong-ben-hai-truoc-tet-binh-ngo-20260123122410181.htm
+https://www.openstreetmap.org/way/87429694
+https://www.openstreetmap.org/way/87429756
+
+Nhà trưng bày Vĩ tuyến 17 và khát vọng thống nhất
+Mái đỏ gần vuông ở phía đông quốc lộ, cách đường bao nhà cũ trên bản đồ khoảng 22 m. Ảnh chụp từ phía Kỳ đài cho thấy cửa chính, bậc thềm, hai loa nón, sân lát và hàng rào trắng. Cỡ mái đo từ ảnh vệ tinh. Cao độ và các chi tiết nhỏ ước lượng theo tỷ lệ ảnh.
+https://www.openstreetmap.org/node/1016631101
+https://commons.wikimedia.org/wiki/File:Nh%C3%A0_b%E1%BA%A3o_t%C3%A0ng_Hi%E1%BB%81n_L%C6%B0%C6%A1ng_-_panoramio.jpg
+
+Vịnh Mốc
+Ảnh tại khu di tích cho thấy xe khách vào sân đón tiếp. Đường ô tô lấy theo tim đường dịch vụ OSM dài 221 m, tới chỗ mở vào sân. Nhà đón khách, phòng trưng bày bổ sung, cửa số 3 lát đá cuội và bậc ra biển bên cửa số 4 có các góc riêng. Cảnh gian hộ sinh theo ảnh trưng bày và tọa độ ngang của máy chụp. Chiều sâu và hình học giữa các gian chưa được đo.
+https://dsvh.gov.vn/di-tich-lich-su-dia-dao-vinh-moc-va-he-thong-lang-ham-vinh-linh-2989
+https://www.openstreetmap.org/way/87308497
+https://www.openstreetmap.org/way/87628785
+https://commons.wikimedia.org/wiki/File:Maternity_Room_in_Vinh_Moc_tunnel.JPG
+
+Chứng tích Tam Tòa, Đồng Hới
+Tháp chuông nằm ở đầu phía tây nền nhà thờ cũ. Mặt cổng hướng đường Nguyễn Du, phía đông còn một trụ gạch về phía sông Nhật Lệ. Kích thước phần tháp còn đứng theo dấu chân bản đồ. Chiều cao, mép gạch vỡ và vị trí trụ trên nền được đối chiếu từ ảnh thực địa.
+https://myquangbinh.vn/vi/nhathotamtoa
+https://www.openstreetmap.org/way/343077412
+https://commons.wikimedia.org/wiki/File:Tam_Toa_Church,_Dong_Hoi.jpg
+
+Quảng Bình Quan, Đồng Hới
+Cổng gạch nằm trên đảo giao thông giữa đường Lê Lợi và đường Quang Trung. Mặt phía vườn có vòm gạch, phía đối diện có bậc lên gác và ô tròn. Dấu chân công trình dài khoảng 31 m. Chiều cao và hoa văn tham khảo ba ảnh thực địa. Điểm xe trên phố Mẹ Suốt cạnh công viên, cách cổng khoảng 63 m.
+https://www.openstreetmap.org/way/940004472
+https://baoquangtri.vn/dat-va-nguoi-quang-binh/201912/quang-binh-quan-cong-trinh-van-hoa-lich-su-tieu-bieu-2172445/
+https://nhandan.vn/bao-nhan-dan-trien-khai-du-an-yeu-lam-viet-nam-tai-cac-di-tich-lich-su-van-hoa-du-lich-cua-tinh-quang-binh-post867590.html
+https://commons.wikimedia.org/?curid=93541168
+https://commons.wikimedia.org/?curid=148222061
+https://commons.wikimedia.org/?curid=7421973
+
+Thánh địa La Vang, Hải Lăng
+Từ điểm đón trả khách ở cổng chính, trục đi bộ xuyên Công trường Mân Côi dẫn đến tháp chuông của nhà thờ cũ. Linh đài Ba Cây Đa ở phía đông và thánh đường mới ở phía nam có dấu chân riêng. Mái thánh đường dựa trên hình ảnh năm 2026 khi công trình đang hoàn thiện. Ảnh tư liệu tháng 9/1967 của Sciacchitano (CC BY-SA 3.0, bản thu nhỏ /sight-photos/6975633.webp) ghi lại nhà thờ năm 1928 trước khi bị phá hủy.
+https://maps.giolelavang.com/
+https://tonggiaophanhue.org/la-vang/luoc-su/tap-sach-trung-tam-thanh-mau-toan-quoc-la-vang-chuong-4-phan-2/
+https://maps.giolelavang.com/img/poi/vuong-cung-thanh-duong/1.webp
+https://maps.giolelavang.com/img/poi/cong-chinh/1.webp
+https://commons.wikimedia.org/?curid=23548467
+https://commons.wikimedia.org/?curid=79211690
+https://commons.wikimedia.org/?curid=6975633
+
+Bến thả hoa hai bờ sông Thạch Hãn, Quảng Trị
+Bên Ngô Quyền có nhà hành lễ, hành lang ngói và bậc đá xuống sông. Nhìn từ bậc bờ nam về An Đôn thấy đền bờ bắc và tượng trên gò tròn. Trước đền là sân thấp dẫn ra bến tám cạnh có bia đá. Chiều cao tượng 21 m theo hồ sơ tác phẩm của Nguyễn Quốc Thắng. Các mặt phù điêu khuất, cao độ từng bậc và mực nước được ước dựng theo ảnh. Bộ ảnh năm 2018 của Phương Huy, CC BY-SA 4.0.
+https://dsvh.gov.vn/di-tich-lich-su-thanh-co-quang-tri-va-nhung-dia-diem-luu-niem-su-kien-81-ngay-dem-nam-1972-2975
+https://dulich.quangtri.gov.vn/vi/benthahoabonamthachhan
+https://tapchimythuat.vn/nha-dieu-khac-nguyen-quoc-thang-di-den-va-cham-hinh-khoi-ky-uc-chien-tranh/
+https://baovanhoa.vn/van-hoa/bao-ton-phat-huy-gia-tri-di-tich-quoc-gia-dac-biet-thanh-co-quang-tri-130234.html
+https://commons.wikimedia.org/?curid=102973338
+https://commons.wikimedia.org/?curid=102973635
+https://commons.wikimedia.org/?curid=102974348
+https://commons.wikimedia.org/?curid=102974023
+
+Tượng đài Mẹ Suốt, Đồng Hới
+Tượng đứng bên sông Nhật Lệ, gần chợ Đồng Hới và bến đò cũ. Dấu GPS trong báo cáo khảo sát của tỉnh và ghim tác phẩm nghệ thuật trên OpenStreetMap nằm trong khoảng 6 m so với bệ đá nhìn thấy trên ảnh vệ tinh. Bệ đá tối màu, lư hương, hàng cau phía phố và các gương mặt chạm trên mũi thuyền được đối chiếu với ảnh mặt trước và ảnh bên. Tác phẩm cao khoảng 7 m gồm cả bệ. Cao độ nền, độ cao cau và các nét chạm nhỏ được ước lượng theo ảnh. Xe dừng trên làn Quách Xuân Kỳ phía công viên.
+https://svhttdl.quangtri.gov.vn/chi-tiet/-/view-article/1/1647938258475/1786420807291
+https://skhcn.quangbinh.gov.vn/3cms/upload/khcn/File/KQKHCN/BaoCaoTongHop3DQB.pdf
+https://www.openstreetmap.org/node/8716478190
+https://www.openstreetmap.org/way/107369248
+https://commons.wikimedia.org/?curid=93541902
+https://commons.wikimedia.org/?curid=93541901
+https://commons.wikimedia.org/?curid=88455578
+
+Cầu Nhật Lệ 1, Đồng Hới
+Hồ sơ ngày thông xe 17/8/2004 ghi chiều dài 635 m, bề rộng 12 m, 15 nhịp và khoang thông thuyền rộng 50 m, cao 7 m. Ảnh từ bờ Đồng Hới cho thấy dầm bê tông dưới mặt đường, các trụ và hàng đèn. Vị trí các trụ trung gian, độ sâu từng đoạn dầm và cao độ máy ngắm được ước lượng theo ảnh. Tuyến xe theo tim cầu OSM. Phần mở rộng hai bên và các nhánh đầu cầu theo chủ trương tháng 10/2026 dự kiến thi công trong năm 2027–2028. Ảnh toàn cảnh của Tttrung có vị trí chụp ở phía tây đầu cầu.
+https://nhandan.vn/quang-binh-thong-xe-cau-nhat-le-post470815.html
+https://dangcongsan.org.vn/boxaydung/tin-tuc-hoat-dong/quang-tri-dau-tu-200-ty-dong-mo-rong-cau-nhat-le-cai-thien-giao-thong-dong-hoi.html
+https://www.openstreetmap.org/way/979538328
+https://www.openstreetmap.org/way/1085506314
+https://commons.wikimedia.org/?curid=4279878
+https://commons.wikimedia.org/?curid=148223058
+
+Cửa Đông, cầu đá qua hào và Bảo tàng Quảng Trị tại Đồng Hới
+Bảo tàng Quảng Trị gọi địa điểm trên đường Hùng Vương là cơ sở 1 tại Đồng Hới. Lối vào quay về sân phía tây. Đường bao OSM rộng và sâu khoảng 51 m. Ảnh phía sân năm 2023 cho thấy tên Quảng Bình trên sảnh, dải tường vàng xòe ra, tháp góc và mái ngói chính. Ảnh toàn cảnh của Linhcandng nhìn từ phía hào ghi nhận đồng thời mặt sau bảo tàng, cầu và gác Cửa Đông. Chiều cao, số nhịp kính và các chi tiết mái được ước lượng theo ảnh.
+https://dulich.quangtri.gov.vn/vi/baotangtinhquangtri
+https://baoquangtri.vn/moi-nong/202608/dau-an-cach-mang-thang-tam-qua-nhung-hien-vat-lich-su-eb7766a/
+https://tuoitre.vn/dulichtphcm/xuyen-khong-ve-qua-khu-o-bao-tang-tong-hop-quang-binh-10760593.htm
+https://vtcnews.vn/anh-dau-tu-hang-chuc-ty-dong-bao-tang-o-quang-binh-xay-xong-lai-bo-hoang-ar429024.html
+https://www.openstreetmap.org/way/334166893
+https://commons.wikimedia.org/?curid=89258755
+
+Cửa Đông sau đợt tôn tạo có một lối vòm, gác trắng và hai tầng mái. Cầu đá có một vòm cuốn viền gạch. Hai đầu cầu cách nhau gần 39 m theo đường bản đồ. Hình lan can và khẩu độ vòm theo ảnh của VnExpress. Bề rộng mặt nước được ước khoảng 25 m ở đoạn ngoài Cửa Đông, dựa trên ảnh, chiều dài cầu và tim hào OSM. Mạch nước nối liền qua cầu.
+https://vnexpress.net/dau-tich-thoi-vua-minh-mang-con-lai-o-thanh-dong-hoi-3295094.html
+https://tuoitre.vn/cua-dong-thanh-dong-hoi-phuc-che-ton-tao-co-cach-tan-6800.htm
+https://www.openstreetmap.org/way/319395915
+https://www.openstreetmap.org/way/1054211136
+https://www.openstreetmap.org/way/940795265
+https://www.openstreetmap.org/way/940795266
+
+Tường thành Đồng Hới, bia bên cầu Nam Thành và sân trong Cửa Đông
+
+Vị trí bia và hai đoạn kè theo bản đồ OpenStreetMap. Ảnh năm 2015 ghi lại bia đá, mảng tường gạch và vỉa hè đầu cầu. Hai nhánh cầu Nam Thành được đặt cao hơn nền mô phỏng 0,8 m để nối với vỉa hè theo ảnh. Đây là độ nâng trong cảnh. Bề rộng hào khoảng 26 m ở phía nam và 28 m tại mũi đông bắc, ước theo ảnh và tim hào. Các mảng vữa, chữ nhỏ trên bia và cây xanh được thể hiện giản lược.
+https://vnexpress.net/dau-tich-thoi-vua-minh-mang-con-lai-o-thanh-dong-hoi-3295094.html
+https://baoquangtri.vn/dat-va-nguoi-quang-binh/201703/thanh-dong-hoi-chung-tich-bi-hung-2143346/
+https://www.openstreetmap.org/node/6346469056
+https://www.openstreetmap.org/way/334166181
+https://www.openstreetmap.org/way/940795265
+https://www.openstreetmap.org/way/969759026
+https://www.openstreetmap.org/way/969759027
+
+Góc nhìn mũi đông bắc từ phía bắc hào dựa vào ảnh định vị của Tttrung, chụp hướng 172°. Hai ảnh sân trong Cửa Đông của Linhcandng và Baklavabaklava thể hiện các bậc lên gác, lỗ tròn ở giữa mặt gác và hai tầng mái. Thông tin tác giả, giấy phép và liên kết ảnh gốc có trong trình xem ảnh.
+https://commons.wikimedia.org/?curid=148222144
+https://commons.wikimedia.org/?curid=93540701
+https://commons.wikimedia.org/?curid=23559025
+
+Hoành Sơn Quan và lối bậc trên Đèo Ngang
+
+Cửa quan do vua Minh Mạng cho xây năm 1833. Cổng hiện còn cao hơn 4 m. Tấm biển chữ Hán đặt ở mặt hướng Hà Tĩnh. Đường Đèo Ngang cũ và lối bộ về phía bắc được đối chiếu theo đường bản đồ 52672833 và 887411294. Đường lên sát cổng và vòm nhìn từ hai phía theo ảnh của Linhcandng và phóng sự của Dân trí. Bề ngang cổng, khẩu độ vòm và độ sâu bậc là số ước từ ảnh. Cảnh chỉ dựng đoạn đường bộ giữa đường đèo cũ và cửa quan. Tuyến thiên lý về phía nam được phát hiện lại là một đoạn khác.
+https://vietnamtourism.vn/index.php/news/items/27340
+https://dantri.com.vn/du-lich/kham-pha-cong-troi-co-tu-thoi-vua-minh-mang-tren-dinh-deo-ngang-20230116104648765.htm
+https://baovanhoa.vn/van-hoa/phat-lo-duong-thien-ly-bac-nam-qua-hoanh-son-quan-108159.html
+https://www.openstreetmap.org/node/8250669293
+https://www.openstreetmap.org/way/887411294
+https://www.openstreetmap.org/way/52672833
+
+Ảnh Hoành Sơn quan 4, 5 và 6 của Linhcandng, ngày 1/9/2016, giấy phép CC BY-SA 3.0. Hai mặt tường và các phiến đá trong cảnh 3D chiếu phần tương ứng của ảnh 4 và 5 lên hình học theo phối cảnh, dùng cùng giấy phép. Ảnh nguyên khung và thông tin tác giả có tại mỗi góc ngắm.
+https://commons.wikimedia.org/?curid=93540481
+https://commons.wikimedia.org/?curid=93540483
+https://commons.wikimedia.org/?curid=93540484
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Vũng Chùa – Đảo Yến, xã Phú Trạch, Quảng Trị (Quảng Đông, Quảng Bình cũ)
+
+Điểm mang tên Vũng Chùa trên OSM là tâm vũng. Để ngắm Hòn Nồm từ đất liền, xe dừng trên đường nhựa cạnh điểm ngắm 6841107787 ở bãi phía tây Mũi Rồng. Góc nhìn từ sườn đồi dùng lối đi bộ 841553891 và bãi xe 884243608. Tọa độ khảo sát 17.923944, 106.494083 ở trang 52–53 báo cáo của Sở Khoa học và Công nghệ Quảng Bình nằm trong bãi xe.
+https://quangbinhtourism.vn/diem-du-lich/khac/vung-chua-dao-yen.html
+https://dulich.quangtri.gov.vn/vi/daoyenvungchua
+https://skhcn.quangbinh.gov.vn/3cms/upload/khcn/File/KQKHCN/BaoCaoTongHop3DQB.pdf
+https://www.openstreetmap.org/node/11563767582
+https://www.openstreetmap.org/node/6841107787
+https://www.openstreetmap.org/way/884243619
+https://www.openstreetmap.org/way/884243608
+https://www.openstreetmap.org/way/841553891
+
+Mép bãi cát và đường bao Đảo Yến theo OSM. Lưới độ cao và màu bề mặt đảo được lấy từ trang địa hình gốc của Vi vu đất Việt ở ô N17E106, dùng Copernicus DEM và ảnh Sentinel-2 của ESA WorldCover 2021. Mô hình thể hiện vùng lõm giữa sườn bắc và mũi thấp phía nam. Vị trí cây phi lao, ánh sáng và độ cao của máy ảnh ở sườn đồi là ước lượng. Ảnh Đảo Yến từ hàng cây của Linhcandng và hai ảnh vịnh của Genghiskhan có giấy phép CC BY-SA 3.0.
+https://www.openstreetmap.org/way/61973139
+https://www.openstreetmap.org/node/10303616063
+https://registry.opendata.aws/copernicus-dem/
+https://esa-worldcover.org/en/data-access
+https://commons.wikimedia.org/?curid=93540011
+https://commons.wikimedia.org/?curid=30735829
+https://commons.wikimedia.org/?curid=30735831
+
+Hai cây phi lao trong ảnh của Linhcandng được tách nền và dùng làm chất liệu có độ trong suốt trên bãi cát. Chất liệu vung-chua-phi-lao.webp dùng cùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=93540011
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Khu mộ Đại tướng Võ Nguyên Giáp và Phó Giáo sư Đặng Bích Hà, Vũng Chùa
+
+Điểm đến trên sườn núi Thọ, thôn Thọ Sơn, nay thuộc xã Phú Trạch, tỉnh Quảng Trị. Vị trí phần mộ Đại tướng theo nút OSM 2495002567. Tọa độ khảo sát 106°29′38,7″Đ, 17°55′26,2″B trong báo cáo 3D Quảng Bình nằm ở bãi đỗ, phía tây nam khu mộ. Đường đi bộ uốn theo đường 841553891. Xe dừng trên đường ven biển ở chân lối bộ.
+https://vietnamtourism.vn/index.php/tourism/items/2924
+https://skhcn.quangbinh.gov.vn/3cms/upload/khcn/File/KQKHCN/BaoCaoTongHop3DQB.pdf
+https://www.openstreetmap.org/node/2495002567
+https://www.openstreetmap.org/way/884243608
+https://www.openstreetmap.org/way/841553891
+https://www.openstreetmap.org/way/888729820
+
+Cục Du lịch Quốc gia Việt Nam ghi nhận quả chuông “Vũng Chùa Hồng Chung” gần phần mộ. Phóng sự tại chỗ của PetroTimes đặt tháp thấp hơn phần mộ. Hình khối và hai tầng mái đối chiếu với ảnh của Linhcandng, CC BY-SA 3.0. Vị trí tháp ước theo công trình vuông ở mép sườn, OSM 885335615.
+https://petrotimes.vn/dat-thieng-vung-chua-144293.html
+https://www.openstreetmap.org/way/885335615
+https://commons.wikimedia.org/?curid=93540695
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Nhà đăng ký ở bãi xe theo ảnh chụp ngày 27/8/2016 của Linhcandng. Chất liệu vung-chua-mai-tranh.webp ghép phần mái, mặt trước và vách tre của nhà đăng ký, cùng dải hoa văn dưới mái tháp chuông. Các mảng ảnh được hiệu chỉnh phối cảnh và phát hành theo giấy phép CC BY-SA 3.0. Mái che cạnh lối viếng dùng cùng chất liệu.
+https://commons.wikimedia.org/?curid=93540695
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Hai phần mộ hướng ra biển. Phó Giáo sư Đặng Bích Hà an táng ngày 29/9/2024. Bài ảnh VOV ngày 3/1/2026 ghi nhận lối lát đá, lan can gỗ, mái che và sườn cỏ. Ảnh dâng hương ngày 25/8/2026 cho thấy bàn gỗ, lư ba chân và đồ thờ. Kích thước, cao độ và vị trí tương đối của các chi tiết sân viếng là ước lượng. Hai bài ảnh được dẫn để người tham quan đối chiếu.
+https://vov.vn/xa-hoi/hang-nghin-nguoi-dang-huong-tai-mo-dai-tuong-vo-nguyen-giap-dau-nam-moi-2026-post1258583.vov
+https://vov.vn/chinh-tri/dang-huong-tuong-nho-dai-tuong-vo-nguyen-giap-tai-vung-chua-dao-yen-post1327197.vov
+
+Ao Bà Om (Ao Vuông), phường Nguyệt Hóa, tỉnh Vĩnh Long
+
+Cục Du lịch Quốc gia Việt Nam ghi nhận quanh ao có gò cát và cây sao, dầu cổ thụ với rễ trồi lên mặt đất. Cổng thông tin Vĩnh Long ghi nhận Ao Bà Om được xếp hạng danh lam thắng cảnh quốc gia ngày 20/7/1994. Đường bờ lấy từ OSM 76041615, cũng là mặt ao đã có trong lớp thủy hệ của Vi vu đất Việt. Xe đỗ ở đường vào phía đông, tại nút nối đường 1161849235 và 1465070930. Các góc ngắm trên gò là vị trí mô phỏng. Từng gốc cây và mảng thực vật thủy sinh không có tọa độ khảo sát riêng.
+https://vietnamtourism.vn/index.php/tourism/items/1395
+https://vinhlong.gov.vn/du-khach-old/diadanh_test
+https://www.openstreetmap.org/way/76041615
+https://www.openstreetmap.org/way/1161849235
+https://www.openstreetmap.org/way/1465070930
+
+Khối độ cao Copernicus ghi nhận cả tán rừng quanh ao. Mặt bằng ven bờ trong cảnh lấy mốc từ trung vị của năm điểm trên phần nước thoáng, nối dần về địa hình gốc bên ngoài gò. Cao độ tương đối của gò cát là ước lượng theo ảnh.
+
+Hai ảnh của Bùi Thụy Đào Nguyên ngày 17/3/2013 cho thấy thân thẳng, rễ nổi và nền cát. Dáng gốc trong góc nhìn gần được ước theo ảnh “Cổ thụ ở ao Bà Ôm”. Chất liệu ao-ba-om-vo-cay.webp và ao-ba-om-nen-cat.webp được cắt từ hai ảnh gốc và cân bằng độ sáng để phủ lên bề mặt 3D. Hai chất liệu dùng giấy phép CC BY-SA 3.0. Ảnh mặt ao của ASM cho thấy cuống và lá sen cạnh bờ, ánh nước và dải cây phía đối diện. Mật độ sen thay đổi theo mùa.
+https://commons.wikimedia.org/?curid=25228817
+https://commons.wikimedia.org/?curid=25228818
+https://commons.wikimedia.org/?curid=34578946
+https://creativecommons.org/licenses/by-sa/3.0/
+https://bvhttdl.mediacdn.vn/documents/181351/512002/3636070998181679.pdf
+
+Chùa Âng (Wat Angkor Raig Borei), phường Nguyệt Hóa, tỉnh Vĩnh Long
+
+Hồ sơ di tích của tỉnh Vĩnh Long ghi hướng đông của chánh điện, năm xây dựng 1842 và năm xếp hạng di tích kiến trúc nghệ thuật quốc gia 1994. Nền dưới rộng 24 × 36 m, cao 1,4 m. Nền trên cao thêm 0,6 m. Hai vòng rào cao lần lượt 1,23 m và 0,7 m. Chánh điện rộng 12 × 24 m, có ba cấp mái. Sáu cột ngoài hành lang phía trước mang hình Keyno và Krud. Hào nước rộng khoảng 4 m bao quanh các công trình. Vị trí cầu phía tây và tương quan giữa các mái nhà được đối chiếu với ảnh nhìn từ trên cao. Kích thước mái, bố trí nhà phụ và độ cao mặt sân là ước lượng.
+https://vinhlong.gov.vn/du-khach-old/di-tich-lich-su
+https://www.openstreetmap.org/way/288574348
+https://www.openstreetmap.org/way/76041682
+
+Ảnh “Chính điện chùa Âng” và “Chùa Âng” của Bùi Thụy Đào Nguyên ngày 17/3/2013. Họa tiết đầu hồi, hình chạm trên đầu cột và mặt đá chân nền được cắt từ ảnh mặt chính điện và ghép vào chua-ang-hoa-van.webp. Phần đá được cân bằng ánh sáng. Chất liệu này và ảnh tham chiếu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=25293197
+https://commons.wikimedia.org/?curid=25228819
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Bảo tàng Văn hóa dân tộc Khmer, phường Nguyệt Hóa, tỉnh Vĩnh Long
+
+Bảo tàng Lịch sử quốc gia mô tả nhà hai tầng và các phòng trưng bày về đời sống, văn hóa, nghệ thuật Khmer. Báo cáo quý I/2026 của Sở Văn hóa, Thể thao và Du lịch Vĩnh Long xác nhận địa chỉ và tên chi nhánh Trà Vinh. Vị trí tòa nhà theo OpenStreetMap. Kích thước nhà, vị trí cổng và cách sắp nhạc cụ trong mô hình được ước lượng từ hình ảnh.
+https://baotanglichsuquocgia.vn/vi/Articles/3096/16337/bao-tang-van-hoa-dan-toc-khmer-tinh-tra-vinh.html
+https://svhttdl.vinhlong.gov.vn/Portals/1040/2026/BAO%20CAO/20032026/11.3.%20BAO%20CAO%20QUY%20I.2026.SVHTTDL.signed.pdf
+https://www.openstreetmap.org/node/4793310552
+https://baocamau.vn/index.php/bao-tang-van-hoa-dan-toc-khmer-a34094.html
+
+Mặt tiền và cổng bảo tàng do Bùi Thụy Đào Nguyên chụp ngày 17/3/2013 (CC BY-SA 3.0). Hai mảng chạm và dòng chữ Khmer trên mặt tiền được cắt, chỉnh phối cảnh và tách nền thành chất liệu bao-tang-khmer-phu-dieu.webp và bao-tang-khmer-chu-noi.webp, cùng giấy phép. Ảnh “Khmer style gong” của Tonbi ko (CC BY-SA 4.0) ghi lại các khung cồng, trống và đàn gỗ trên bục trưng bày. Chất liệu bao-tang-khmer-mat-cong.webp là phần mặt cồng cắt và chỉnh phối cảnh từ ảnh này, dùng giấy phép CC BY-SA 4.0.
+https://commons.wikimedia.org/?curid=25223209
+https://commons.wikimedia.org/?curid=25331929
+https://creativecommons.org/licenses/by-sa/3.0/
+https://commons.wikimedia.org/?curid=42774900
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Cổng phía đông, bảo tháp năm ngọn và hai lối qua hào chùa Âng
+
+Ảnh chụp thẳng từ trên cao của VietNamNet, đăng lại trên VOV năm 2023, cho thấy hai mép nước, một cầu hẹp phía tây và trục tiếp cận phía đông. Vị trí các bờ, lối qua hào và hai ngôi tháp trước chánh điện được ước lượng bằng cách đối chiếu ảnh với các góc mái và cầu phía tây trên ảnh vệ tinh. Một số đoạn bờ khuất dưới tán cây. Hình dáng, cửa thông gió, số ngọn và vị trí tương đối của hai ngôi tháp được đối chiếu thêm với ảnh tháng 3/2025. Cao độ bờ kè và vị trí cổng ngoài theo lối cây sao là ước lượng.
+https://vov.gov.vn/ngoi-chua-khmer-gan-1000-nam-tuoi-o-tra-vinh-dtnew-534688
+https://tuoitre.vn/nld/clip-chiem-nguong-kien-truc-ngoi-chua-hon-1000-nam-tuoi-o-tra-vinh-196250316133955332.htm
+https://www.chuagiacngo.com/sites/default/files/huong-dan/book_tnt/phat_giao_vung_mekong_di_san_va_van_hoa.pdf
+https://vinhlong.gov.vn/du-khach-old/di-tich-lich-su
+
+Ảnh “Cổng chùa Âng” do Bùi Thụy Đào Nguyên chụp năm 2013. Ba đầu hồi nhỏ, dải hoa văn, bảng tên và các hình chạm bên cửa được cắt và tách nền từ ảnh này cho chất liệu chua-ang-cong-dong.webp. Ảnh và chất liệu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=25293196
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Bệ thờ và bích họa chánh điện chùa Âng
+
+Hồ sơ di tích của tỉnh ghi tượng Phật chính cao 2,1 m, bệ thờ hình tòa sen và khung gỗ chạm. Mô hình thể hiện mười hai cột gỗ trong gian thờ. Hai cảnh bích họa, khung gỗ và một nhóm tượng trên bệ được tái dựng theo ảnh tại chỗ. Độ sâu của tượng, vị trí hai cảnh tranh dọc tường và khoảng cách giữa các hiện vật là ước lượng.
+https://vinhlong.gov.vn/du-khach-old/di-tich-lich-su
+https://tuoitre.vn/nld/clip-chiem-nguong-kien-truc-ngoi-chua-hon-1000-nam-tuoi-o-tra-vinh-196250316133955332.htm
+
+Ảnh “Tượng Phật Thích Ca trong chùa Âng” và “Tranh tường trong chùa Âng” do Bùi Thụy Đào Nguyên chụp ngày 17/3/2013. Chất liệu chua-ang-be-tho.webp được cắt từ ảnh bệ thờ. Chất liệu chua-ang-bich-hoa.webp ghép hai cảnh tranh đã chỉnh phối cảnh và một phần họa tiết cột. Các ảnh và chất liệu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=25293194
+https://commons.wikimedia.org/?curid=25293198
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Chùa Hang (Wat Kompông Chrây), xã Châu Thành, vùng Trà Vinh
+
+Tỉnh Trà Vinh xếp hạng chùa là di tích lịch sử cấp tỉnh theo Quyết định 1158/QĐ-UBND ngày 19/5/2025. Hồ sơ tỉnh ghi chùa khởi dựng năm 1637, trong khuôn viên có xưởng điêu khắc và rừng cây là nơi trú ngụ của nhiều loài cò, diệc. Cổng phía tây nằm trên đường 2 Tháng 9 (Quốc lộ 54). Điểm dừng xe trong mô phỏng nằm trên tuyến đường này.
+https://vinhlong.gov.vn/du-khach-old/%C4%91iem-du-lich
+https://vinhlong.gov.vn/du-khach-old/diadanh_test
+https://vietnamtourism.vn/index.php/tourism/items/1283
+
+Trục chánh điện, nền hình chữ nhật khoảng 25 × 40 m và phạm vi rừng được dựng theo thửa chùa và đường bao công trình trên OpenStreetMap. Ảnh từ trên cao của Trí Trần tháng 7/2025 giúp xác định vị trí các dãy nhà, bậc phía đông, nhà trưng bày phía tây và cột chim trong sân. Nhà phía bắc được thể hiện theo phần khung nhìn thấy trong ảnh năm 2025. Dải ngói màu, giao mái, cột trắng và hàng rào nền đỏ được đối chiếu với ảnh ở sân chùa. Cao độ sân được ước lượng từ các điểm trống quanh chùa và đường ven khuôn viên để giảm ảnh hưởng của tán cây trong dữ liệu độ cao. Chiều cao công trình, vị trí từng cây, chậu kiểng và đàn chim là ước lượng.
+https://www.openstreetmap.org/way/1352279406
+https://www.openstreetmap.org/way/288582896
+https://thanhnien.vn/can-canh-chua-hang-hang-tram-tuoi-giua-rung-cay-co-thu-o-vinh-long-185250717132218388.htm
+
+Ảnh “Chính điện chùa Hang (Trà Vinh)” và “Nhà trưng bày ở chùa Hang (Trà Vinh)” do Bùi Thụy Đào Nguyên chụp năm 2013. Chất liệu chua-hang-nha-trung-bay.webp gồm dải phù điêu, biển chữ Khmer, phần lan can và hoa văn chân cột chim được cắt, chỉnh phối cảnh từ ảnh nhà trưng bày. Chất liệu chua-hang-cay-kieng.webp dùng ba tán cây kiểng đã tách nền từ hai ảnh. Các ảnh và chất liệu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=25299321
+https://commons.wikimedia.org/?curid=25299317
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Cổng phía tây chùa Hang, đường 2 Tháng 9 (Quốc lộ 54)
+
+Hồ sơ của tỉnh ghi cổng phụ phía tây có lối vòm dài 8 m, xây vào đầu thế kỷ XX. Ảnh của Trí Trần tháng 7/2025 cho thấy ba lối đi, các cửa nhỏ thông nhau dưới vòm, tường rào xanh và màu vữa sau phong hóa. Vị trí cổng dọc lề đường, chiều rộng và chiều cao vòm, đường đi dưới tán cây là ước lượng từ ảnh và bản đồ. Cao độ mô phỏng lấy theo điểm đường trống trước cổng.
+https://vinhlong.gov.vn/du-khach-old/diadanh_test
+https://thanhnien.vn/can-canh-chua-hang-hang-tram-tuoi-giua-rung-cay-co-thu-o-vinh-long-185250717132218388.htm
+
+Ảnh cổng chùa Hang của Bùi Thụy Đào Nguyên năm 2013 dùng làm ảnh tham chiếu. Chất liệu chua-hang-cong-vom.webp dùng phần mặt cổng, chữ nổi và vữa lòng vòm đã chỉnh phối cảnh, tách nền và giảm sắc vàng. Ảnh và chất liệu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=25299316
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Hòn Phụ Tử, hòn Bà và hòn Ông, xã Kiên Lương, tỉnh An Giang
+
+Từ khu Chùa Hang ở xã Bình An, huyện Kiên Lương cũ, khách nhìn ra cụm đảo đá vôi ngoài biển. Phóng sự tại chỗ ngày 9/8/2006 ghi hòn Phụ cao khoảng 33,6 m đã gãy đổ, hòn Tử cao khoảng 30 m còn đứng. Ảnh từ phía biển của Chí Công tháng 6/2026 cho thấy hòn Tử, chuỗi khối đá thấp và hai đảo nhiều cây ở phía sau. Mô hình thể hiện hiện trạng này.
+https://kienluong.angiang.gov.vn/kien-luong-phat-huy-nhung-tiem-nang-du-lich-tu-cac-di-tich-lich-su-van-hoa
+https://tuoitre.vn/hon-phu-tu-nga-sup-155099.htm
+https://tuoitre.vn/gan-20-nam-gap-su-co-gay-do-den-nay-hon-phu-tu-ra-sao-100260629165618354.htm
+
+Ranh giới và hướng ba đảo được đối chiếu với ba đường bờ OpenStreetMap và ảnh nhìn từ trên cao. Nhánh đường nối ĐT.971 tới bờ được dùng làm nơi dừng xe. Hình cột đá phía bắc được dựng theo đường biên trong ảnh chụp từ bờ và từ bến thuyền. Bề dày lưng cột, chiều cao hòn Bà và hòn Ông, các khe giữa từng khối trên bệ, cây phủ và vị trí máy ảnh là ước lượng.
+https://www.openstreetmap.org/way/1223400935
+https://www.openstreetmap.org/way/1223400936
+https://www.openstreetmap.org/way/1223400937
+https://www.openstreetmap.org/way/1548345366
+
+Hai ảnh “Hòn Phụ Tử” và “Hòn Phụ Tử ở Kiên Lương” của Bùi Thụy Đào Nguyên, chụp ngày 10/5/2014. Chất liệu hon-phu-tu-da-voi.webp ghép vách bắc của cột đá, phần bệ đá gãy và mặt hòn Bà đã cắt biên. Hai mảng đá và tán cây được cắt từ ảnh hòn Bà, ghép đối xứng để phủ các mặt khuất. Các ảnh và chất liệu dùng giấy phép CC BY-SA 3.0.
+https://commons.wikimedia.org/?curid=32748961
+https://commons.wikimedia.org/?curid=32749318
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Chùa Som Rông, Sóc Trăng
+
+Ảnh “Tượng phật nằm tại Sóc Trăng 2” của Huynhdat1909, chụp ngày 27/5/2023, cung cấp góc nhìn từ trước đại tượng. Chất liệu som-rong-tuong-nam.webp cắt từ ảnh, xử lý các phần bị lan can và người tham quan che khuất, dùng giấy phép CC BY-SA 4.0. Hình dáng nhìn từ trước, bàn tay đỡ đầu, tay duỗi trên đùi và gối kê theo ảnh. Bề dày ra sau là ước dựng. Kích thước tượng là 63 × 22,5 m. Bên trong bảo tháp có một tượng Thích Ca ngồi thiền, hướng mặt về phía đông.
+https://commons.wikimedia.org/wiki/File:Tượng_phật_nằm_tại_Sóc_Trăng_2.jpg
+https://creativecommons.org/licenses/by-sa/4.0/
+https://baosoctrang.org.vn/van-hoa-the-thao-du-lich/202501/cau-hanh-phuc-cau-binh-an-cau-mot-nam-tot-lanh-tron-ven-98c10d5/
+https://congan.camau.gov.vn/ch28/1921-Dau-xuan-tham-ngoi-chua-co-tuong-Phat-nam-lon-nhat-Viet-Nam.html
+
+Tượng Phật Bốn Tay, Linh Sơn cổ tự, Ba Thê
+
+Dáng ngồi, hai tư thế tay phía trên, áo thếp vàng, mũ cao và tán rắn được đối chiếu với ảnh chụp hai bên tượng của Báo An Giang, ảnh Bùi Thụy Đào Nguyên năm 2007 và tư liệu của Sở Văn hóa, Thể thao và Du lịch An Giang. Chất liệu linh-son-mu-va-chan-dung.webp cắt từ ảnh “Tượng Phật bốn tay” của Bùi Thụy Đào Nguyên, chụp ngày 28/4/2007, có nâng sáng và chỉnh màu theo nước sơn trong ảnh khảo sát sau này, dùng giấy phép CC BY-SA 3.0. Ngũ quan hiện ở góc có ảnh chụp.
+https://baoangiang.com.vn/chiem-nguong-nhieu-canh-doc-la-o-chua-linh-son-a410918.html
+https://commons.wikimedia.org/wiki/File:Tượng_Phật_bốn_tay.jpg
+https://creativecommons.org/licenses/by-sa/3.0/
+https://media.angiang.gov.vn/SoVHTTDL-Portal/File-Dinh-Kem/thong_tin_du_lich_an_giang.pdf#page=50
+
+Tượng đài Mẹ Suốt ở Đồng Hới
+
+Dáng đầu ngẩng, tay nắm cán chèo, ống quần và đường bao mũi thuyền được đối chiếu ở ba góc chụp. Hai chất liệu me-suot-nguoi.webp và me-suot-mui-thuyen.webp được cắt, điều chỉnh sắc độ từ hai ảnh của Linhcandng, dùng giấy phép CC BY-SA 3.0. Mặt khuất dùng màu đá. Chiều sâu là ước lượng từ góc chéo.
+https://commons.wikimedia.org/?curid=93541902
+https://commons.wikimedia.org/?curid=93541901
+https://commons.wikimedia.org/?curid=88455578
+https://creativecommons.org/licenses/by-sa/3.0/
+https://dulichquangtri.vn/diem-du-lich/tuong-dai-me-suot/
+
+Tượng Đức Bà Hòa Bình tại Công trường Công xã Paris, TP. Hồ Chí Minh
+
+Chiều cao phần đá cẩm thạch 4,6 m theo Tổng Giáo phận Sài Gòn. Chất liệu duc-ba-cam-thach.webp và duc-ba-dia-cau.webp lấy từ ảnh chính diện của 源義信 ngày 10/12/2023. Chất liệu duc-ba-khan-choang.webp lấy từ ảnh mặt sau của Theodor. Hai góc được cắt biên, cân sắc độ và căn theo đường bao của pho tượng. Chất liệu duc-ba-minh-van.webp được cắt và chỉnh phối cảnh từ ảnh bảng đồng của Ign christian. Ba ảnh và các chất liệu chuyển thể dùng giấy phép CC BY-SA 4.0. Vị trí quả địa cầu phía trước ngực và độ rủ của tay áo được đối chiếu thêm với ảnh chụp nghiêng của Diego Delso.
+https://tgpsaigon.net/bai-viet/ky-niem-50-nam-cung-hien-vuong-cung-thanh-duong-chanh-toa-duc-ba-sai-gon-43841
+https://commons.wikimedia.org/?curid=142839580
+https://commons.wikimedia.org/?curid=147770341
+https://commons.wikimedia.org/?curid=47358337
+https://creativecommons.org/licenses/by-sa/4.0/
+https://commons.wikimedia.org/?curid=30082753
+Nhóm tượng tại Khu chứng tích Sơn Mỹ, Quảng Ngãi
+
+Dáng đứng, nắm tay giơ cao, trẻ được bế và các nạn nhân dưới chân tượng được dựng theo ảnh “Monument of the My Lai Massacre (2)” của -JvL-. Tệp son-my-memorial.webp cắt từ ảnh gốc dùng giấy phép CC BY 2.0. Phần trước dùng ảnh, phần sau và chiều sâu khối đá được ước dựng.
+https://commons.wikimedia.org/wiki/File:Monument_of_the_My_Lai_Massacre_(2).jpg
+https://creativecommons.org/licenses/by/2.0/
+
+Kim Thân Phật Tổ, chùa Long Sơn, Nha Trang
+
+Tệp long-son-kim-than.webp cắt từ ảnh “White Bouddha Nha Trang” của Edgar DURAND. Ảnh gốc và chất liệu chuyển thể dùng giấy phép CC BY-SA 2.0. Thân tượng cao 14 m. Ba chân dung nhìn thấy ở chính diện dùng ảnh của từng vị. Bốn vị còn lại chỉ thể hiện khung phù điêu. Hai bên và phía sau thân tượng được ước dựng.
+https://commons.wikimedia.org/wiki/File:White_Bouddha_Nha_Trang.jpg
+https://creativecommons.org/licenses/by-sa/2.0/
+https://khanhhoa.khanhhoagov.vnptweb.vn/du-khach/chua-long-son-863666
+https://dulichso.khanhhoa.gov.vn/article/chua-long-son-b4e
+
+Thiên Y A Na, gian thờ Tháp Nhạn, Tuy Hòa
+
+Tệp thap-nhan-thien-y-a-na.webp lấy từ ảnh “Nhan Tower 3” của Christophe95. Vi vu đất Việt cắt phần mão, mặt và trang phục để phủ lên mặt trước pho tượng. Phần áo khuất sau lư hương được giản lược. Ảnh và phần cắt dùng giấy phép CC BY-SA 4.0.
+https://commons.wikimedia.org/wiki/File:Nhan_Tower_3.jpg
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Quan Âm Bãi Bụt, Sơn Trà, Đà Nẵng
+
+Tệp son-tra-quan-am.webp cắt từ ảnh “Tượng Bồ Tát tại Chùa Linh Ứng, Sơn Trà, Đà Nẵng, tháng 3 năm 2021 (3)” của Phương Huy. Tư thế tay, mão và nếp áo mặt trước theo ảnh. Bề dày và phần lưng được ước dựng. Ảnh và phần cắt dùng giấy phép CC BY-SA 4.0. Cục Du lịch Quốc gia Việt Nam ghi nhận 18 pho La Hán riêng trong sân chùa.
+https://commons.wikimedia.org/wiki/File:Tượng_Bồ_Tát_tại_Chùa_Linh_Ứng,_Sơn_Trà,_Đà_Nẵng,_tháng_3_năm_2021_(3).jpg
+https://creativecommons.org/licenses/by-sa/4.0/
+https://vietnamtourism.gov.vn/en/post/15941
+
+Tượng đài Mẹ Việt Nam Anh hùng, Tam Kỳ
+
+Hai cánh đá rộng 84,7 m, dài 117 m theo đường cong. Chiều cao 18,37 m và chiều dày từ 8 tới 24,3 m. Bố cục, dáng tóc, cổ áo và hồ phía trước đối chiếu ảnh tại Tam Kỳ. Khuôn mặt và các chân dung phụ trên vách được lược bỏ. Tọa độ tâm khối tượng và trục nhìn ra quảng trường được đối chiếu ảnh vệ tinh Esri.
+https://baochinhphu.vn/quang-nam-khanh-thanh-tuong-dai-me-viet-nam-anh-hung-102180934.htm
+https://baotanglichsu.vn/vi/Articles/3091/17862/khanh-thanh-tuong-djai-me-viet-nam-anh-hung-tai-quang-nam.html
+https://dltm.vnptit3.vn/vi/tuongdaimevietnam
+
+Tượng đồng Chủ tịch Hồ Chí Minh, Đài tưởng niệm Núi Nhạn, Tuy Hòa
+
+Bức tượng bán thân cao 83 cm, rộng 73 cm theo ghi nhận khi khánh thành năm 2009. Vai áo, râu, bệ thờ và ngôi sao đồng trên vách đối chiếu với ảnh toàn cảnh của tỉnh chụp trong nhà bia. Khuôn mặt để trơn.
+https://phuyen.baodaklak.vn/76/43006/dat-tuong-dong-bac-ho-tai-dai-tuong-niem-nui-nhan.html
+https://daklakvrtour.com/tour/42/index.html#node3
+
+Điện Biên Phủ, nhóm tượng đồng trên đỉnh D1 và hai nhóm mạ vàng tại nghĩa trang A1
+Tác phẩm trên đỉnh D1 của Nguyễn Hải cao 12,6 m. Ảnh chính diện của Ioe2015 (CC BY-SA 4.0) được cắt và cân sáng cho chất liệu dien-bien-d1-tuong-dong.webp. Các mặt cắt theo đường bao người, em bé và cờ trong ảnh. Các ảnh của Adam Jones và Pilip được dùng để đối chiếu góc bên và phía sau.
+https://vietnamtourism.vn/index.php/tourism/items/2073
+https://commons.wikimedia.org/?curid=63381109
+https://creativecommons.org/licenses/by-sa/4.0/
+https://commons.wikimedia.org/?curid=80522897
+https://commons.wikimedia.org/?curid=3101339
+Hai ảnh tại A1 do Adam Jones chụp (CC BY-SA 2.0) được xoay, cắt và tách màu nền để làm dien-bien-a1-dai-lua.webp và dien-bien-a1-chien-si.webp. Phần chân khuất ở nhóm hai chiến sĩ được giản lược. Các chất liệu chuyển thể dùng cùng giấy phép với từng ảnh gốc.
+https://commons.wikimedia.org/?curid=80522845
+https://commons.wikimedia.org/?curid=80522844
+https://creativecommons.org/licenses/by-sa/2.0/
+https://nvsk.vnanet.vn/nghia-trang-liet-sy-a1-nhan-chung-lich-su-ve-tinh-than-quat-cuong-cua-dan-toc-1-145620.vna

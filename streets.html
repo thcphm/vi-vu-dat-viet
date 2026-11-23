@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111714">
+  <title>Tập lái ô tô trên phố Trần Phú · Vi vu đất Việt</title>
+  <meta name="description" content="Luyện lái qua phố Trần Phú, cổng trường và đoạn thi công. Quan sát người đi bộ, phương tiện và trả lời câu hỏi tình huống khi lái.">
+  <link rel="canonical" href="/streets">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="Tập lái ô tô trên phố Trần Phú · Vi vu đất Việt">
+  <meta property="og:description" content="Luyện lái qua phố Trần Phú, cổng trường và đoạn thi công. Quan sát người đi bộ, phương tiện và trả lời câu hỏi tình huống khi lái.">
+  <meta property="og:url" content="/streets">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="quiz.css"><link rel="stylesheet" href="answer-feedback.css"><link rel="stylesheet" href="lesson-cockpit.css"><link rel="stylesheet" href="driving-renderer.css"></head>
+<body class="lessonStreet" data-mode="ready">
+<header><a class="brand" href="./" target="_top"><i aria-hidden="true"></i>Vi vu <em>đất Việt</em></a><nav aria-label="Điều hướng chính"><button class="active" id="driveNav">Buồng lái</button><button id="theory">Ngân hàng câu hỏi</button><button id="history">Thành tích</button></nav></header>
+<main><fieldset id="courseSelect" class="courseStrip"><legend>Chọn chặng lái</legend>
+<label><input type="radio" name="course" value="city" checked><span>Phố Trần Phú</span><small>Đô thị · 180 m</small></label>
+<label><input type="radio" name="course" value="school"><span>Cổng trường</span><small>Đón khách · 145 m</small></label>
+<label><input type="radio" name="course" value="works"><span>Đường thi công</span><small>Nhập làn · 230 m</small></label>
+</fieldset><div class="grid"><section class="screen" aria-label="Buồng lái 3D"><canvas id="road"></canvas><canvas id="impactGlass" width="960" height="540" aria-hidden="true"></canvas>
+<div class="location"><i></i><span id="locationName">PHỐ TRẦN PHÚ</span></div><div class="tools"><button id="fullStart">Bắt đầu lái</button><button id="camera" title="Đổi góc nhìn (C)">Góc tài xế</button><button id="audio" aria-pressed="false">Âm thanh tắt</button><button id="full" aria-label="Toàn màn hình">⛶</button></div>
+<div class="cover"><div class="kicker">TUYẾN TẬP LÁI ĐÔ THỊ</div><h1>Một vòng<br><em>phố Việt.</em></h1><p><b id="coverName">Phố Trần Phú</b> <span>／</span> <span id="coverLength">180 mét</span></p><button class="mobileStart" id="mobileStart">Vào buồng lái →</button></div>
+<div id="target" hidden><b></b></div><div class="liveHint" id="hint" role="status">Sẵn sàng xuất phát</div>
+<div class="speed"><strong id="speed">00</strong><span>km/h</span><b>D</b><i id="turn" hidden>➜</i></div>
+<div class="map"><canvas id="map" aria-label="Sơ đồ chặng lái trên phố" width="132" height="90"></canvas><small id="remaining">180 m đến đích</small></div>
+<div id="incident" hidden role="group" aria-labelledby="incidentTitle"><strong id="incidentTitle">Va chạm</strong><p id="incidentDetails"></p><button id="recover">Luyện tiếp từ vị trí an toàn</button><button id="leaveCourse">Chọn chặng khác</button></div><div class="touch"><button data-key="arrowleft" aria-label="Đánh lái trái">←</button><button data-key="arrowright" aria-label="Đánh lái phải">→</button><button id="blinkLeft">⇠ Báo trái</button><button id="blinkMobile">Báo phải ⇢</button><button data-key="arrowdown">Phanh</button><button data-key="arrowup">Ga</button></div></section>
+<aside id="console"><div class="brief"><div class="kicker">LỘ TRÌNH THỰC HÀNH</div><h2 id="routeTitle">Qua phố an toàn</h2><div class="spec"><span><strong id="routeLength">180</strong> mét</span><span><strong>04</strong> tình huống</span></div>
+<fieldset id="lessonMode"><legend>Cách luyện</legend><label><input type="radio" name="lesson-mode" value="guided" checked> Học theo chặng</label><label><input type="radio" name="lesson-mode" value="flow"> Lái liên tục</label></fieldset><ol id="stages"><li><b>Xuất phát</b><small>Giữ đúng phần đường</small></li><li><b>Đọc biển tốc độ</b><small>Kiểm soát chân ga</small></li><li><b>Qua ngã tư</b><small>Nhường người đi bộ</small></li><li><b>Dừng xe sát lề</b><small>Báo hiệu và giảm tốc</small></li></ol>
+<button id="exitRun" hidden>Trở về chọn chặng</button><button id="askCoach" hidden>Ôn tình huống hiện tại</button><small id="damage" hidden></small><div class="travel"><span>Tiến độ tuyến</span><b id="metres">0 / 180 m</b><progress id="travel" max="180" value="0"></progress></div>
+<button class="start" id="start">Bắt đầu lái &nbsp; →</button></div></aside></div>
+<div class="bottom"><section><div class="kicker">ĐIỀU KHIỂN</div><div class="keys"><label><kbd>↑</kbd> Ga</label><label><kbd>↓</kbd> Phanh</label><label><kbd>← →</kbd> Đánh lái</label><label><kbd>Q E</kbd> Xi nhan trái / phải</label><label><kbd>P</kbd> Tạm dừng</label></div></section><button id="lesson"><span><small>CỤC CSGT · 2025</small>Thư viện 600 câu</span><b>↗</b></button></div></main>
+<dialog id="quiz"></dialog><dialog id="report"><h2 id="rt"></h2><p id="rb"></p><button id="nextCourse" hidden>Chặng tiếp theo →</button><button id="reviewDrive" hidden>Ôn 4 tình huống vừa lái</button><button onclick="this.closest('dialog').close()">Trở về buồng lái</button></dialog>
+<script src="drivetrain.js"></script><script src="cockpit-settings.js"></script><script src="drive-input.js"></script><script src="three.min.js"></script><script src="tree-scan-data.js"></script><script src="tree-models.js"></script><script src="driving-graphics.js"></script><script src="courses.js"></script><script src="impact.js"></script><script src="cabin.js"></script><script src="traffic/loader.js"></script><script src="pedestrian-models.js"></script><script src="traffic.js"></script><template id="drivingScripts" data-canvas="road" data-power="high-performance"><script src="scene.js"></script><script src="bank.js"></script><script src="answer-feedback.js"></script><script src="quiz.js"></script><script src="audio.js"></script><script src="app.js"></script></template><script src="driving-renderer.js"></script></body></html>

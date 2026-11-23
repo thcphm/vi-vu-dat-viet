@@ -1,0 +1,40 @@
+RANH GIỚI HÀNH CHÍNH VIỆT NAM VÀ ĐỒNG NAI
+
+Hai lớp GeoJSON gồm 34 tỉnh, thành phố và 95 xã, phường của thành phố Đồng Nai, mã 75. Đồng Nai bao gồm địa bàn tỉnh Đồng Nai và tỉnh Bình Phước trước sắp xếp năm 2025. Thành phố có 33 phường và 62 xã từ ngày 30/04/2026.
+
+Hình học và mã hành chính được chuyển từ Vietnamese Provinces Database của Thang Le Quoc, phiên bản 5.2.0, tạo ngày 20/09/2026. Mã phiên bản nguồn 8b78ba5118715e1fa81769286724db79346abf52. Cơ sở dữ liệu công bố theo giấy phép MIT. Copyright (c) 2021 Thang Le Quoc. Nội dung giấy phép trong tệp LICENSE.
+https://github.com/thanglequoc/vietnamese-provinces-database/tree/8b78ba5118715e1fa81769286724db79346abf52/json/geojson
+https://github.com/thanglequoc/vietnamese-provinces-database/blob/master/docs/gis/README_vi.md
+
+Nguồn hình học gốc được dự án dẫn là Bản đồ tra cứu các đơn vị hành chính Việt Nam, Nhà xuất bản Tài nguyên, Môi trường và Bản đồ Việt Nam.
+https://sapnhap.bando.com.vn/
+
+Đối chiếu 95 mã và tên đơn vị với Quyết định 19/2025/QĐ-TTg, Nghị quyết 1662/NQ-UBTVQH15 và Nghị quyết 237/NQ-UBTVQH16. Tên và loại hình thành phố Đồng Nai theo Nghị quyết 30/2026/QH16. Mười xã chuyển thành phường tháng 04/2026 giữ nguyên diện tích và ranh giới.
+https://congbao.chinhphu.vn/tai-ve-van-ban-so-19-2025-qd-ttg-45430-57441
+https://vanban.chinhphu.vn/?docid=213994&pageid=27160
+https://vpubnd.dongnai.gov.vn/vi/news/hoat-dong-chinh-quyen-nha-nuoc/thanh-lap-10-phuong-thuoc-tinh-dong-nai-142.html
+https://xaydungchinhsach.chinhphu.vn/nghi-quyet-so-30-2026-qh16-thanh-lap-thanh-pho-dong-nai-119260430102336551.htm
+
+Các đường biên được giảm số đỉnh để hiển thị trên web theo hệ tọa độ WGS84, thứ tự kinh độ, vĩ độ. Điểm lon, lat nằm bên trong vùng hiển thị và hình học nguồn tương ứng. Những điểm này phục vụ đặt nhãn. Dữ liệu tham khảo có độ chi tiết phụ thuộc tỷ lệ. Lớp xã, phường thể hiện chi tiết hơn lớp tỉnh, thành.
+
+Routes et carburants / Đường và trạm nhiên liệu
+© OpenStreetMap contributors · Open Database License 1.0 · https://www.openstreetmap.org/copyright
+Dữ liệu trích từ các lớp vn-roads và vn-amenities của dự án, ảnh chụp 18/11/2026. Các tuyến khái quát được giản lược để hiển thị trên bản đồ toàn quốc.
+
+Điểm sạc điện: 426 điểm có thể phục vụ ô tô trong trích xuất OpenStreetMap ngày 15/11/2026; 2 điểm nằm trong địa giới Đồng Nai. Độ phủ còn thiếu, không cung cấp trạng thái trực tiếp. Chi tiết trong ../../licenses/charging-stations.md.
+
+Lộ trình lái xe
+Tọa độ của các địa điểm được đối chiếu với danh mục vn-search, dữ liệu đường và bản đồ địa phương. Mỗi hành trình nối điểm đi và điểm đến bằng các đoạn đường ô tô của OpenStreetMap trong dữ liệu vn-roads. Bộ chọn đường sử dụng chiều lưu thông và hạn chế rẽ từ vn-traffic. Bản xem trước được giản lược từ chính đường đi và chỉ dùng để hiển thị. Cự ly được đo dọc theo đường xe chạy giữa hai vị trí trên đường ô tô gần các địa danh.
+© OpenStreetMap contributors · ODbL 1.0 · https://www.openstreetmap.org/copyright
+Xem thêm vn-roads/CREDITS.txt, vn-traffic/CREDITS.txt và vn-search/CREDITS.txt trong thư mục dist của gói dự án. Để tính lại từ dữ liệu đi kèm, chạy node tools/build-featured-drives.mjs từ thư mục gốc.
+
+Tuyến Chợ Biên Hòa – Văn miếu Trấn Biên
+Điểm xuất phát trên đường Lý Thường Kiệt, ngoài đường bao hai nhà chợ. Điểm dừng trên đường Chu Văn An, trước Văn Miếu Môn. Các lối bên trong khuôn viên được OpenStreetMap ghi nhận là đường đi bộ. Mặt bằng và chiều cao công trình dọc tuyến dùng dữ liệu trong vn-structures và vn-osm-buildings. Mặt tiền và mái nhà trong cảnh 3D là mô phỏng.
+https://www.openstreetmap.org/way/225364835
+https://www.openstreetmap.org/way/981111138
+https://www.openstreetmap.org/way/1039825148
+https://www.openstreetmap.org/way/1058035744
+https://www.openstreetmap.org/way/984292075
+https://www.openstreetmap.org/way/998734951
+Ranh khuôn viên Văn miếu dùng để giữ đường đi bộ, các tòa nhà đã được lập bản đồ và khoảng sân giữa chúng.
+https://www.openstreetmap.org/way/972604565

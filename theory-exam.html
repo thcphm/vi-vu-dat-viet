@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Thi thử lý thuyết lái xe hạng B trực tuyến · Vi vu đất Việt</title>
+  <meta name="description" content="Làm đề thi thử lý thuyết ô tô hạng B với 30 câu trong 20 phút. Luyện từ ngân hàng 600 câu và xem kết quả sau khi nộp bài.">
+  <link rel="canonical" href="/theory-exam">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="Thi thử lý thuyết lái xe hạng B trực tuyến · Vi vu đất Việt">
+  <meta property="og:description" content="Làm đề thi thử lý thuyết ô tô hạng B với 30 câu trong 20 phút. Luyện từ ngân hàng 600 câu và xem kết quả sau khi nộp bài.">
+  <meta property="og:url" content="/theory-exam">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="theory-exam.css"><link rel="stylesheet" href="answer-feedback.css">
+</head>
+<body>
+<main>
+  <header><span>Vi vu đất Việt</span><b id="modeLabel"></b></header>
+  <section id="welcome">
+    <p class="eyebrow">Ô TÔ HẠNG B</p>
+    <h1>Sát hạch lý thuyết</h1>
+    <div class="facts"><span><strong>30</strong> câu</span><span><strong>20</strong> phút</span><span><strong>27/30</strong> điểm đạt</span></div>
+    <p>Đề rút ngẫu nhiên từ bộ 600 câu của Cục CSGT. Bạn cần trả lời đúng câu về tình huống mất an toàn giao thông nghiêm trọng. Có thể quay lại sửa đáp án trước khi nộp.</p>
+    <button id="begin" class="primary">Bắt đầu làm bài</button>
+    <p class="source"><a href="library.html">Ôn 600 câu hỏi theo chương</a></p>
+    <p class="source">Áp dụng đến hết 28/02/2027 theo quy định chuyển tiếp. <a href="https://vanban.chinhphu.vn/?classid=1&amp;docid=218725&amp;pageid=27160&amp;typegroupid=6" target="_blank" rel="noopener">Thông tư 108/2026/TT-BCA</a></p>
+  </section>
+  <section id="workspace" hidden>
+    <div class="examhead"><h1 id="heading">Lý thuyết hạng B</h1><span id="clock" role="timer" aria-label="Thời gian còn lại"></span></div>
+    <div id="result" hidden aria-live="polite"></div>
+    <div class="layout">
+      <article><p class="eyebrow" id="counter"></p><h2 id="prompt"></h2><img id="diagram" alt="" hidden><div id="choices"></div>
+        <div id="answerNote" role="status"></div>
+        <div class="paging"><button id="prev">← Trước</button><button id="mark" aria-pressed="false">Đánh dấu</button><button id="next">Sau →</button></div>
+      </article>
+      <aside><strong>Phiếu trả lời</strong><p id="progress"></p><div id="grid" aria-label="Chuyển đến câu hỏi"></div><small id="legend">Ô sáng đã trả lời · góc vàng đã đánh dấu</small><button id="submit" class="primary">Nộp bài</button><button id="newPaper" hidden>Làm đề mới</button></aside>
+    </div>
+  </section>
+</main>
+<dialog id="confirm"><h2>Nộp bài thi?</h2><p id="confirmText"></p><div class="paging"><button id="cancel">Tiếp tục làm</button><button id="send" class="primary">Nộp và chấm điểm</button></div></dialog>
+<script src="bank.js"></script><script src="answer-feedback.js"></script><script src="theory-exam.js"></script>
+</body></html>

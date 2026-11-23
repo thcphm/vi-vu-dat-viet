@@ -1,0 +1,22 @@
+Cầu trên mạng đường Vi vu đất Việt
+
+© OpenStreetMap contributors, https://www.openstreetmap.org/copyright
+Dữ liệu phái sinh được phân phối theo ODbL 1.0.
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Nguồn Geofabrik Việt Nam, thời điểm 2026-11-18T21:21:02Z
+https://download.geofabrik.de/asia/vietnam/vietnam-261118.osm.pbf
+
+details.json bổ sung thông tin cho các đoạn đã có thuộc tính cầu trong
+vn-traffic. Khóa là mã đoạn đường của vn-roads. Các trường tùy chọn gồm
+tầng tương đối (layer), kết cấu (structure) và tên riêng của cầu (name).
+Tên và kết cấu có thể đến từ đường bao công trình khi phần lớn đoạn đường
+nằm trên cầu đó.
+
+footbridges.json lưu các lối đi trên cầu có giao cắt với đường xe chạy ở
+tầng mặt đất, các đoạn mặt cầu nối tiếp và cầu thang hoặc dốc nối trực
+tiếp đã được ghi nhận trong bản đồ. Trình tạo dữ liệu lọc bỏ các nút giao
+cùng mức và vỉa hè chạy dọc cầu đường bộ. Hình học theo lưới 0,00001 độ.
+Mỗi dòng gồm mã đường OSM, loại đoạn, tầng, bề rộng và dãy kinh/vĩ độ.
+Bề rộng bằng 0 khi thiếu số đo. Hình học cầu thang và dốc đi từ thấp lên cao.
+Lệnh tạo dữ liệu nằm trong tools/build_vn_bridges.py.

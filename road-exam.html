@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Luyện sát hạch đường trường hạng B · Vi vu đất Việt</title>
+  <meta name="description" content="Lái trên tuyến Ven sông hoặc Đèo trà, xử lý hiệu lệnh tăng giảm số và theo dõi kết quả trong bài mô phỏng sát hạch đường trường hạng B.">
+  <link rel="canonical" href="/road-exam">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="Luyện sát hạch đường trường hạng B · Vi vu đất Việt">
+  <meta property="og:description" content="Lái trên tuyến Ven sông hoặc Đèo trà, xử lý hiệu lệnh tăng giảm số và theo dõi kết quả trong bài mô phỏng sát hạch đường trường hạng B.">
+  <meta property="og:url" content="/road-exam">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="road-exam.css"><link rel="stylesheet" href="lesson-cockpit.css"><link rel="stylesheet" href="driving-renderer.css"></head>
+<body class="lessonRoad"><main>
+<header><div><small>THỰC HÀNH TRÊN ĐƯỜNG · HẠNG B</small><h1 id="routeName">Tuyến ven sông</h1><a data-weather href="https://open-meteo.com/" target="_blank" rel="noopener" aria-label="Thời tiết từ Open-Meteo">Đang lấy thời tiết…</a></div><label>Tuyến lái <select id="route"><option value="river">Ven sông · 2,24 km</option><option value="pass">Đèo trà · 2,48 km</option></select></label></header>
+<section class="view"><canvas id="world"></canvas><div class="tools"><button id="camera">Góc tài xế</button><button id="sound">Bật âm</button></div><div class="command"><small id="stage">HIỆU LỆNH</small><strong id="command"></strong></div><canvas id="map" width="175" height="121" aria-label="Sơ đồ tuyến đường"></canvas><div class="instruments"><b id="speed">0</b> km/h <i id="gear">N</i><span id="signals"></span></div></section>
+<section class="dash"><div><b id="distance">0 m</b><progress id="progress" value="0" max="2240"></progress></div><b id="score">100 điểm</b><button id="start">Nhận lệnh xuất phát</button></section>
+<div id="feedback" aria-live="polite"></div>
+<div class="controls"><button data-action="belt">Dây an toàn <kbd>B</kbd></button><button data-action="hand">Phanh tay <kbd>H</kbd></button><button data-action="leftSignal">Báo trái <kbd>Q</kbd></button><button data-action="rightSignal">Báo phải <kbd>E</kbd></button><button data-action="downGear">Số − <kbd>Z</kbd></button><button data-action="upGear">Số + <kbd>X</kbd></button><button id="submit" hidden>Chấm bài kết thúc</button></div>
+<div class="pedals"><button data-key="arrowleft">◀ Trái</button><button data-key="arrowright">Phải ▶</button><button data-key="arrowdown">↓ Phanh</button><button data-key="arrowup">↑ Ga</button></div>
+<details><summary>Thao tác và cách chấm</summary><p>Thắt dây, bật báo trái, nhả phanh tay, vào số 1. Sau hiệu lệnh, đưa xe qua vạch trong 30 giây và lên số 3 trong 15 m đầu. Dùng các phím mũi tên để đánh lái, tăng ga và phanh. Mỗi lệnh đổi số yêu cầu tăng hoặc giảm một cấp số và ít nhất 5 km/h trong 100 m. Khi kết thúc, báo phải trong 5 m đầu sau lệnh, dừng sát lề, về N và kéo phanh tay.</p><p>Hai tuyến giả lập dùng thang 100, đạt từ 80. Điểm luyện tập mô phỏng các thao tác mà trò chơi đo được. <a href="https://vanban.chinhphu.vn/?classid=1&amp;docid=218725&amp;pageid=27160&amp;typegroupid=6" target="_blank" rel="noopener">Thông tư 108/2026/TT-BCA, Điều 41</a> · <a href="https://bocongan.gov.vn/KND/vb/vbqp/Lists/VBQP/Attachments/2822/Thong%20tu%2012.2025.TT.BCA.pdf" target="_blank" rel="noopener">Phụ lục IV, Mục C của Thông tư 12/2025/TT-BCA</a>.</p></details>
+<dialog id="result"><small>PHIẾU ĐƯỜNG TRƯỜNG</small><h2 id="resultTitle"></h2><p id="resultText"></p><button id="again">Lái lại</button></dialog>
+</main><script src="guardrail-clearance.js"></script><script src="driving-weather.js"></script><script src="cockpit-settings.js"></script><script src="drive-input.js"></script><script src="three.min.js"></script><script src="tree-scan-data.js"></script><script src="tree-models.js"></script><script src="driving-graphics.js"></script><script src="surface-materials.js"></script><script src="traffic/loader.js"></script><script src="cabin.js"></script><script src="audio.js"></script><script src="roadside.js"></script><script src="driving-water.js"></script><script src="stage-terrain.js"></script><script src="mountain-verges.js"></script><script src="scenic-passes.js"></script><template id="drivingScripts" data-canvas="world"><script src="road-exam.js"></script></template><script src="driving-renderer.js"></script></body></html>

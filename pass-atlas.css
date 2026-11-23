@@ -1,0 +1,54 @@
+@font-face{font-family:Barlow Condensed;src:url(ui-font/barlow-condensed-bold-italic.ttf);font-weight:700;font-style:italic;font-display:swap}
+:root{color-scheme:dark;--ink:#eff1df;--muted:#bcc8b8;--line:#426155;--accent:#d8fa82;font:100%/1.5 system-ui,sans-serif;color:var(--ink);background:#12241f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 75% 0,#263d30,transparent 67%),#12241f}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:.25em}
+a:focus-visible{outline:3px solid #f8cf7a;outline-offset:4px}
+header,main{width:min(1376px,92vw);margin:auto}
+header{min-height:68px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand,h1,h2{font-family:"Barlow Condensed",system-ui,sans-serif;font-weight:700;font-style:italic}
+.brand{font-size:2rem;letter-spacing:-.04em;line-height:1}.brand b{color:var(--accent)}
+header nav{display:flex;gap:clamp(14px,2.8vw,40px);font-weight:600;font-size:.94rem}
+main{padding:clamp(22px,3.2vw,52px) 0 24px}
+h1{font-size:clamp(2.85rem,5.4vw,5rem);letter-spacing:-.025em;line-height:1.03;margin:0 0 .35em}
+#passChoices{display:flex;flex-wrap:wrap;gap:3px 6px;border-block:1px solid var(--line);padding:8px 0;margin-bottom:18px}
+#passChoices a{padding:8px clamp(9px,1.35vw,20px);color:var(--muted);font-weight:650;border-radius:3px}
+#passChoices a[aria-current]{color:#172419;background:var(--accent)}
+article{display:grid;grid-template-columns:minmax(0,1.58fr) minmax(320px,1fr);background:#1a3128;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+figure{position:relative;margin:0;isolation:isolate;background:#32463a;min-height:360px}
+figure img{display:block;position:absolute;width:100%;height:100%;object-fit:cover}
+figcaption{position:absolute;left:14px;bottom:14px;display:flex;gap:15px;border-radius:3px;background:#132720ef;color:#faf7df;padding:6px 12px;font-size:.78rem}
+figcaption span{display:flex;align-items:center;gap:7px}
+figcaption i{display:inline-block;width:9px;height:9px;border-radius:50%;border:2px solid #fff5cb}
+figcaption .finishMark{background:#b96035;border-radius:0;transform:rotate(45deg)}
+.notes{padding:clamp(22px,2.7vw,46px);display:flex;flex-direction:column}
+#region,.chartLabel{font-size:.86rem;color:#c6d2b7}
+#region{margin:0 0 5px;letter-spacing:.055em;font-weight:650}
+h2{font-size:clamp(3rem,4.8vw,5.4rem);line-height:1.04;letter-spacing:-.025em;margin:0}
+#description{margin:12px 0 22px;color:#e0e5d8;max-width:47ch}
+.profile{border-block:1px solid var(--line);padding:12px 0 14px;margin-top:auto}
+.chartLabel,dl{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.chartLabel span{font-size:.76rem;color:var(--muted)}
+#elevation{width:100%;height:46px;display:block;margin:5px 0}
+dl,dd{margin:0}dl{justify-content:flex-start;gap:clamp(24px,3.5vw,58px)}
+dt{font-size:.8rem;color:var(--muted)}dd{font-size:1.37rem;line-height:1.25;font-variant-numeric:tabular-nums;font-weight:650}
+.lightChoice{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;font-size:.86rem;color:var(--muted)}
+.lightChoice select{min-height:38px;padding:6px 9px;background:#20382e;color:var(--ink);border:1px solid var(--line);border-radius:4px;font:inherit}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 17px;border:1px solid #819485;border-radius:4px;font-weight:700}
+.actions a:first-child{background:var(--accent);color:#17271b;border-color:var(--accent)}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2px 15px;padding:10px 0;font-size:.78rem;color:var(--muted)}
+@media(max-width:780px){
+  header{min-height:52px}article{grid-template-columns:1fr}figure{min-height:0;aspect-ratio:1.8}.notes{padding:20px}
+  #passChoices{gap:3px;margin-bottom:10px}#passChoices a{font-size:.89rem;padding:7px 9px}
+  #description{max-width:65ch;margin:8px 0 16px}
+}
+@media(max-width:430px){.brand{font-size:1.7rem}header nav{font-size:.82rem}main{padding-top:18px}#passChoices a{flex:1 0 27%;text-align:center}}
+
+.passGuide { margin-top: 1rem; padding-block: .75rem; border-block: 1px solid var(--line); }
+.passGuide summary { cursor: pointer; font-weight: 650; }
+.passGuide ul { padding-left: 1.25rem; max-width: 78ch; }
+.passGuide li + li { margin-top: .4rem; }
+.passGuide a, #passGuideLink { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
+#passGuideLink { margin-top: .8rem; align-self: flex-start; }

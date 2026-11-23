@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101713">
+  <title>Thi thử sát hạch lái xe hạng B · Vi vu đất Việt</title>
+  <meta name="description" content="Luyện lý thuyết, sa hình và đường trường ngay trong trình duyệt. Chọn từng bài hoặc thi thử hạng B liên hoàn để theo dõi tiến độ từng phần.">
+  <link rel="canonical" href="/hall">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="Thi thử sát hạch lái xe hạng B · Vi vu đất Việt">
+  <meta property="og:description" content="Luyện lý thuyết, sa hình và đường trường ngay trong trình duyệt. Chọn từng bài hoặc thi thử hạng B liên hoàn để theo dõi tiến độ từng phần.">
+  <meta property="og:url" content="/hall">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="hall.css"><link rel="stylesheet" href="cockpit-settings.css"></head>
+<body><header><div class="bar"><a href="./" class="brand"><i aria-hidden="true"></i>Vi vu <em>đất Việt</em></a><nav class="modes" aria-label="Chế độ chơi"><a href="./?classic=1">Xuyên Việt</a><a href="cup.html">Đua Cúp</a><a href="#home" aria-current="page">Sân tập</a></nav><button class="layoutButton" data-cockpit-settings aria-haspopup="dialog">Bố trí buồng lái</button></div></header>
+<main id="hall">
+<nav class="practiceLinks" aria-label="Các mục sân tập"><a href="#home">Sát hạch</a><a href="streets.html" data-practice="streets">Lái trên phố</a><a href="library.html" data-practice="library">600 câu hỏi</a></nav>
+<section class="heading"><div><span class="eyebrow">GIẤY PHÉP LÁI XE HẠNG B</span><h1>Thi thử sát hạch ô tô</h1><p>Luyện từng bài trên sân hoặc thi liên hoàn từ lý thuyết đến đường trường.</p></div><div class="examStart"><button id="examStart">Bắt đầu kỳ thi <span>→</span></button><small id="examStatus">3 phần thi theo thứ tự</small></div></section>
+<section class="cards" aria-label="Các phần thi">
+<a class="card" href="theory-exam.html" data-practice="theory"><div class="art signs"><div class="limit">40</div><div class="priority"><i></i></div><div class="roadbook"><i></i><i></i><i></i><i></i></div></div><div class="copy"><small>30 CÂU &nbsp; / &nbsp; 20 PHÚT</small><h2>Lý thuyết</h2><p>Làm đề từ ngân hàng 600 câu. Đạt từ 27 câu đúng và trả lời đúng câu điểm liệt.</p><strong>Làm đề luyện <b>↗</b></strong></div></a>
+<a class="card" href="yard.html" data-practice="yard"><div class="art trackArt"><canvas id="trackArt" width="660" height="270" aria-hidden="true"></canvas></div><div class="copy"><small>11 BÀI &nbsp; / &nbsp; 18 PHÚT</small><h2>Sa hình</h2><p>Lái qua dốc, cua vuông, đường chữ S, lùi vào chuồng và ghép xe ngang.</p><strong>Vào sân tập <b>↗</b></strong></div></a>
+<a class="card" href="road-exam.html" data-practice="road"><div class="art roadArt"><canvas id="roadArt" width="660" height="270" aria-hidden="true"></canvas></div><div class="copy"><small>ĐƯỜNG TRƯỜNG &nbsp; / &nbsp; TỪ 2 KM</small><h2>Lái trên đường</h2><p>Chọn cung ven sông hoặc đèo trà, chạy qua cầu, vào cua và xử lý hiệu lệnh đổi số.</p><strong>Chọn tuyến lái <b>↗</b></strong></div></a>
+</section>
+<section class="syllabus"><div class="sectionHead"><div><span class="eyebrow">SÂN TẬP HẠNG B</span><h2>Chọn bài sa hình</h2></div><a href="yard.html" data-practice="yard">Vào sân →</a></div><div id="yardLessons" class="lessons"></div></section>
+<section class="routeList"><div class="sectionHead"><div><span class="eyebrow">THỰC HÀNH TRÊN ĐƯỜNG</span><h2>Chọn cung đường</h2></div></div><div class="routeLinks"><a href="road-exam.html?route=river" data-practice="road/river"><img loading="lazy" alt="" src="river-preview.jpg"><strong>Ven sông</strong><span>2,24 km · Cầu Bến Lau và ngã ba bến chợ</span><b>↗</b></a><a href="road-exam.html?route=pass" data-practice="road/pass"><img loading="lazy" alt="" src="pass-preview.jpg"><strong>Đèo trà</strong><span>2,48 km · Dốc đồi và ngã ba nông trường</span><b>↗</b></a></div></section><section class="lower"><div><h2>Tiến độ kỳ thi</h2><div id="scores"></div><button id="newExam" hidden>Thi lại từ lý thuyết</button></div><div><h2>Luyện giao thông đô thị</h2><p>Phố Trần Phú, cổng trường và đường thi công có phương tiện, người đi bộ và câu hỏi ngay trên đường.</p><a href="streets.html" data-practice="streets">Đến ba chặng thực hành →</a></div></section>
+<footer>Thi thử dân sự hạng B · Quy trình áp dụng tháng 11/2026. Điểm thực hành do game mô phỏng. <a href="https://vanban.chinhphu.vn/?classid=1&amp;docid=218725&amp;pageid=27160&amp;typegroupid=6" target="_blank" rel="noopener">Thông tư 108/2026/TT-BCA</a><nav class="infoLinks" aria-label="Thông tin Vi vu đất Việt"><a href="privacy.html">Quyền riêng tư</a> · <a href="terms.html">Điều khoản và nguồn</a> · <a href="contact.html">Liên hệ</a></nav></footer></main>
+<section id="player" hidden><div class="sessionbar"><button id="back">← Trung tâm</button><strong id="partName"></strong><small id="modeText"></small></div><div class="outcome" id="outcome" hidden role="status"><span id="outcomeText"></span><button id="continue"></button></div><iframe id="module" src="about:blank" title="Bài thi" allow="fullscreen" allowfullscreen></iframe></section>
+<dialog id="confirm"><h2>Bắt đầu kỳ thi mới?</h2><p>Kết quả từng phần của lượt đang lưu sẽ được thay bằng lượt mới.</p><form method="dialog"><button value="stay">Giữ lượt hiện tại</button><button value="reset">Thi lại</button></form></dialog><script src="cockpit-settings.js"></script><script src="hall.js"></script></body></html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#12241f">
+
+
+  <title>Sáu cung đèo Việt Nam: bản đồ và trải nghiệm lái 3D · Vi vu đất Việt</title>
+  <meta name="description" content="Khám phá Hải Vân, Mã Pí Lèng, Khau Phạ, Ô Quy Hồ, Pha Đin và Ngoạn Mục. Xem địa hình từng chặng rồi chọn lái tự do hoặc đua tính giờ.">
+  <link rel="canonical" href="/cung-duong">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="Sáu cung đèo Việt Nam: bản đồ và trải nghiệm lái 3D · Vi vu đất Việt">
+  <meta property="og:description" content="Khám phá Hải Vân, Mã Pí Lèng, Khau Phạ, Ô Quy Hồ, Pha Đin và Ngoạn Mục. Xem địa hình từng chặng rồi chọn lái tự do hoặc đua tính giờ.">
+  <meta property="og:url" content="/cung-duong">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="pass-atlas.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./" aria-label="Vi vu đất Việt, trang chính">Vi vu <b>đất Việt</b></a>
+    <nav aria-label="Chế độ chơi"><a href="./">Xuyên Việt</a><a href="cup.html">Đua Cúp</a><a href="hall.html">Sân tập</a></nav>
+  </header>
+  <main>
+    <h1>Cung đường nổi tiếng</h1>
+    <nav id="passChoices" aria-label="Chọn cung đường">
+      <a href="#guide-deo-hai-van">Hải Vân</a>
+      <a href="#guide-deo-ma-pi-leng">Mã Pí Lèng</a>
+      <a href="#guide-deo-khau-pha">Khau Phạ</a>
+      <a href="#guide-deo-o-quy-ho">Ô Quy Hồ</a>
+      <a href="#guide-deo-pha-din">Pha Đin</a>
+      <a href="#guide-deo-ngoan-muc">Ngoạn Mục</a>
+    </nav>
+    <article aria-labelledby="passTitle">
+      <figure>
+        <img id="plate" src="pass-plates/deo-hai-van.webp" width="1000" height="620" alt="Bản đồ đường đèo Hải Vân qua núi ven biển">
+        <figcaption><span><i class="startMark"></i>Xuất phát</span><span><i class="finishMark"></i>Về đích</span></figcaption>
+      </figure>
+      <div class="notes">
+        <p id="region">Lăng Cô · Đà Nẵng</p><h2 id="passTitle">Đèo Hải Vân</h2><p id="description">Đường ôm sườn núi Hải Vân. Qua mỗi mũi núi, một khoảng biển lại hiện ra giữa rừng và chân trời.</p>
+        <div class="profile">
+          <div class="chartLabel"><strong>Biên dạng dốc</strong><span>Chặng trong game</span></div>
+          <canvas id="elevation" width="640" height="92" role="img" aria-label="Biểu đồ độ cao tương đối theo chiều lái"></canvas>
+          <dl><div><dt>Chiều dài</dt><dd id="length"></dd></div><div><dt>Tổng leo dốc</dt><dd id="ascent"></dd></div></dl>
+        </div>
+        <label class="lightChoice">Ánh sáng mô phỏng
+          <select id="light"><option value="morning">Nắng sớm</option><option value="late">Chiều muộn</option><option value="local">Giờ địa phương</option></select>
+        </label>
+        <div class="actions"><a id="explore" href="./?pass=deo-hai-van&amp;light=morning">Lái tự do</a><a id="race" href="cup.html?route=deo-hai-van&amp;light=morning">Đua chặng này</a></div>
+        <a id="passGuideLink" href="deo-hai-van.html">Bản đồ và thông số chặng Hải Vân</a>
+      </div>
+    </article>
+    <details class="passGuide" open>
+      <summary>Khám phá cảnh quan của sáu cung đèo</summary>
+      <ul>
+        <li id="guide-deo-hai-van"><a href="deo-hai-van.html">Đèo Hải Vân</a>. Lái giữa sườn rừng và biển trên đường nối vùng Lăng Cô với Đà Nẵng.</li>
+        <li id="guide-deo-ma-pi-leng"><a href="deo-ma-pi-leng.html">Đèo Mã Pí Lèng</a>. Theo quốc lộ 4C trên cao nguyên đá, nhìn xuống hẻm vực sông Nho Quế.</li>
+        <li id="guide-deo-khau-pha"><a href="deo-khau-pha.html">Đèo Khau Phạ</a>. Qua những thửa ruộng bậc thang giữa Tú Lệ và Mù Cang Chải.</li>
+        <li id="guide-deo-o-quy-ho"><a href="deo-o-quy-ho.html">Đèo Ô Quy Hồ</a>. Men theo sống núi Hoàng Liên Sơn giữa Sa Pa và Tam Đường.</li>
+        <li id="guide-deo-pha-din"><a href="deo-pha-din.html">Đèo Pha Đin</a>. Theo những khúc cua của quốc lộ 6 qua thung lũng giữa Thuận Châu và Tuần Giáo.</li>
+        <li id="guide-deo-ngoan-muc"><a href="deo-ngoan-muc.html">Đèo Ngoạn Mục</a>. Leo từ lưu vực Sông Pha lên cao nguyên Đơn Dương qua các khúc ngoặt ven sườn núi.</li>
+      </ul>
+    </details>
+    <footer><span><a href="streetscape/CREDITS.txt">Địa hình Mapzen / USGS · Thảm phủ ESA WorldCover 2021</a></span><a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></footer>
+  </main>
+  <script src="mountain-stages.js"></script>
+  <script src="scenic-passes.js"></script>
+  <script src="pass-atlas.js"></script>
+</body>
+</html>
