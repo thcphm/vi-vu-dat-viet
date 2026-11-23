@@ -1,6 +1,6 @@
 # Vi vu đất Việt
 
-**Bộ ôn thi sát hạch lái xe trực quan kết hợp mô phỏng lái 3D trên web.** Dùng thử tại [thcphm.github.io/vi-vu-dat-viet](https://thcphm.github.io/vi-vu-dat-viet/).
+**Bộ ôn thi sát hạch lái xe trực quan kết hợp mô phỏng lái 3D trên web.** Dùng thử tại [thcphm.github.io/vi-vu-dat-viet-demo](https://thcphm.github.io/vi-vu-dat-viet-demo/).
 
 Vi vu đất Việt không phải một game đơn thuần. Sản phẩm gộp hai thứ thường nằm ở hai ứng dụng khác nhau: bộ 600 câu hỏi sát hạch có hình minh họa, và môi trường 3D để người học áp dụng ngay điều vừa học. Tất cả chạy trên trình duyệt máy tính và điện thoại, không cần cài đặt.
 
@@ -25,7 +25,7 @@ Vi vu đất Việt không phải một game đơn thuần. Sản phẩm gộp h
 - Nhạc, mô hình xe và nhân vật đều tự dựng hoặc dùng giấy phép mở, có hồ sơ ghi công từng nguồn.
 - Chi phí vận hành thấp vì là trang tĩnh.
 
-Sản phẩm phù hợp với trung tâm đào tạo lái xe cần công cụ ôn thi gắn thương hiệu riêng, sở du lịch và địa phương muốn quảng bá điểm đến bằng trải nghiệm tương tác, và hãng xe hoặc nhà tài trợ muốn đưa sản phẩm vào trải nghiệm lái. Liên hệ qua [trang góp ý](https://thcphm.github.io/vi-vu-dat-viet/contact).
+Sản phẩm phù hợp với trung tâm đào tạo lái xe cần công cụ ôn thi gắn thương hiệu riêng, sở du lịch và địa phương muốn quảng bá điểm đến bằng trải nghiệm tương tác, và hãng xe hoặc nhà tài trợ muốn đưa sản phẩm vào trải nghiệm lái. Liên hệ qua [trang góp ý](https://thcphm.github.io/vi-vu-dat-viet-demo/contact).
 
 Các bài tập và điểm số dùng để luyện tập, không thay cho phần mềm sát hạch chính thức.
 
