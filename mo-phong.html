@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111914">
+
+  <title>120 tình huống giả định luyện phản xạ lái xe · Vi vu đất Việt</title>
+  <meta name="description" content="Luyện nhận biết tình huống nguy hiểm qua 120 tình huống giả định dựng 3D từ góc nhìn người lái. Nhấn phím Cách khi mối nguy xuất hiện, thi thử 10 tình huống, 50 điểm.">
+  <link rel="canonical" href="/mo-phong">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Vi vu đất Việt">
+  <meta property="og:title" content="120 tình huống giả định luyện phản xạ lái xe · Vi vu đất Việt">
+  <meta property="og:description" content="Luyện nhận biết tình huống nguy hiểm qua 120 tình huống giả định dựng 3D từ góc nhìn người lái. Nhấn phím Cách khi mối nguy xuất hiện, thi thử 10 tình huống, 50 điểm.">
+  <meta property="og:url" content="/mo-phong">
+  <meta property="og:image" content="/social-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xe đỏ trên đường đèo trong trò chơi Vi vu đất Việt">
+  <meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="mo-phong.css">
+</head>
+<body>
+<main>
+  <header><a class="brand" href="hall.html">Vi vu đất Việt</a><nav aria-label="Điều hướng"><a href="hall.html">← Sân tập &amp; thi thử</a></nav></header>
+
+  <section id="home">
+    <div class="intro">
+      <p class="eyebrow">Ô TÔ HẠNG B · MÔ PHỎNG TÌNH HUỐNG</p>
+      <h1>120 tình huống giả định</h1>
+      <div class="facts"><span><strong>10</strong> tình huống mỗi đề</span><span><strong>50</strong> điểm tối đa</span><span><strong>35</strong> điểm đạt</span></div>
+      <p>Xem đoạn mô phỏng từ ghế lái và nhấn <kbd>Space</kbd> đúng lúc tình huống bắt đầu trở nên nguy hiểm. Nhấn càng sớm trong vùng tính điểm thì điểm càng cao: 5, 4, 3, 2, 1. Nhấn trước hoặc sau vùng này được 0 điểm.</p>
+      <p class="note" role="note"></p>
+      <div class="actions"><button id="examStart" class="primary" type="button">Thi thử 10 tình huống</button><span id="lastExam"></span></div>
+    </div>
+    <h2 class="sub">Ôn tập theo chương</h2>
+    <div id="chapters" class="chapters"></div>
+  </section>
+
+  <section id="chapter" hidden>
+    <div class="headrow"><button id="chBack" type="button">← Các chương</button><p id="chMeta"></p></div>
+    <h1 id="chTitle" class="small"></h1>
+    <ol id="list" class="list"></ol>
+    <p class="note" role="note"></p>
+  </section>
+
+  <section id="player" hidden>
+    <div class="headrow"><button id="quit" type="button" aria-label="Thoát tình huống">← Thoát</button><p id="pCount"></p></div>
+    <div id="stage">
+      <canvas id="view" aria-label="Mô phỏng 3D từ góc nhìn người lái"></canvas>
+      <div class="hud"><strong id="pTitle"></strong><small id="pTags"></small></div>
+      <svg class="dash" viewBox="0 0 1600 240" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 240V96C240 44 520 22 800 22s560 22 800 74v144Z" fill="#0b0f0d"/>
+        <path d="M0 96C240 44 520 22 800 22s560 22 800 74" fill="none" stroke="#2b3a31" stroke-width="5"/>
+        <ellipse cx="455" cy="262" rx="250" ry="190" fill="none" stroke="#161d19" stroke-width="42"/>
+        <ellipse cx="455" cy="262" rx="250" ry="190" fill="none" stroke="#33443a" stroke-width="3"/>
+        <rect x="372" y="118" width="166" height="74" rx="14" fill="#101713" stroke="#39473e" stroke-width="3"/>
+      </svg>
+      <div class="speedo" aria-hidden="true"><b id="speed">0</b><span>km/h</span></div>
+      <div id="pre" class="overlay">
+        <div class="panel"><p id="preText"></p><p id="glMsg" class="warn" hidden>Trình duyệt này không bật được đồ hoạ 3D (WebGL) nên không chạy được mô phỏng.</p><button id="start" class="primary" type="button">Bắt đầu</button></div>
+      </div>
+      <div id="res" class="overlay" hidden>
+        <div class="panel" role="status" aria-live="polite">
+          <p class="eyebrow" id="resTitle"></p>
+          <strong id="resScore"></strong>
+          <p id="resText"></p>
+          <p id="resEx" class="explain"></p>
+          <div class="actions"><button id="next" class="primary" type="button">Tình huống tiếp theo</button><button id="reviewBtn" type="button">Xem lại có vùng điểm</button><button id="again" type="button">Làm lại</button><button id="toList" type="button">Danh sách</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div id="tl" class="timeline" aria-hidden="true"><div id="tlFill"></div><div id="tlBands"><i></i><i></i><i></i><i></i><i></i></div><div id="tlFlag" hidden></div></div>
+      <button id="flagBtn" class="flag" type="button" disabled aria-label="Phát hiện nguy hiểm, phím Space">Phát hiện nguy hiểm <kbd>Space</kbd></button>
+    </div>
+    <p id="live" class="live" role="status" aria-live="polite"></p>
+    <p class="note" role="note"></p>
+  </section>
+
+  <section id="examRes" hidden>
+    <div class="intro">
+      <p class="eyebrow">KẾT QUẢ THI THỬ</p>
+      <h1 id="examTotal"></h1>
+      <p id="examVerdict"></p>
+      <ol id="examRows" class="rows"></ol>
+      <div class="actions"><button id="examAgain" class="primary" type="button">Thi đề khác</button><button id="examHome" type="button">Về trang ôn tập</button></div>
+      <p class="note" role="note"></p>
+    </div>
+  </section>
+</main>
+<script src="three.min.js"></script><script src="traffic/loader.js"></script><script src="mo-phong-data.js"></script><script src="mo-phong.js"></script>
+</body></html>
