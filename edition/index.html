@@ -137,5 +137,5 @@
 
   <link rel="stylesheet" href="session.css"><script src="fleet.js"></script><script src="energy.js"></script>
   <script type="module" src="app.js"></script>
-</body>
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}));</script></body>
 </html>
