@@ -304,44 +304,6 @@
     }
   });
 
-  // ───────────────────────── 5. Đá Ba Chồng ─────────────────────────
-  // OSM node 9974267816 beside QL 20. Photos: two house-sized rounded boulders
-  // balanced on a third slab that crowns a bare granite dome right at the
-  // road verge. Centre is 30 m west of the carriageway centreline.
-  sights.push({...common,
-    id:'da-ba-chong',name:'Đá Ba Chồng',city:'Định Quán',
-    lon:107.3482778,lat:11.1908616,start:[107.3485122,11.1907214],width:52,depth:46,yaw:1.010,
-    map:'https://www.openstreetmap.org/node/9974267816',
-    source:'https://e.vnexpress.net/news/travel/places/a-pile-of-rocks-in-dong-nai-defy-gravity-for-centuries-3971476.html',
-    description:'Ba khối đá granodiorit tròn nhẵn chồng lên nhau chênh vênh trên vòm đá trọc ngay sát mép quốc lộ 20. Đây là thắng cảnh tiêu biểu của quần thể đá Định Quán cùng Hòn Dĩa và núi Đá Voi.',
-    solids:[[0,0,15,12]],
-    build(T,k){
-      const {stamp,round,palette}=k;
-      const g=[0x8d8171,0x9a8d7b,0x7b7167,0xa39683],masonry=0x8b8478;
-      palette({stone:[...g,masonry]});
-      const big=boulder(T,2),small=boulder(T,1),r=dice(9151);
-      // Bare dome sloping to the verge, with a lower shoulder behind.
-      stamp(big,g[1],0,0,0,16.5,7.2,12.5,.15);
-      stamp(big,g[3],-8,0,-5,11,6,8.5,1.2);
-      stamp(big,g[1],7,0,3,9,4.6,8,.6);
-      // The stack: a flat slab, then two great rounded boulders, each off-centre.
-      stamp(big,g[3],.3,6.0,-.5,9.4,3.3,8.0,.9);
-      stamp(big,g[0],1.0,14.1,-.8,6.9,5.5,6.2,.4,0,.06);
-      stamp(big,g[2],-.9,23.0,-1.5,5.9,4.4,5.4,1.9,.05,-.08);
-      // Wedge stones under the lower boulder and the small stone-walled shelter.
-      for(const [x,z,s] of [[-5.5,3.5,1.5],[-3.6,5.2,1.1],[5.2,3.8,1.3],[4.2,-5,1.6]])stamp(small,g[2],x,8.4,z,s*1.2,s*.8,s,x);
-      stamp(round,masonry,-1.6,8.7,5.6,1.5,1.8,1.5);
-      // Neighbouring outcrops and loose blocks.
-      stamp(big,g[0],-19,2.5,-10,6.5,5,5.8,2.2);
-      stamp(big,g[2],-13.5,2,-17,5,3.8,4.6,.7);
-      stamp(big,g[1],17.5,1.2,-13,5,3.2,4.4,1.5);
-      for(let i=0;i<12;i++){
-        const a=Math.PI*.55+i/12*Math.PI*1.4+r()*.2,d=15.5+r()*5,s=1+r()*1.6;
-        stamp(small,g[i%4],Math.sin(a)*d*1.15,s*.3,Math.cos(a)*d*.85,s*(1+r()*.5),s*(.6+r()*.4),s,r()*6);
-      }
-      big.dispose();small.dispose();
-    }
-  });
 
   // ───────────────────────── 6. Suối Mơ ─────────────────────────
   // Park way 1195398460, lake way 486419739. Photos: a wide curtain fall over
