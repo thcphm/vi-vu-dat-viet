@@ -7,3 +7,11 @@ body[data-phase="grid"] #camera{display:none}
  .gridcopy h1{font-size:clamp(36px,12vw,68px);margin:3px 0 0}.gridcopy h1 br{display:none}.gridcopy h1 i{margin-left:.15em}
  .gridcopy p{margin:5px 0 auto;font-size:15px}.gridcopy select,.gridcopy .hot{width:100%}.gridcopy a{align-self:center}
 }
+
+/* Turn signals beside the speed readout */
+.blinkers{display:flex;gap:5px;margin-bottom:5px}
+.blinkers button{pointer-events:auto;flex:1;min-width:34px;min-height:28px;padding:0;border:1px solid #ffffff38;border-radius:5px;background:#232a33;color:#8f9aa6;font-size:13px;line-height:1;cursor:pointer}
+body[data-signal=left] .blinkers [data-signal=left],body[data-signal=right] .blinkers [data-signal=right],body[data-signal=hazard] .blinkers button{animation:blinker .7s steps(2,jump-none) infinite}
+@keyframes blinker{0%{background:#ffb021;color:#231a05;border-color:#ffd27a}}
+@media (any-pointer:coarse){.blinkers button{min-height:40px;min-width:40px;font-size:16px}}
+@media (prefers-reduced-motion:reduce){body[data-signal] .blinkers button{animation:none}}

@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'vi-vu-cd7503ec2adb';
+const CACHE = 'vi-vu-3219f6baed59';
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', event => event.waitUntil((async () => {
   for (const name of await caches.keys()) if (name.startsWith('vi-vu-') && name !== CACHE) await caches.delete(name);

@@ -69,13 +69,21 @@ function parkBox(i){
 const scene=new Y.Scene();scene.background=new Y.Color(0xa9c6d6);scene.fog=new Y.FogExp2(0xc2cfce,.0055);
 const renderer=DrivingRenderer.get($('world'));
 const camera=new Y.PerspectiveCamera(54,1,.1,550);
-const graphics=createDrivingGraphics(renderer,camera);
-new Y.TextureLoader().load('streetscape/sky.jpg',texture=>{
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=Y.PCFSoftShadowMap;
+renderer.toneMapping=Y.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
+const textures=new Y.TextureLoader();
+textures.load('streetscape/sky.jpg',texture=>{
  texture.mapping=Y.EquirectangularReflectionMapping;texture.colorSpace=Y.SRGBColorSpace;
  scene.background=texture;scene.environment=texture;
 });
-scene.add(new Y.HemisphereLight(0xfff0d2,0x9ab6ac,1.8));
-const sun=new Y.DirectionalLight(0xffdfad,2.2);sun.position.set(-35,55,15);scene.add(sun);
+scene.add(new Y.HemisphereLight(0xfff0d2,0x8fae9a,1.35));
+// The shadow frustum travels with the car, so a small map stays sharp.
+const sunOffset=new Y.Vector3(-34,52,18);
+const sun=new Y.DirectionalLight(0xffe2b4,2.5);sun.castShadow=true;
+sun.shadow.camera.left=sun.shadow.camera.bottom=-42;sun.shadow.camera.right=sun.shadow.camera.top=42;
+sun.shadow.camera.near=5;sun.shadow.camera.far=150;sun.shadow.bias=-.0006;sun.shadow.normalBias=.04;
+scene.add(sun,sun.target);
+const graphics=createDrivingGraphics(renderer,camera,sun);
 const cube=new Y.BoxGeometry(1,1,1), materials=new Map(), batches=new Map();
 function mat(color){if(!materials.has(color))materials.set(color,new Y.MeshLambertMaterial({color}));return materials.get(color);}
 function block(x,z,alt,w,h,d,color,angle=0,parent=null){
@@ -87,9 +95,28 @@ function localBlock(st,side,up,w,h,d,color){
  const p=point(st,side);
  return block(p.x,p.y,altitude(st)+up,w,h,d,color,p.h);
 }
-block(35,-20,-.35,800,.6,800,0x839e65);
-const asphalt=new Y.TextureLoader().load('streetscape/asphalt.jpg');
-asphalt.colorSpace=Y.SRGBColorSpace;asphalt.wrapS=asphalt.wrapT=Y.RepeatWrapping;
+function tiled(file,repeat){
+ const t=textures.load(file);t.colorSpace=Y.SRGBColorSpace;t.wrapS=t.wrapT=Y.RepeatWrapping;
+ if(repeat)t.repeat.set(repeat,repeat);t.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+ return t;
+}
+// A mown lawn, drawn once: short blades in a few greens over an even base.
+function turf(){
+ const c=document.createElement('canvas');c.width=c.height=256;
+ const ctx=c.getContext('2d');ctx.fillStyle='#7c9f55';ctx.fillRect(0,0,256,256);
+ let seed=7;const random=()=>(seed=(seed*16807)%2147483647)/2147483647;
+ for(let i=0;i<9000;i++){
+  ctx.fillStyle=['#6c9049','#88ab5e','#739850','#93b468','#648843'][i%5];
+  const x=random()*256,y=random()*256;ctx.fillRect(x,y,1+random()*1.5,2+random()*3);
+  // Repeat blades across the edges so the tile has no seam.
+  if(x>252||y>250)ctx.fillRect(x-256,y-256,3,5);
+ }
+ const t=new Y.CanvasTexture(c);t.colorSpace=Y.SRGBColorSpace;t.wrapS=t.wrapT=Y.RepeatWrapping;t.repeat.set(210,210);
+ t.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());return t;
+}
+const lawn=new Y.Mesh(new Y.PlaneGeometry(800,800).rotateX(-Math.PI/2),new Y.MeshLambertMaterial({map:turf()}));
+lawn.position.set(35,-.05,20);lawn.receiveShadow=true;scene.add(lawn);
+const asphalt=tiled('streetscape/asphalt.jpg');
 const roadMat=new Y.MeshLambertMaterial({map:asphalt,color:0xabb4b1,side:Y.DoubleSide});
 function ribbon(path,width,offset,height,material){
  const vertices=[],indices=[],uv=[];
@@ -102,8 +129,26 @@ function ribbon(path,width,offset,height,material){
  });
  const g=new Y.BufferGeometry();g.setAttribute('position',new Y.Float32BufferAttribute(vertices,3));
  g.setAttribute('uv',new Y.Float32BufferAttribute(uv,2));g.setIndex(indices);g.computeVertexNormals();
- scene.add(new Y.Mesh(g,material));
+ const mesh=new Y.Mesh(g,material);mesh.receiveShadow=true;scene.add(mesh);
 }
+// Paint lies flat on the road and follows its slope.
+function paint(st,side,width,length,draw,ratio=2){
+ const c=document.createElement('canvas');c.width=512;c.height=512*ratio;
+ const ctx=c.getContext('2d');ctx.fillStyle=ctx.strokeStyle='#f4f2e2';draw(ctx,c.width,c.height);
+ const tex=new Y.CanvasTexture(c);tex.colorSpace=Y.SRGBColorSpace;tex.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+ const mesh=new Y.Mesh(new Y.PlaneGeometry(width,length).rotateX(-Math.PI/2),
+  new Y.MeshBasicMaterial({map:tex,transparent:true,opacity:.9,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}));
+ const p=point(st,side);mesh.position.set(p.x,altitude(st)+.05,-p.y);
+ mesh.rotation.order='YXZ';mesh.rotation.y=-p.h;mesh.rotation.x=Math.atan((altitude(st+1)-altitude(st-1))/2);
+ scene.add(mesh);
+}
+function arrow(ctx,w,h){
+ ctx.beginPath();ctx.moveTo(w/2,h*.04);ctx.lineTo(w*.9,h*.42);ctx.lineTo(w*.62,h*.42);ctx.lineTo(w*.62,h*.96);
+ ctx.lineTo(w*.38,h*.96);ctx.lineTo(w*.38,h*.42);ctx.lineTo(w*.1,h*.42);ctx.closePath();ctx.fill();
+}
+const lettering=text=>(ctx,w,h)=>{
+ ctx.font='900 '+Math.round(h*.78)+'px Arial';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(text,w/2,h*.54,w*.96);
+};
 const signPlate=new Y.PlaneGeometry(4.3,1.26);
 function sign(st,offset,text,color='#215f54'){
  const p=point(st,offset),ground=altitude(st);
@@ -118,6 +163,7 @@ function sign(st,offset,text,color='#215f54'){
  back.rotation.y=Math.PI;back.position.z=-.03;board.add(back);
  board.position.set(p.x,ground+2.65,-p.y);board.rotation.y=-p.h;board.translateZ(.085);scene.add(board);
 }
+const stopAt=i=>zones[i].from+({1:13,2:17,4:10,8:12}[i]||0);
 const yellow=mat(0xffd14d), white=mat(0xf2f1df);
 yellow.side=white.side=Y.DoubleSide;
 zones.forEach((z,i)=>{
@@ -125,12 +171,32 @@ zones.forEach((z,i)=>{
  ribbon(strip,z.width,0,.025,roadMat);
  for(const signSide of [-1,1])ribbon(strip,.12,signSide*(z.width/2-.10),.044,white);
  sign(z.from+3,-z.width/2-1.65,(i+1)+' · '+['XUẤT PHÁT','NHƯỜNG ĐƯỜNG','DỐC','GÓC VUÔNG','NGÃ TƯ','ĐƯỜNG CHỮ S','GHÉP DỌC','GHÉP NGANG','ĐƯỜNG SẮT','ĐỔI SỐ','KẾT THÚC'][i]);
- for(let s=z.from+2;s<z.to;s+=5){
-  for(const edge of [-1,1])if(!(i===6||i===7)||edge===-1){
-   localBlock(s,edge*(z.width/2+.32),.14,.38,.28,1.5,Math.floor(s/5)%2?0xe4e0cc:0xb15543);
+ // Continuous red and white kerbs, opened for the crossroads, the rails and both bays.
+ for(let s=z.from+.5;s<z.to;s++){
+  if(i===4&&Math.abs(s-stopAt(4)-5)<3.3||i===8&&Math.abs(s-stopAt(8)-3)<1.5)continue;
+  const apron=(i===6||i===7)&&s>z.from+2&&s<z.to-2;
+  for(const edge of [-1,1]){
+   const side=apron&&edge>0?9.17:edge*(z.width/2+.17);
+   localBlock(s,side,.02,.3,.32,1.03,Math.floor(s)%2?0xeeebdc:0xc2402f);
   }
  }
+ if(i===6||i===7)for(const s of [z.from+2,z.to-2])for(let side=z.width/2+.5;side<9;side++)
+  localBlock(s,side,.02,1.03,.32,.3,Math.floor(side)%2?0xeeebdc:0xc2402f);
+ if(i!==3)paint(z.from+2.4,0,.95,2.5,arrow);
+ // Lamp posts stand opposite the lesson signs.
+ for(let s=z.from+9;s<z.to-3;s+=26){
+  const side=i===6||i===7?-(z.width/2+1.5):z.width/2+1.5,reach=-Math.sign(side);
+  localBlock(s,side,3.6,.15,7.2,.15,0x59615d);
+  localBlock(s,side+reach*.85,7.15,1.8,.1,.12,0x59615d);
+  localBlock(s,side+reach*1.6,7.07,.55,.12,.3,0xfdf6d8);
+ }
 });
+// Fill under the ramp so it reads as a built slope.
+for(let s=zones[2].from+.5;s<zones[2].to;s++){
+ const h=altitude(s)-.07;if(h>.05)localBlock(s,0,-h/2-.07,zones[2].width+.9,h,1.03,0x9b9e97);
+}
+paint(zones[0].from+7.3,0,4.6,1.15,lettering('XUẤT PHÁT'),.25);
+paint(total-7,0,4.6,1.15,lettering('KẾT THÚC'),.25);
 for(const i of [6,7]){
  const b=parkBox(i),z=zones[i];
  const strip=route.filter(p=>p.s>=z.from+2&&p.s<=z.to-2);
@@ -140,7 +206,6 @@ for(const i of [6,7]){
   localBlock(b.s,b.side+b.width/2*dir,.06,.12,.045,b.length,0xffde67);
  }
 }
-const stopAt=i=>zones[i].from+({1:13,2:17,4:10,8:12}[i]||0);
 for(const i of [1,2,4,8])localBlock(stopAt(i),0,.059,zones[i].width-.3,.05,.18,0xffda60);
 for(let j=-2.6;j<3;j+=.83)localBlock(stopAt(1)+2,j,.064,.42,.035,2.3,0xf3f0df);
 for(const dir of [-1,1])localBlock(stopAt(8)+3+dir*.72,0,.084,19,.06,.14,0x604f40);
@@ -148,9 +213,22 @@ for(let j=-9;j<9;j+=.6)localBlock(stopAt(8)+3,j,.052,.23,.045,2.2,0x8a6d4c);
 const junction=point(stopAt(4)+5);block(junction.x,junction.y,-.025,32,.08,6,0x616562,junction.h);
 const signalAt=stopAt(4)+2,lightPoint=point(signalAt,3.9);
 localBlock(signalAt,3.9,2.1,.13,4.2,.13,0x666d66);
-localBlock(signalAt,3.9,3.8,.63,1.55,.46,0x26302c);
-const lamp=new Y.Mesh(new Y.SphereGeometry(.25,12,10),new Y.MeshBasicMaterial({color:0xff3c26}));
-lamp.position.set(lightPoint.x-.28*Math.sin(lightPoint.h),4.13,-lightPoint.y+.28*Math.cos(lightPoint.h));scene.add(lamp);
+localBlock(signalAt,3.9,3.8,.63,1.7,.46,0x26302c);
+const bulb=new Y.SphereGeometry(.2,14,10);
+const lamps=[[0xff3c26,4.33],[0xffb52e,3.8],[0x36e865,3.27]].map(([color,up])=>{
+ const lamp=new Y.Mesh(bulb,new Y.MeshBasicMaterial({color}));lamp.userData.color=color;
+ lamp.position.set(lightPoint.x-.26*Math.sin(lightPoint.h),up,-lightPoint.y+.26*Math.cos(lightPoint.h));scene.add(lamp);
+ return lamp;
+});
+// Cones mark the corners of both parking bays.
+const cone=new Y.ConeGeometry(.17,.55,10),coneMat=mat(0xf0661f);
+for(const i of [6,7]){
+ const b=parkBox(i);
+ for(const along of [-1,1])for(const across of [-1,1]){
+  const p=point(b.s+along*(b.length/2+.25),b.side+across*(b.width/2+.25));
+  const m=new Y.Mesh(cone,coneMat);m.position.set(p.x,.3,-p.y);m.castShadow=true;scene.add(m);
+ }
+}
 for(const edge of [-1,1])localBlock(zones[3].from+6,.72+edge*.24,.056,.09,.055,8,0xffd444);
 for(const s of [zones[9].from+.8,zones[9].from+25,zones[9].to-1])localBlock(s,0,.055,6.3,.05,.2,0xf0d65b);
 sign(zones[9].from+5,4.5,'SỐ 2   >24','#28578c');sign(zones[9].from+30,4.5,'SỐ 1   <24','#28578c');
@@ -167,6 +245,15 @@ for(let x=left-20;x<right+30;x+=13){
  for(const y of [bottom-10,topY+14]){
   const angle=x*.47+y*.71,h=6.8+1.2*Math.sin(angle);
   yardTrees.push([x,0,-y,h*.84,h,angle]);
+ }
+}
+// Shade trees on the lawns between the lanes, clear of every lesson.
+for(let x=left+7;x<right-4;x+=12.5){
+ for(let y=bottom+6;y<topY-4;y+=12.5){
+  const angle=x*.61+y*.37,tx=x+3.5*Math.sin(angle*1.7),ty=y+3.5*Math.cos(angle*2.3);
+  if(route.some(p=>(p.x-tx)**2+(p.y-ty)**2<13.5**2))continue;
+  const h=5.6+1.3*Math.sin(angle);
+  yardTrees.push([tx,0,-ty,h*.84,h,angle]);
  }
 }
 createTreeModels(Y).grove(scene,yardTrees,false);
@@ -188,7 +275,8 @@ for(let x=left-15;x<right+20;x+=18){
 }
 for(const [color,list] of batches){
  const batch=new Y.InstancedMesh(cube,mat(color),list.length);
- list.forEach((matrix,i)=>batch.setMatrixAt(i,matrix));scene.add(batch);
+ list.forEach((matrix,i)=>batch.setMatrixAt(i,matrix));
+ batch.castShadow=batch.receiveShadow=true;scene.add(batch);
 }
 const vehicle=new Y.Group();scene.add(vehicle);
 const body=new Y.Group();vehicle.add(body);
@@ -207,14 +295,52 @@ async function loadSedan(){
  const json=buf[0]===31?await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).json():JSON.parse(new TextDecoder().decode(buf));
  const model=new Y.ObjectLoader().parse(json),bounds=new Y.Box3().setFromObject(model);
  const scale=4.18/(bounds.max.z-bounds.min.z);model.scale.setScalar(scale);
- model.position.y=-bounds.min.y*scale;model.rotation.y=Math.PI;body.add(model);body.remove(fallback);
+ model.position.y=-bounds.min.y*scale;model.rotation.y=Math.PI;
+ model.traverse(part=>{if(part.isMesh)part.castShadow=true;});
+ body.add(model);body.remove(fallback);
 }
 loadSedan().catch(()=>{});
-const car={x:0,y:0,h:0,v:0,steer:0,gear:1,signal:'',belt:false,hazard:false};
+// Lamps on the car show what the examiner sees: brake, reverse and turn signals.
+const glow=(color,x,y,z,w=.3)=>{
+ const m=new Y.Mesh(cube,new Y.MeshBasicMaterial({color}));m.position.set(x,y,z);m.scale.set(w,.1,.06);m.visible=false;body.add(m);return m;
+};
+const carLamps={brake:[glow(0xff2a1c,-.62,.83,2.1),glow(0xff2a1c,.62,.83,2.1)],reverse:[glow(0xffffff,0,.6,2.11,.5)],
+ left:[glow(0xffa51f,-.8,.7,2.07,.14),glow(0xffa51f,-.8,.66,-2.04,.14)],right:[glow(0xffa51f,.8,.7,2.07,.14),glow(0xffa51f,.8,.66,-2.04,.14)]};
+// Predicted wheel tracks help line the car up, forwards and in reverse.
+const trailSteps=22,trailGeometry=new Y.BufferGeometry();
+trailGeometry.setAttribute('position',new Y.BufferAttribute(new Float32Array(trailSteps*4*3),3));
+{
+ const index=[];
+ for(const base of [0,trailSteps*2])for(let i=0;i<trailSteps-1;i++){const v=base+2*i;index.push(v,v+1,v+2,v+2,v+1,v+3);}
+ trailGeometry.setIndex(index);
+}
+const trail=new Y.Mesh(trailGeometry,new Y.MeshBasicMaterial({color:0x4fd2ff,transparent:true,opacity:.5,depthWrite:false,side:Y.DoubleSide}));
+trail.frustumCulled=false;trail.renderOrder=2;scene.add(trail);
+let trailOn=!exam;
+try{const saved=localStorage.getItem('vivudatviet.yardTrail');if(saved)trailOn=saved==='on';}catch{}
+function drawTrail(){
+ trail.visible=trailOn&&mode!=='ended';if(!trail.visible)return;
+ const positions=trailGeometry.attributes.position,dir=car.gear<0?-1:1,turn=Math.tan(car.steer*.60)/2.62,step=.45*dir;
+ let x=car.x,y=car.y,h=car.h;
+ for(let i=0;i<trailSteps;i++){
+  const ground=altitude(s+i*step*Math.cos(h-point(s).h))+.075;
+  [-.78,.78].forEach((offset,track)=>{
+   for(const [edge,half] of [[0,-.09],[1,.09]]){
+    const side=offset+half;
+    positions.setXYZ(track*trailSteps*2+i*2+edge,x+Math.cos(h)*side,ground,-(y-Math.sin(h)*side));
+   }
+  });
+  h+=turn*step;x+=Math.sin(h)*step;y+=Math.cos(h)*step;
+ }
+ positions.needsUpdate=true;
+}
+const car={x:0,y:0,h:0,v:0,steer:0,gear:1,signal:'',belt:false,hazard:false,brake:false};
 const input=createDriveInput(),penalties=[],mapCtx=$('map').getContext('2d');
 let index=0,s=0,oldS=0,mode='ready',score=100,wallStart=0,time=0,stageStart=0,view=DriveView.current();
 let done=new Set(),flags={},emergency=null,emergencyIndex=6,emergencyOnly=false,lastTime=performance.now();
-let note='',noteUntil=0,lastHud=-Infinity;
+let note='',noteUntil=0,lastHud=-Infinity,cameraHeading=0,wheelTurn=null,shownTurn=0;
+const touch=matchMedia('(any-pointer:coarse)').matches,wheel=$('wheel');
+if(parent!==window)document.body.classList.add('embedded');
 pick.add(new Option('Tình huống nguy hiểm bất ngờ',11));
 function resetFlags(){flags={stop:false,hold:0,roll:0,park:false,reverse:0,fast:false,slow:false,track:false,off:false,wrong:false,overspeed:0,overTime:0,stageTime:0};stageStart=time;}
 function tell(msg,seconds=3){note=msg;noteUntil=time+seconds;}
@@ -240,7 +366,7 @@ function scenario(requested){
  emergencyOnly=!exam&&requested===11;index=emergencyOnly?6:requested;
  pick.value=emergencyOnly?11:index;
  s=zones[index].from+.9;oldS=s;const p=point(s);
- Object.assign(car,{x:p.x,y:p.y,h:p.h,v:0,steer:0,gear:1,signal:'',belt:index!==0,hazard:false});
+ Object.assign(car,{x:p.x,y:p.y,h:p.h,v:0,steer:0,gear:1,signal:'',belt:index!==0,hazard:false,brake:false});cameraHeading=p.h;
  mode='ready';time=0;score=100;penalties.length=0;input.clear();done.clear();
  resetFlags();emergency=null;emergencyIndex=[4,6,8][Math.floor(Math.random()*3)];
  note='';noteUntil=0;lastHud=-Infinity;$('go').disabled=false;$('go').textContent=exam?'Bắt đầu thi':'Bắt đầu lái';
@@ -258,6 +384,7 @@ function end(passed,why){
 function fine(key,text,points=5){
  if(done.has(key))return;done.add(key);score=Math.max(0,score-points);
  penalties.push(text+' (−'+points+')');tell(penalties.at(-1),4);
+ const stats=$('stats');stats.classList.remove('hit');void stats.offsetWidth;stats.classList.add('hit');
  if(exam&&score<80)end(false,'Dưới 80 điểm');
 }
 function start(){
@@ -365,7 +492,8 @@ function drive(dt){
  const left=input.has('arrowleft')||input.has('a'), right=input.has('arrowright')||input.has('d');
  const brake=input.has('arrowdown')||input.has('s')||input.has(' ');
  const gas=input.has('arrowup')||input.has('w');
- car.steer+=(Number(right)-Number(left)-car.steer)*Math.min(1,dt*7);
+ car.brake=brake;
+ car.steer+=((wheelTurn===null?Number(right)-Number(left):wheelTurn)-car.steer)*Math.min(1,dt*(wheelTurn===null?7:12));
  const grade=(altitude(s+.2)-altitude(s-.2))/.4;
  car.v+=((gas?(car.gear<0?-1.9:2.85):0)-grade*5.1*Math.cos(car.h-point(s).h))*dt;
  const drag=(brake?6.8:.35+car.v*car.v*.009)*dt;
@@ -377,13 +505,14 @@ function drive(dt){
 }
 function hud(){
  const kmh=Math.round(Math.abs(car.v)*3.6),z=zones[index];
+ document.body.dataset.mode=mode;
  $('points').textContent=score+' điểm';$('speed').textContent=kmh;$('gear').textContent=car.gear<0?'R':car.gear;
  const seconds=exam?Math.max(0,1080-Math.floor(time)):Math.floor(time);
  $('clock').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');
  $('badge').textContent=emergencyOnly?'Xử lý nguy hiểm':'Bài '+(index+1)+' / 11';
  if(mode==='ended')return;
  let cue='';
- if(mode==='ready')cue='Chọn Bắt đầu, giữ ↑ để nhấn ga.';
+ if(mode==='ready')cue=touch?'Chọn Bắt đầu, giữ Ga để chạy.':'Chọn Bắt đầu, giữ ↑ để nhấn ga.';
  else if(emergency)cue=emergency.clear?'Hết báo động · dừng và tắt H.':'⚠ NGUY HIỂM · phanh dừng ngay và bật H!';
  else if(time<noteUntil)cue=note;
  else if([1,2,8].includes(index)&&!flags.stop&&!flags.missed)cue='Cản trước cách vạch '+(stopAt(index)-s-2.09*Math.cos(car.h-point(s).h)).toFixed(2)+' m';
@@ -422,13 +551,26 @@ function frame(now){
    cabin.driverEye(seat,ahead,camera.aspect);
    camera.position.copy(vehicle.localToWorld(seat));camera.lookAt(vehicle.localToWorld(ahead));
  }else{
-   const overhead=view==='overhead',back=overhead?5.5:7.8,up=overhead?17:4.6,look=overhead?0:3.5;
-   camera.position.set(car.x-Math.sin(car.h)*back,height+up,-car.y+Math.cos(car.h)*back);
-   camera.lookAt(car.x+Math.sin(car.h)*look,height+.3,-car.y-Math.cos(car.h)*look);
+   // The chase camera swings behind the car a moment after it turns.
+   const overhead=view==='overhead',tall=1+Math.max(0,1-camera.aspect)*.9;
+   const back=(overhead?4:7.6)*tall,up=(overhead?24:3.9)*tall,look=overhead?1:4.5;
+   const swing=Math.atan2(Math.sin(car.h-cameraHeading),Math.cos(car.h-cameraHeading));
+   cameraHeading+=swing*(1-Math.exp(-dt*(overhead?2.5:5)));
+   camera.position.set(car.x-Math.sin(cameraHeading)*back,height+up,-car.y+Math.cos(cameraHeading)*back);
+   camera.lookAt(car.x+Math.sin(car.h)*look,height+.5,-car.y-Math.cos(car.h)*look);
  }
  cabin?.update(seated,car.v*3.6,car.steer,undefined,undefined,car.gear<0?'R':String(car.gear));
  if(seated)cabin.reflectMounted(renderer,scene,graphics.profile.mirrorMs);
- lamp.material.color.setHex(index===4&&lightGreen()?0x36e865:0xff3f25);
+ const lit=index===4&&lightGreen()?2:0;
+ lamps.forEach((lamp,i)=>lamp.material.color.setHex(lamp.userData.color).multiplyScalar(i===lit?1:.16));
+ const flash=now%700<380,braking=car.brake&&mode==='running';
+ for(const m of carLamps.brake)m.visible=braking;
+ carLamps.reverse[0].visible=car.gear<0;
+ for(const side of ['left','right'])for(const m of carLamps[side])m.visible=flash&&(car.hazard||car.signal===side);
+ sun.position.set(car.x,height,-car.y).add(sunOffset);sun.target.position.set(car.x,height,-car.y);
+ drawTrail();
+ const turn=Math.round(car.steer*135);
+ if(turn!==shownTurn){shownTurn=turn;wheel.style.setProperty('--turn',turn+'deg');wheel.setAttribute('aria-valuenow',Math.round(car.steer*100));}
  renderer.render(scene,camera);
  if(now-lastHud>=100){hud();miniMap();lastHud=now;}
  requestAnimationFrame(frame);
@@ -444,11 +586,35 @@ function showCamera(){
 }
 function changeCamera(){view=nextView[view];if(view!=='overhead')DriveView.select(view);showCamera();}
 showCamera();
+function showTrail(){$('trail').setAttribute('aria-pressed',trailOn);}
+function toggleTrail(){trailOn=!trailOn;try{localStorage.setItem('vivudatviet.yardTrail',trailOn?'on':'off');}catch{}showTrail();}
+showTrail();$('trail').onclick=toggleTrail;
+// Dragging around the hub turns the wheel. Releasing it centres the steering.
+{
+ const lock=2.35;let grip=null;
+ const angle=e=>Math.atan2(e.clientY-grip.cy,e.clientX-grip.cx);
+ const release=e=>{if(grip&&e.pointerId===grip.id){grip=null;wheelTurn=null;}};
+ wheel.addEventListener('pointerdown',e=>{
+  if(e.button!==0||grip)return;
+  e.preventDefault();try{wheel.setPointerCapture(e.pointerId);}catch{}
+  const box=wheel.getBoundingClientRect();
+  grip={id:e.pointerId,cx:box.left+box.width/2,cy:box.top+box.height/2,turn:car.steer*lock};grip.last=angle(e);
+  wheelTurn=car.steer;
+ });
+ wheel.addEventListener('pointermove',e=>{
+  if(!grip||e.pointerId!==grip.id)return;
+  const now=angle(e),delta=Math.atan2(Math.sin(now-grip.last),Math.cos(now-grip.last));
+  grip.last=now;grip.turn=clamp(grip.turn+delta,-lock,lock);wheelTurn=grip.turn/lock;
+ });
+ for(const type of ['pointerup','pointercancel','lostpointercapture'])wheel.addEventListener(type,release);
+ wheel.addEventListener('contextmenu',e=>e.preventDefault());
+ addEventListener('blur',()=>{grip=null;wheelTurn=null;});
+}
 addEventListener('keydown',e=>{
  if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input,textarea,select,[contenteditable=true],dialog'))return;
  const key=e.key.toLowerCase();
  if(['arrowup','arrowdown','arrowleft','arrowright',' ','w','a','s','d'].includes(key)){e.preventDefault();input.add(key);}
- if(!e.repeat&&controls[key])action(controls[key]);if(!e.repeat&&key==='c')changeCamera();
+ if(!e.repeat&&controls[key])action(controls[key]);if(!e.repeat&&key==='c')changeCamera();if(!e.repeat&&key==='v')toggleTrail();
 });
 addEventListener('keyup',e=>input.delete(e.key.toLowerCase()));addEventListener('blur',()=>input.clear());
 for(const b of document.querySelectorAll('[data-act]'))b.onclick=()=>action(b.dataset.act);

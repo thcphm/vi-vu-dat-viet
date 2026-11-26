@@ -1,6 +1,14 @@
 'use strict';
 const $=id=>document.getElementById(id),clamp=(x,min,max)=>Math.max(min,Math.min(max,x));
 const keySet=createDriveInput(),held=(...names)=>names.some(n=>keySet.has(n));
+// Turn signals and hazard lamps. The scene draws the lamps and cancels a signal after the turn.
+const driveSignals=window.driveSignals={side:'',hazard:false,yaw:0};
+function setSignal(which){
+ if(mode!=='drive')return;
+ if(which==='hazard')driveSignals.hazard=!driveSignals.hazard;
+ else{driveSignals.side=driveSignals.side===which?'':which;driveSignals.yaw=car.yaw;}
+}
+for(const button of document.querySelectorAll('[data-signal]'))button.onclick=()=>setSignal(button.dataset.signal);
 const featured=[['Hà Nội',105.8521,21.0277],['TP. Hồ Chí Minh',106.6994,10.7743],['Đà Nẵng',108.2204,16.0677],['Hải Phòng',106.6821,20.8587],['Huế',107.5887,16.4645],['Đà Lạt',108.4373,11.9418],['Cần Thơ',105.7831,10.0324],['Cà Mau',105.1507,9.1769],['Hà Giang',104.9844,22.8234],['Phú Quốc',103.959,10.2135]];
 const baSaoDrive=['Ba Sao · Quốc lộ 21',105.815695,20.550735];featured.push(baSaoDrive);
 const nameOf=e=>e.name||({motorway:'Đường cao tốc',trunk:'Đường trục chính',primary:'Đường chính',secondary:'Đường liên huyện',tertiary:'Đường địa phương',residential:'Đường dân cư',service:'Đường dịch vụ'}[e.kind]||'Đường địa phương');
@@ -1178,6 +1186,7 @@ window.addEventListener('keydown',e=>{
  }
  if(mode!=='drive')return;
  if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input,textarea,select,[contenteditable=true],dialog'))return;
+ if(['q','e','h'].includes(k)){if(!e.repeat)setSignal({q:'left',e:'right',h:'hazard'}[k]);e.preventDefault();return;}
  if(['p','u','c'].includes(k)&&!e.repeat){
    if(k==='p')pause();if(k==='u')recover();if(k==='c')$('camera').click();e.preventDefault();return;
  }

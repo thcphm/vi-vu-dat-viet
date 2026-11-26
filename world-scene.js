@@ -1387,6 +1387,31 @@
     const headlight=new T.SpotLight(0xffeccd,0,82,.49,.58,2);
     headlight.position.set(0,.73,-2.27);headlight.target.position.set(0,.08,-23);
     playerRig.add(headlight,headlight.target);
+    // Four amber lamps at the corners of the player's car.
+    const signalRig=new T.Group();scene.add(signalRig);
+    const signalLamps=[[-1,-1],[-1,1],[1,-1],[1,1]].map(([side,end])=>{
+      const lamp=new T.Mesh(new T.BoxGeometry(.2,.1,.06),new T.MeshBasicMaterial({color:0xffa41c}));
+      lamp.userData={side,end};lamp.visible=false;signalRig.add(lamp);return lamp;
+    });
+    let signalShown='';
+    function updateSignals(car,inside,now){
+      const state=window.driveSignals;if(!state)return;
+      if(state.side){
+        // A signal switches itself off once the car has turned and straightened.
+        const turned=Math.atan2(Math.sin(car.yaw-state.yaw),Math.cos(car.yaw-state.yaw));
+        if(Math.abs(turned)>.7&&Math.abs(car.steer||0)<.08)state.side='';
+      }
+      const shown=state.hazard?'hazard':state.side;
+      if(shown!==signalShown){signalShown=shown;document.body.dataset.signal=shown;}
+      const lit=now%700<380,wide=car.spec.width??1.8,high=car.spec.height??1.18;
+      signalRig.visible=!inside&&!car.sightView&&!car.showroom;
+      signalRig.position.copy(player.root.position);signalRig.quaternion.copy(playerRig.quaternion);
+      for(const lamp of signalLamps){
+        const {side,end}=lamp.userData;
+        lamp.visible=lit&&(state.hazard||state.side===(side<0?'left':'right'));
+        lamp.position.set(side*(wide/2-.14),high*.6,end*(car.spec.length/2+.01));
+      }
+    }
     let cabin, cabinModel;
     function refreshMap(){cabin?.refreshMap();}
     const mapRay=new T.Raycaster(),mapPointer=new T.Vector2();
@@ -1444,6 +1469,7 @@
       playerRig.position.y+=car.spec.seatLift??0;
       playerRig.rotation.set(-player.root.rotation.x,-car.yaw,-player.root.rotation.z,'YXZ');
       mirrorRotation.copy(playerRig.quaternion);
+      updateSignals(car,inside,now);
       if(inside){
         cabin??=window.buildDriverCabin(T,playerRig,document.getElementById('map'));
         if(cabinModel!==kind){cabin.setVehicle(kind,car.spec);cabinModel=kind;}
