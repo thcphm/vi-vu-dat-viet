@@ -737,7 +737,7 @@ function createTourDistrict(T,scene,plaster,structures,osmBuildings,nightLights)
         b.h=built.height;b.solids=built.solids;b.stelae=built.stelae;continue;
       }
       const [bLon,bLat]=graph.geo(x,z),zone=window.CentralStreetscapes?.zoneAt(bLon,bLat);
-      const zWalls=zone?zone.walls:null,zRoofs=zone?zone.roofs:null;
+      const zWalls=zone&&!zone.general?zone.walls:null,zRoofs=zone&&!zone.general?zone.roofs:null;
       const roofColor=detail?.['roof:colour']?new T.Color(detail['roof:colour']):zRoofs?new T.Color(zRoofs[opening===1?0:seed%zRoofs.length]):roofs[opening===1?0:seed%roofs.length];
       const base=detail?.['building:colour']?new T.Color(detail['building:colour']):detail?.['building:material']==='wood'?new T.Color(0x99765a):zWalls?new T.Color(zWalls[seed%zWalls.length]):palette[seed%palette.length];
       if(!part&&!opening&&!unclassified&&Math.hypot(x-cx,z-cz)<185&&h>=3&&h<17&&maxX-minX<32&&maxZ-minZ<32&&

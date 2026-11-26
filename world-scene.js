@@ -818,7 +818,8 @@
         const {house,s,sign,hx,hz,width,depth,type,random}=c;
             if(house){
               const regional=centralStreetscapes?.themeAt(graph,hx+cx,hz+cz);
-              const rZone=regional?.zone,rShop=rZone?.shops[type%rZone.shops.length];
+              // Spread houses over the whole shop list of the region, not only its first six.
+              const rZone=regional?.zone,shopPick=rZone?(type+6*Math.floor(c.priority*997))%rZone.shops.length:type,rShop=rZone?.shops[shopPick];
               const twoStory=rShop?rShop.upstairs:upstairs.has(shopTypes[type]);
               const h=(twoStory?6.7:3.65)+random()*.62;
               registerObstacle({id:c.key,kind:'building',x:hx,z:hz,fx:s.fx,fz:s.fz,w:width/2,d:depth/2,height:h});
@@ -832,7 +833,7 @@
               const roofPal=rZone?rZone.roofs:[0x989d98,0xaf846d,0x99aeb0];
               const gablePal=rZone?rZone.gables:[0xa26148,0x825947,0x7b8688];
               const awningPal=rZone?rZone.awnings:[0xa2a692,0xbc8062,0x809b93];
-              const frontKey=regional?regional.frontKeys[type%regional.frontKeys.length]:'front'+type;
+              const frontKey=regional?regional.frontKeys[shopPick%regional.frontKeys.length]:'front'+type;
               instance('wall',unitBox,hx,h*.5,hz,width,h,depth,rot,wallPal[type%wallPal.length]);
               instance(frontKey,unitPlane,hx+sx*(depth/2+.025),h/2,hz+sz*(depth/2+.025),width,h,1,rot);
               for(const side of [-1,1]){
@@ -1267,9 +1268,23 @@
     }
     const trafficModels={
       sedan:{asset:'traffic/hatchback.glb',length:3.95},van:{asset:'traffic/kei-van.glb',length:4.05},
-      scooter:{asset:'traffic/motor-scooter.glb',length:1.84},taxi:{asset:'streetscape/city-taxi.glb',length:4.52},rival:worldGarage.gt
+      scooter:{asset:'traffic/motor-scooter.glb',length:1.84},taxi:{asset:'streetscape/city-taxi.glb',length:4.52},rival:worldGarage.gt,
+      suv:{asset:'streetscape/family-suv.glb',length:4.6,width:1.95,height:1.63},
+      minivan:{asset:'edition/assets/vehicles/minivan.glb',length:4.8,width:1.96,height:1.79},
+      mini:{asset:'edition/assets/vehicles/vf3.glb',length:3.19,width:1.7,height:1.65},
+      bus:{asset:'edition/assets/vehicles/bus.glb',length:9.4,width:2.56,height:2.76,paints:[0x1f8f6b,0xd9822b,0x2c6fb3,0xf2efe6,0xc23b32]},
+      truck:{asset:'edition/assets/vehicles/truck.glb',length:6.8,width:2.4,height:3,paints:[0x2f5fa8,0xf1eee4,0xb8322a,0x3d7d4e,0xd7a419]}
     };
-    const cache=new Map(),colors=[0x446370,0x9f553e,0x9aaba9,0x384c67,0xa7a39c,0x99864e];
+    // Paint seen on Vietnamese streets: mostly white, silver and black, with a few bright cars.
+    const cache=new Map(),colors=[0xe9e9e4,0x446370,0x9f553e,0x9aaba9,0x1c1e21,0x384c67,0xa7a39c,0xb3261e,0x99864e,0xf4f3ee,0x5d6468,0x1f4f8a,0x6d1f2a,0x2f6b55,0xc9b28a,0xd9d6cf];
+    const riderLooks={jacket:[0x506d69,0x2e4a78,0x8a2f2b,0x3a3d40,0xc9c2ae,0x4d6b3a,0xd0862d,0x6b4a7a,0x1f6f7a],
+      jeans:[0x37474b,0x23262b,0x5b4a3a,0x2f3f63,0x6a6f73],helmet:[0xe4ddd2,0xc0392b,0x1f1f22,0x2f6fb5,0xf0c330,0x3f8f5a,0xf29cb3,0x9aa3a8]};
+    const riderShades=new Map();
+    function riderShade(part,idx){
+      const list=riderLooks[part],color=list[Math.abs(Math.imul(idx+1,part.length*2654435761>>>0)>>>7)%list.length],key=part+color;
+      if(!riderShades.has(key))riderShades.set(key,part==='helmet'?new T.MeshStandardMaterial({color,roughness:.26}):basic(color));
+      return riderShades.get(key);
+    }
     const contactTexture=document.createElement('canvas');contactTexture.width=contactTexture.height=64;
     const ctx=contactTexture.getContext('2d'),grad=ctx.createRadialGradient(32,32,9,32,32,31);
     grad.addColorStop(0,'rgba(10,13,15,.75)');grad.addColorStop(1,'rgba(10,13,15,0)');ctx.fillStyle=grad;ctx.fillRect(0,0,64,64);
@@ -1294,7 +1309,101 @@
       limb:new T.CylinderGeometry(.063,.08,1,8)
     };
     const riderMats={skin:basic(0xb98e6a),jacket:basic(0x506d69),jeans:basic(0x37474b),helmet:new T.MeshStandardMaterial({color:0xe4ddd2,roughness:.26})};
-    function scooterRider(parent){
+    // Two-wheeler bodywork. The scooter model is repainted and reshaped; the electric
+    // moped and the bicycle are built from tubes so they cost no extra download.
+    const bikePaints=[null,0xf1efe8,0x20242a,0x2b5fa8,0x9aa3a8,0x2f7d5b,0xd8b23a,0x6b4f8a,null,0xdfe3e6,0x7a1f2b];
+    const repaints=new Map(),flatShades=new Map();
+    const flat=color=>{if(!flatShades.has(color))flatShades.set(color,basic(color));return flatShades.get(color);};
+    function repaintTexture(map,color){
+      const key=map.uuid+':'+color;
+      if(repaints.has(key))return repaints.get(key);
+      const image=map.image,canvas=document.createElement('canvas');canvas.width=image.width;canvas.height=image.height;
+      const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.drawImage(image,0,0);
+      const pixels=ctx.getImageData(0,0,canvas.width,canvas.height),data=pixels.data;
+      const r=(color>>16&255)/255,g=(color>>8&255)/255,b=(color&255)/255;
+      for(let i=0;i<data.length;i+=4){
+        // Only the red paint changes; tyres, chrome and lamps keep their colour.
+        if(data[i]>50&&data[i]>data[i+1]*1.45&&data[i]>data[i+2]*1.45){
+          const light=Math.min(255,data[i]*1.08+18);
+          data[i]=light*r;data[i+1]=light*g;data[i+2]=light*b;
+        }
+      }
+      ctx.putImageData(pixels,0,0);
+      const texture=new T.CanvasTexture(canvas);
+      texture.flipY=map.flipY;texture.colorSpace=map.colorSpace;texture.wrapS=map.wrapS;texture.wrapT=map.wrapT;texture.channel=map.channel;
+      repaints.set(key,texture);return texture;
+    }
+    function stretch(model,x,y,z){
+      model.scale.x*=x;model.scale.y*=y;model.scale.z*=z;model.position.x*=x;model.position.y*=y;model.position.z*=z;
+    }
+    function styleScooter(model,style,idx){
+      const paint=bikePaints[idx%bikePaints.length];
+      if(style!=='box')model.getObjectByName('lid')?.removeFromParent();
+      if(paint!==null){
+        const done=new Map();
+        model.traverse(n=>{
+          if(!n.isMesh||!n.material?.map||!/body/.test(n.material.name))return;
+          if(!done.has(n.material)){const m=n.material.clone();m.map=repaintTexture(n.material.map,paint);done.set(n.material,m);}
+          n.material=done.get(n.material);
+        });
+      }
+      if(style==='sport')stretch(model,.94,.95,1.09);
+      if(style==='premium'){
+        stretch(model,1.08,1.1,1.14);
+        const screen=new T.Mesh(new T.PlaneGeometry(.4,.38),new T.MeshStandardMaterial({color:0xbfd3da,transparent:true,opacity:.38,roughness:.1,side:T.DoubleSide}));
+        screen.position.set(0,1.3,.6);screen.rotation.x=-.42;model.parent?.add(screen);model.userData.screen=screen;
+      }
+    }
+    const bikeParts={tube:new T.CylinderGeometry(1,1,1,8),tyre:new T.TorusGeometry(1,.075,8,22),fatTyre:new T.TorusGeometry(1,.3,8,18),hub:new T.CylinderGeometry(1,1,1,12)};
+    const bikeTyre=basic(0x1d1f20),bikeSteel=basic(0x8f9698);
+    function tube(group,a,b,radius,material){
+      const from=new T.Vector3(...a),to=new T.Vector3(...b),dir=to.clone().sub(from),m=new T.Mesh(bikeParts.tube,material);
+      m.position.copy(from).add(to).multiplyScalar(.5);m.scale.set(radius,dir.length(),radius);
+      m.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),dir.normalize());m.castShadow=true;group.add(m);return m;
+    }
+    function slab(group,x,y,z,w,h,l,material){
+      const m=new T.Mesh(unitBox,material);m.position.set(x,y,z);m.scale.set(w,h,l);m.castShadow=true;group.add(m);return m;
+    }
+    function bikeWheel(group,name,z,radius,fat){
+      const wheel=new T.Group();wheel.name=name;wheel.position.set(0,radius,z);group.add(wheel);
+      const tyre=new T.Mesh(fat?bikeParts.fatTyre:bikeParts.tyre,bikeTyre);tyre.rotation.y=Math.PI/2;
+      tyre.scale.setScalar(fat?radius*.77:radius*.93);tyre.castShadow=true;wheel.add(tyre);
+      if(fat){const hub=new T.Mesh(bikeParts.hub,bikeSteel);hub.rotation.z=Math.PI/2;hub.scale.set(radius*.55,.07,radius*.55);wheel.add(hub);}
+      else for(let i=0;i<4;i++){const spoke=slab(wheel,0,0,0,.008,radius*1.8,.008,bikeSteel);spoke.rotation.x=i*Math.PI/4;spoke.castShadow=false;}
+      return wheel;
+    }
+    function buildBicycle(idx){
+      const g=new T.Group(),paint=flat([0x2f6fb5,0xb8322a,0x1f1f22,0x3f8f5a,0xd9d6cf,0xc97b2a,0x7a4fa0][idx%7]),dark=flat(0x26282a);
+      bikeWheel(g,'wheel_F',.53,.34);bikeWheel(g,'wheel_R',-.53,.34);
+      tube(g,[0,.34,-.12],[0,.9,-.21],.018,paint);tube(g,[0,.84,-.2],[0,.88,.36],.017,paint);tube(g,[0,.36,-.1],[0,.82,.38],.019,paint);
+      for(const s of [-1,1]){tube(g,[s*.045,.34,-.12],[s*.055,.34,-.53],.011,paint);tube(g,[s*.03,.8,-.2],[s*.055,.34,-.53],.011,paint);tube(g,[s*.05,.92,.37],[s*.055,.34,.53],.013,paint);}
+      tube(g,[0,.86,.37],[0,1.04,.33],.014,bikeSteel);tube(g,[-.26,1.04,.32],[.26,1.04,.32],.013,bikeSteel);
+      slab(g,0,.93,-.22,.15,.05,.26,dark);tube(g,[-.09,.34,-.12],[.09,.34,-.12],.02,bikeSteel);
+      if(idx%3!==1){slab(g,0,.98,.62,.3,.2,.22,flat(0x6b5a45));}
+      if(idx%2){slab(g,0,.74,-.55,.16,.02,.36,bikeSteel);}
+      return g;
+    }
+    function buildElectricMoped(idx){
+      const g=new T.Group(),paint=flat([0xf1efe8,0x8fc7d8,0xe7a9b8,0x20242a,0xb8322a,0x9ccf8a,0xf0c330][idx%7]),dark=flat(0x26282a);
+      bikeWheel(g,'wheel_F',.58,.2,true);bikeWheel(g,'wheel_R',-.56,.2,true);
+      slab(g,0,.25,.02,.3,.07,.72,dark);slab(g,0,.42,-.4,.3,.3,.56,paint);slab(g,0,.61,-.33,.29,.07,.6,dark);
+      const shield=slab(g,0,.52,.4,.34,.56,.07,paint);shield.rotation.x=-.2;
+      slab(g,0,.36,.58,.2,.06,.3,paint);tube(g,[0,.24,.56],[0,1,.4],.024,dark);tube(g,[-.27,1,.4],[.27,1,.4],.015,dark);
+      slab(g,0,.84,.47,.16,.12,.07,flat(0xf4f2e6));slab(g,0,.5,-.69,.18,.06,.03,flat(0xb3241c));
+      slab(g,0,.7,-.72,.24,.2,.22,idx%2?dark:paint);
+      return g;
+    }
+    const strawHat=new T.ConeGeometry(.27,.15,18),straw=basic(0xd9c48f);
+    function scooterRider(parent,idx=0,style='classic'){
+      const look={skin:riderMats.skin,jacket:riderShade('jacket',idx),jeans:riderShade('jeans',idx),helmet:riderShade('helmet',idx)};
+      const cycling=style==='bicycle',lift=cycling?.1:style==='electric'?-.12:style==='premium'?.07:style==='sport'?-.03:0;
+      // Cyclists wear a conical hat or ride bare-headed; everyone else wears a helmet.
+      seatRider(parent,look,cycling?-.04:style==='electric'?-.06:0,lift,1,cycling?(idx%2?'straw':'none'):'helmet');
+      // About one scooter in four carries a passenger behind the rider.
+      if(idx%4===1&&!cycling&&style!=='box')seatRider(parent,{skin:riderMats.skin,jacket:riderShade('jacket',idx+5),jeans:riderShade('jeans',idx+3),helmet:riderShade('helmet',idx+2)},-.36,lift+.02,.93,'helmet');
+    }
+    function seatRider(parent,riderMats,back,lift,size,hat){
+      const seat=new T.Group();seat.position.set(0,lift,back);seat.scale.setScalar(size);parent.add(seat);parent=seat;
       function blob(geometry,material,x,y,z,sx,sy,sz){
         const m=new T.Mesh(geometry,material);m.position.set(x,y,z);m.scale.set(sx,sy,sz);m.castShadow=true;parent.add(m);return m;
       }
@@ -1304,7 +1413,9 @@
       }
       blob(riderGeometry.head,riderMats.jacket,0,1.07,-.10,.205,.335,.148).rotation.x=.16;
       blob(riderGeometry.head,riderMats.skin,0,1.49,-.045,.112,.135,.119);
-      blob(riderGeometry.helmet,riderMats.helmet,0,1.53,-.054,.136,.138,.14);
+      if(hat==='helmet')blob(riderGeometry.helmet,riderMats.helmet,0,1.53,-.054,.136,.138,.14);
+      else if(hat==='straw'){const cone=new T.Mesh(strawHat,straw);cone.position.set(0,1.65,-.045);cone.castShadow=true;parent.add(cone);}
+      else blob(riderGeometry.helmet,flat(0x1b1917),0,1.54,-.06,.118,.1,.124);
       for(const s of [-1,1]){
         limb([s*.15,1.26,-.075],[s*.216,1.05,.06],riderMats.jacket);limb([s*.216,1.05,.06],[s*.255,1.03,.34],riderMats.skin);
         limb([s*.107,.83,-.14],[s*.175,.58,.24],riderMats.jeans);limb([s*.175,.58,.24],[s*.18,.26,.09],riderMats.jeans);
@@ -1348,7 +1459,8 @@
         if(item.loading)return;item.loading=true;
         item.ready=loadModel(kind).then(async base=>{
           if(!base){item.modelReady=true;return;}
-          const model=base.clone(true),tints=new Map();
+          const style=kind==='scooter'&&!player?bikeStyleOf(idx):'';
+          const model=style==='bicycle'?buildBicycle(idx):style==='electric'?buildElectricMoped(idx):base.clone(true),tints=new Map();
           model.traverse(n=>{
             if(!n.isMesh)return;
             const src=n.material;
@@ -1358,7 +1470,7 @@
                 const m=src.clone();
                 if(player)m.color.setHex(spec.paint);
                 else if(kind==='rival')m.color.setHex(0x3a7790);
-                else if(kind!=='taxi')m.color.setHex(colors[idx%colors.length]);
+                else if(kind!=='taxi')m.color.setHex((spec.paints||colors)[idx%(spec.paints||colors).length]);
                 tints.set(src,m);
               }n.material=tints.get(src);
             }else if(src.name==='light_rear'){
@@ -1369,7 +1481,9 @@
           });
           item.wheels=['FL','FR','RL','RR','F','R'].map(id=>({n:model.getObjectByName('wheel_'+id),id})).filter(i=>i.n);
           item.front=['FL','FR'].map(id=>model.getObjectByName('steer_'+id)).filter(Boolean);
-          const detail=new T.Group();detail.add(model);if(kind==='scooter')scooterRider(detail);
+          const detail=new T.Group();detail.add(model);
+          if(style&&style!=='bicycle'&&style!=='electric')styleScooter(model,style,idx);
+          if(kind==='scooter')scooterRider(detail,idx,style||'box');
           outside.add(detail);detail.visible=false;
           for(const {n} of item.wheels){
             const axle=root.worldToLocal(n.getWorldPosition(new T.Vector3()));

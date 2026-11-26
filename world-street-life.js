@@ -131,10 +131,46 @@ function createWorldStreetLife(T,scene,small,environment,amenities,prepareActor)
       const actor=walker(p),t=(p.phase+walkTime*(.9+(p.phase%3)*.12))%(4*p.span);
       const along=p.span-Math.abs(t-2*p.span),sign=t<2*p.span?1:-1;
       const wx=p.x+p.fx*along,wz=p.z+p.fz*along;
+      actor.group.visible=true;
+      if(actor.hit){tumble(actor,dt,ground);continue;}
+      actor.x=wx;actor.z=wz;
       actor.group.position.set(wx-originX,ground(wx,wz)+.015,wz-originZ);
-      actor.group.rotation.y=Math.atan2(sign*p.fx,sign*p.fz);actor.group.visible=true;
+      actor.group.rotation.set(0,Math.atan2(sign*p.fx,sign*p.fz),0);
       actor.mixer?.update(dt);
     }
+  }
+  // A struck pedestrian is thrown along the car's path, lands, slides and lies still.
+  // They stand up and walk on a few seconds later.
+  function tumble(actor,dt,ground){
+    const h=actor.hit;h.age+=dt;
+    if(h.y>0||h.vy>0){
+      h.y+=h.vy*dt;h.vy-=9.81*dt;h.turn+=h.spin*dt;
+      if(h.y<=0){h.y=0;h.vy=h.vy<-3?-h.vy*.22:0;h.spin*=.3;}
+    }else{
+      const slow=Math.exp(-dt*4.5);h.vx*=slow;h.vz*=slow;h.turn+=h.spin*dt;h.spin*=slow;
+    }
+    h.x+=h.vx*dt;h.z+=h.vz*dt;
+    const rising=h.age>h.rest?Math.min(1,(h.age-h.rest)/1.2):0;
+    h.tilt+=((rising?0:1.5)-h.tilt)*(1-Math.exp(-dt*(rising?3:9)));
+    actor.group.position.set(h.x-originX,ground(h.x,h.z)+.015+h.y+Math.sin(Math.min(h.tilt,1.5))*.13,h.z-originZ);
+    actor.group.rotation.set(h.tilt,h.turn,0,'YXZ');
+    if(rising>=1)delete actor.hit;
+  }
+  // Test the car's footprint against every walker on screen. Returns the first person struck.
+  function strike(x,z,yaw,speed,halfLength,halfWidth){
+    const fx=Math.sin(yaw),fz=-Math.cos(yaw),vx=fx*speed,vz=fz*speed,pace=Math.abs(speed);
+    for(const actor of walkers.values()){
+      if(actor.hit||actor.x===undefined||!actor.group.visible)continue;
+      const dx=actor.x-x,dz=actor.z-z,along=dx*fx+dz*fz,across=dx*fz-dz*fx;
+      if(Math.abs(along)>halfLength+.28||Math.abs(across)>halfWidth+.24)continue;
+      // Glancing contacts push the person aside; square hits carry them along.
+      const glance=Math.min(1,Math.abs(across)/(halfWidth+.24)),side=Math.sign(across)||1;
+      actor.hit={x:actor.x,z:actor.z,y:.02,age:0,tilt:0,rest:5+pace*.12,
+        vx:vx*(1.05-glance*.4)+fz*side*pace*glance*.45,vz:vz*(1.05-glance*.4)-fx*side*pace*glance*.45,
+        vy:Math.min(7,.9+pace*.3*(1-glance*.5)),turn:Math.atan2(vx,vz),spin:(glance-.3)*side*Math.min(9,pace*.6)};
+      return {x:actor.x,z:actor.z,speed:pace};
+    }
+    return null;
   }
   async function prepareDeparture(){
     // render() has already requested every walker visible from the starting point.
@@ -142,5 +178,5 @@ function createWorldStreetLife(T,scene,small,environment,amenities,prepareActor)
     await Promise.all(Array.from(departure,item=>item.ready));
     return walkGroup;
   }
-  return {activity,prepare,render,prepareDeparture,get places(){return places;}};
+  return {activity,prepare,render,prepareDeparture,strike,get places(){return places;}};
 }

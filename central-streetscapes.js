@@ -234,6 +234,146 @@
         { title: 'BÁNH RẾ PHAN THIẾT', sub: 'CỐM SỮA • QUÀ BIỂN', accent: '#9c522a', upstairs: false }
       ],
       stalls: ['BÁNH CĂN', 'RĂNG MỰC', 'GỎI CÁ MAI', 'NƯỚC DỪA']
+    },
+    {
+      id: 'mien-bac',
+      // A broad fallback: ordinary shops found on any street of the region.
+      general: true,
+      bounds: [102.0, 19.9, 108.2, 23.5],
+      walls: [0xf0dfa8, 0xe9d4b5, 0xd9e2cf, 0xf3ead6, 0xe6c9a2],
+      roofs: [0x989d98, 0xa5553c, 0x99aeb0, 0x7c6a5c],
+      gables: [0xa26148, 0x825947, 0x7b8688],
+      awnings: [0x2e6a73, 0x9c4832, 0x3f6f4a, 0xc9a23a, 0x8a8f8c],
+      forcePitched: false,
+      heritageWood: false,
+      lanterns: false,
+      signStyle: { bg: '#8a2d24', fg: '#fbe9b0', trim: '#cfa04c', wall: '#efe1bd', shutter: '#4c4a44' },
+      shops: [
+        { title: 'PHỞ BÒ GIA TRUYỀN', sub: 'TÁI • NẠM • GẦU • QUẨY', accent: '#9b2f24', upstairs: true },
+        { title: 'BÚN CHẢ', sub: 'NEM CUA BỂ • BÚN NEM', accent: '#a5482a', upstairs: false },
+        { title: 'TẠP HÓA', sub: 'BÁNH KẸO • NƯỚC NGỌT • GIA VỊ', accent: '#2f6a55', upstairs: true },
+        { title: 'SỬA CHỮA XE MÁY', sub: 'THAY DẦU • VÁ SĂM • RỬA XE', accent: '#2c5b7a', upstairs: false },
+        { title: 'HIỆU THUỐC', sub: 'THUỐC TÂY • DỤNG CỤ Y TẾ', accent: '#1f7a5c', upstairs: true },
+        { title: 'CẮT TÓC NAM NỮ', sub: 'GỘI ĐẦU • UỐN • NHUỘM', accent: '#7a3358', upstairs: false },
+        { title: 'ĐIỆN THOẠI', sub: 'SIM THẺ • SỬA CHỮA • PHỤ KIỆN', accent: '#1d5f8c', upstairs: true },
+        { title: 'BÁNH MÌ', sub: 'PATE • TRỨNG • XÚC XÍCH', accent: '#b0652a', upstairs: false },
+        { title: 'CƠM BÌNH DÂN', sub: 'CƠM RANG • PHỞ XÀO', accent: '#8a4a26', upstairs: true },
+        { title: 'BIA HƠI', sub: 'LẠC RANG • NEM CHUA • ĐẬU RÁN', accent: '#b8862b', upstairs: false },
+        { title: 'PHOTOCOPY', sub: 'IN ẤN • ĐÁNH MÁY • ÉP PLASTIC', accent: '#4a5a66', upstairs: true },
+        { title: 'VÀNG BẠC', sub: 'TRANG SỨC • MUA BÁN • TRAO ĐỔI', accent: '#b3862a', upstairs: false },
+        { title: 'MAY ĐO', sub: 'ÁO DÀI • VEST • SỬA QUẦN ÁO', accent: '#6b3d6f', upstairs: true },
+        { title: 'TRÀ ĐÁ', sub: 'NƯỚC MÍA • HƯỚNG DƯƠNG • THUỐC LÀO', accent: '#3f6b4a', upstairs: false },
+        { title: 'BÚN ĐẬU MẮM TÔM', sub: 'CHẢ CỐM • NEM RÁN', accent: '#7c4a2a', upstairs: true },
+        { title: 'XÔI', sub: 'XÔI XÉO • XÔI NGÔ • BÁNH KHÚC', accent: '#a8742a', upstairs: false },
+        { title: 'CHÈ', sub: 'TÀO PHỚ • CHÈ ĐỖ ĐEN • CARAMEN', accent: '#35657a', upstairs: true },
+        { title: 'NHA KHOA', sub: 'NHỔ RĂNG • TRÁM RĂNG • NIỀNG RĂNG', accent: '#2a6f8a', upstairs: false },
+        { title: 'GAS', sub: 'NƯỚC LỌC ĐÓNG BÌNH • GIAO TẬN NƠI', accent: '#9a3a2a', upstairs: true },
+        { title: 'ĐIỆN NƯỚC', sub: 'ĐỒ ĐIỆN • ỐNG NƯỚC • KHÓA', accent: '#4b5f3c', upstairs: false }
+      ],
+      stalls: ['TRÀ ĐÁ', 'BÁNH MÌ', 'XÔI NÓNG', 'NƯỚC MÍA', 'BÁNH RÁN', 'NGÔ NƯỚNG']
+    },
+    {
+      id: 'tay-nguyen',
+      // A broad fallback: ordinary shops found on any street of the region.
+      general: true,
+      bounds: [107.0, 11.2, 108.9, 15.3],
+      walls: [0xe9d4b5, 0xd8e0c8, 0xf0e2c0, 0xdcc9a8],
+      roofs: [0x989d98, 0xa5553c, 0x99aeb0, 0x7c6a5c],
+      gables: [0xa26148, 0x825947, 0x7b8688],
+      awnings: [0x2e6a73, 0x9c4832, 0x3f6f4a, 0xc9a23a, 0x8a8f8c],
+      forcePitched: false,
+      heritageWood: false,
+      lanterns: false,
+      signStyle: { bg: '#3f5a2c', fg: '#fff0c4', trim: '#c99a48', wall: '#ece0c2', shutter: '#4a4334' },
+      shops: [
+        { title: 'CÀ PHÊ RANG XAY', sub: 'ROBUSTA • ARABICA • PHA PHIN', accent: '#5e3c28', upstairs: true },
+        { title: 'PHỞ KHÔ', sub: 'BÚN ĐỎ • BÚN CUA', accent: '#9b3a24', upstairs: false },
+        { title: 'NÔNG SẢN', sub: 'HỒ TIÊU • MẮC CA • MẬT ONG', accent: '#4b6a2f', upstairs: true },
+        { title: 'TẠP HÓA', sub: 'GẠO • MUỐI • MÌ TÔM', accent: '#2f6a55', upstairs: false },
+        { title: 'SỬA XE MÁY', sub: 'VÁ SĂM • HÀN • TIỆN', accent: '#2c5b7a', upstairs: true },
+        { title: 'QUẦY THUỐC', sub: 'THUỐC TÂY • THUỐC NAM', accent: '#1f7a5c', upstairs: false },
+        { title: 'CƠM LAM GÀ NƯỚNG', sub: 'RƯỢU CẦN • MĂNG RỪNG', accent: '#8a4a26', upstairs: true },
+        { title: 'VẬT TƯ NÔNG NGHIỆP', sub: 'PHÂN BÓN • HẠT GIỐNG', accent: '#3f6b4a', upstairs: false },
+        { title: 'CẮT TÓC', sub: 'GỘI ĐẦU • CẠO MẶT', accent: '#7a3358', upstairs: true },
+        { title: 'BÁNH MÌ', sub: 'XÍU MẠI • CHẢ CÁ', accent: '#b0652a', upstairs: false },
+        { title: 'ĐIỆN THOẠI', sub: 'SIM THẺ • PHỤ KIỆN', accent: '#1d5f8c', upstairs: true },
+        { title: 'BƠ SẦU RIÊNG', sub: 'TRÁI CÂY • SINH TỐ • KEM BƠ', accent: '#7a8a2a', upstairs: false }
+      ],
+      stalls: ['CÀ PHÊ', 'BƠ SÁP', 'BẮP NƯỚNG', 'NƯỚC MÍA', 'SỮA ĐẬU NÀNH']
+    },
+    {
+      id: 'mien-nam',
+      // A broad fallback: ordinary shops found on any street of the region.
+      general: true,
+      bounds: [103.4, 8.3, 107.9, 12.2],
+      walls: [0xe9d4b5, 0xc7d6bb, 0xf3dfb0, 0xcfe0e6, 0xf2d7c9],
+      roofs: [0x989d98, 0xa5553c, 0x99aeb0, 0x7c6a5c],
+      gables: [0xa26148, 0x825947, 0x7b8688],
+      awnings: [0x2e6a73, 0x9c4832, 0x3f6f4a, 0xc9a23a, 0x8a8f8c],
+      forcePitched: false,
+      heritageWood: false,
+      lanterns: false,
+      signStyle: { bg: '#1e6078', fg: '#fff2d0', trim: '#dfa349', wall: '#f2e4ca', shutter: '#2f5766' },
+      shops: [
+        { title: 'CƠM TẤM', sub: 'SƯỜN • BÌ • CHẢ • TRỨNG ỐP LA', accent: '#a8432a', upstairs: true },
+        { title: 'HỦ TIẾU', sub: 'HỦ TIẾU NAM VANG • MÌ • HOÀNH THÁNH', accent: '#8a5a2a', upstairs: false },
+        { title: 'CÀ PHÊ', sub: 'CÀ PHÊ SỮA ĐÁ • BẠC XỈU • NƯỚC ÉP', accent: '#5e3c28', upstairs: true },
+        { title: 'TẠP HÓA', sub: 'GẠO • MẮM • ĐƯỜNG • NƯỚC NGỌT', accent: '#2f6a55', upstairs: false },
+        { title: 'SỬA XE', sub: 'VÁ VỎ • THAY NHỚT • BƠM XE', accent: '#2c5b7a', upstairs: true },
+        { title: 'NHÀ THUỐC TÂY', sub: 'THUỐC • SỮA • THỰC PHẨM CHỨC NĂNG', accent: '#1f7a5c', upstairs: false },
+        { title: 'HỚT TÓC', sub: 'CẠO MẶT • RÁY TAI • GỘI ĐẦU', accent: '#7a3358', upstairs: true },
+        { title: 'ĐIỆN THOẠI', sub: 'MUA BÁN • SỬA CHỮA • DÁN MÀN HÌNH', accent: '#1d5f8c', upstairs: false },
+        { title: 'BÁNH MÌ THỊT', sub: 'CHẢ LỤA • XÍU MẠI • HEO QUAY', accent: '#b0652a', upstairs: true },
+        { title: 'BÚN BÒ', sub: 'BÚN RIÊU • BÚN MẮM', accent: '#8c2d2c', upstairs: false },
+        { title: 'QUÁN NHẬU', sub: 'LẨU DÊ • GÀ NƯỚNG • ỐC', accent: '#7c3926', upstairs: true },
+        { title: 'TRÀ SỮA', sub: 'TRÀ TRÁI CÂY • SINH TỐ • KEM', accent: '#b85a7a', upstairs: false },
+        { title: 'TIỆM VÀNG', sub: 'VÀNG 18K • 24K • CẦM ĐỒ', accent: '#b3862a', upstairs: true },
+        { title: 'GIẶT ỦI', sub: 'GIẶT SẤY • GIAO NHẬN TẬN NHÀ', accent: '#3a6f8a', upstairs: false },
+        { title: 'NƯỚC MÍA', sub: 'RAU MÁ • DỪA TƯƠI • SÂM LẠNH', accent: '#3f7a4a', upstairs: true },
+        { title: 'VẬT LIỆU XÂY DỰNG', sub: 'XI MĂNG • CÁT ĐÁ • SẮT THÉP', accent: '#4a5a66', upstairs: false },
+        { title: 'BÁNH XÈO', sub: 'BÁNH KHỌT • GỎI CUỐN', accent: '#a8742a', upstairs: true },
+        { title: 'CHÈ', sub: 'CHÈ THÁI • CHÈ BƯỞI • TÀU HỦ', accent: '#35657a', upstairs: false },
+        { title: 'KARAOKE', sub: 'PHÒNG LẠNH • ÂM THANH HAY', accent: '#6b3d8f', upstairs: true },
+        { title: 'PHÒNG KHÁM', sub: 'NỘI TỔNG QUÁT • NHI • SIÊU ÂM', accent: '#2a6f8a', upstairs: false }
+      ],
+      stalls: ['BÁNH MÌ', 'NƯỚC MÍA', 'CÀ PHÊ', 'BÁNH TRÁNG TRỘN', 'DỪA TƯƠI', 'HỦ TIẾU GÕ']
+    },
+    {
+      id: 'viet-nam',
+      // A broad fallback: ordinary shops found on any street of the region.
+      general: true,
+      bounds: [100.0, 7.0, 112.5, 24.0],
+      walls: [0xe9d4b5, 0xc7d6bb, 0xf3dfb0, 0xefe6d4],
+      roofs: [0x989d98, 0xa5553c, 0x99aeb0, 0x7c6a5c],
+      gables: [0xa26148, 0x825947, 0x7b8688],
+      awnings: [0x2e6a73, 0x9c4832, 0x3f6f4a, 0xc9a23a, 0x8a8f8c],
+      forcePitched: false,
+      heritageWood: false,
+      lanterns: false,
+      signStyle: { bg: '#7c3926', fg: '#fbe9b0', trim: '#cfa04c', wall: '#eee2c4', shutter: '#4c3f32' },
+      shops: [
+        { title: 'CƠM TẤM', sub: 'SƯỜN • BÌ • CHẢ • TRỨNG ỐP LA', accent: '#a8432a', upstairs: true },
+        { title: 'HỦ TIẾU', sub: 'HỦ TIẾU NAM VANG • MÌ • HOÀNH THÁNH', accent: '#8a5a2a', upstairs: false },
+        { title: 'CÀ PHÊ', sub: 'CÀ PHÊ SỮA ĐÁ • BẠC XỈU • NƯỚC ÉP', accent: '#5e3c28', upstairs: true },
+        { title: 'TẠP HÓA', sub: 'GẠO • MẮM • ĐƯỜNG • NƯỚC NGỌT', accent: '#2f6a55', upstairs: false },
+        { title: 'SỬA XE', sub: 'VÁ VỎ • THAY NHỚT • BƠM XE', accent: '#2c5b7a', upstairs: true },
+        { title: 'NHÀ THUỐC TÂY', sub: 'THUỐC • SỮA • THỰC PHẨM CHỨC NĂNG', accent: '#1f7a5c', upstairs: false },
+        { title: 'HỚT TÓC', sub: 'CẠO MẶT • RÁY TAI • GỘI ĐẦU', accent: '#7a3358', upstairs: true },
+        { title: 'ĐIỆN THOẠI', sub: 'MUA BÁN • SỬA CHỮA • DÁN MÀN HÌNH', accent: '#1d5f8c', upstairs: false },
+        { title: 'BÁNH MÌ THỊT', sub: 'CHẢ LỤA • XÍU MẠI • HEO QUAY', accent: '#b0652a', upstairs: true },
+        { title: 'BÚN BÒ', sub: 'BÚN RIÊU • BÚN MẮM', accent: '#8c2d2c', upstairs: false },
+        { title: 'PHỞ BÒ GIA TRUYỀN', sub: 'TÁI • NẠM • GẦU • QUẨY', accent: '#9b2f24', upstairs: true },
+        { title: 'BÚN CHẢ', sub: 'NEM CUA BỂ • BÚN NEM', accent: '#a5482a', upstairs: false },
+        { title: 'TẠP HÓA', sub: 'BÁNH KẸO • NƯỚC NGỌT • GIA VỊ', accent: '#2f6a55', upstairs: true },
+        { title: 'SỬA CHỮA XE MÁY', sub: 'THAY DẦU • VÁ SĂM • RỬA XE', accent: '#2c5b7a', upstairs: false },
+        { title: 'HIỆU THUỐC', sub: 'THUỐC TÂY • DỤNG CỤ Y TẾ', accent: '#1f7a5c', upstairs: true },
+        { title: 'CẮT TÓC NAM NỮ', sub: 'GỘI ĐẦU • UỐN • NHUỘM', accent: '#7a3358', upstairs: false },
+        { title: 'ĐIỆN THOẠI', sub: 'SIM THẺ • SỬA CHỮA • PHỤ KIỆN', accent: '#1d5f8c', upstairs: true },
+        { title: 'BÁNH MÌ', sub: 'PATE • TRỨNG • XÚC XÍCH', accent: '#b0652a', upstairs: false },
+        { title: 'CƠM BÌNH DÂN', sub: 'CƠM RANG • PHỞ XÀO', accent: '#8a4a26', upstairs: true },
+        { title: 'BIA HƠI', sub: 'LẠC RANG • NEM CHUA • ĐẬU RÁN', accent: '#b8862b', upstairs: false }
+      ],
+      stalls: ['BÁNH MÌ', 'NƯỚC MÍA', 'TRÀ ĐÁ', 'CÀ PHÊ']
     }
   ];
 
@@ -715,7 +855,7 @@
       let overheadCount = 0;
       let garlandCount = 0;
       let signCount = 0;
-      const maxStalls = 14;
+      const maxStalls = zone.general ? 9 : 14;
       const maxOverhead = (zone.id === 'hoi-an' || zone.id === 'hue') ? 10 : 0;
       const maxGarlands = zone.lanterns ? 10 : 0;
       const maxSigns = 8;

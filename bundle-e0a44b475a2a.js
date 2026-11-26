@@ -996,7 +996,8 @@ window.DriveBody={
  // kg, dimensionless normal restitution. Vehicle masses include a nominal occupant.
  mass(body){
    if(body?.spec?.mass)return body.spec.mass;
-   return body?.bike||body?.kind==='scooter'?205:({rally:1260,gt:1570,supercar:1480,van:1900,taxi:1420,rival:1460,person:75}[body?.model||body?.kind]||1450);
+   if(body?.mass)return body.mass;
+   return body?.bike||body?.kind==='scooter'?205:({rally:1260,gt:1570,supercar:1480,van:1900,taxi:1420,rival:1460,person:75,bus:11500,truck:7800,suv:1950,minivan:1850,mini:950}[body?.model||body?.kind]||1450);
  },
  strikeTraffic(actor,hit,event,yaw,attackerX,attackerZ,targetX,targetZ){
    if(event.closing<.8)return;

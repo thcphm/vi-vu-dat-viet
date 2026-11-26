@@ -334,15 +334,33 @@ function spawnAhead(ahead,index){
  if(index%3===1&&!c.edge.oneway)c.dir*=-1;
  addNpc(c,index);
 }
+// Two-wheelers come in several shapes: step-through scooters with or without a top box,
+// a sport scooter, a large premium scooter, an electric moped and a bicycle.
+const bikeStyles=['classic','box','sport','premium','electric','bicycle','classic','sport','electric','box','premium','bicycle','classic'];
+function bikeStyleOf(id){return bikeStyles[Math.abs(Math.floor(id))%bikeStyles.length];}
+// Share of each vehicle on the road. Buses and lorries keep to through roads.
+const npcFleet=[['sedan',24],['suv',15],['taxi',13],['van',11],['mini',9],['minivan',8],['truck',8],['bus',6],['rival',6]];
+// Half width and half length used for contact and following distance.
+const npcBody={scooter:[.38,.95],bus:[1.28,4.6],truck:[1.2,3.3],minivan:[.98,2.35],suv:[.97,2.25],mini:[.85,1.55]};
+const npcHalf=n=>(npcBody[n.kind]||[.91,1.98])[1];
+function npcKind(road){
+ const narrow=/^(residential|service|living_street|track|path|unclassified)/.test(road);
+ const fleet=narrow?npcFleet.filter(([kind])=>kind!=='bus'&&kind!=='truck'&&kind!=='rival'):npcFleet;
+ let roll=Math.random()*fleet.reduce((sum,[,share])=>sum+share,0);
+ for(const [kind,share] of fleet)if((roll-=share)<0)return kind;
+ return 'sedan';
+}
 function addNpc(c,i){
  const centre=roads.sample(c);
  const mix=gfx.streetLife.activity(roads,centre.x,centre.z,c.edge.kind,$('trafficLevel').value);
- const kind=Math.random()<mix.scooter?'scooter':['taxi','van','sedan','rival'][i%4];
+ const kind=Math.random()<mix.scooter?'scooter':npcKind(c.edge.kind);
  const offset=roadLaneOffset(c,kind==='scooter');
  const p=roads.sample(c,offset);
- if(Math.hypot(car.x-p.x,car.z-p.z)<16||npcs.some(n=>Math.hypot(p.x-n.x,p.z-n.z)<(kind==='scooter'&&n.kind==='scooter'?6:10)))return;
- const pace=(kind==='scooter'?6:kind==='rival'?21:9)+Math.random()*4;
- npcs.push({...c,...p,deckLift:roads.roadLevel(c.edge,c.s),kind,id:nextNpc++,speed:Math.min(pace,(roadSpeedLimit(c)??160)/3.6),pace,stopped:0});
+ const long=npcHalf({kind});
+ if(Math.hypot(car.x-p.x,car.z-p.z)<14+long||npcs.some(n=>Math.hypot(p.x-n.x,p.z-n.z)<(kind==='scooter'&&n.kind==='scooter'?6:6+long+npcHalf(n))))return;
+ const style=kind==='scooter'?bikeStyleOf(nextNpc):'';
+ const pace=style==='bicycle'?3.2+Math.random()*1.6:style==='electric'?5+Math.random()*2.5:(kind==='scooter'?6:kind==='rival'?21:kind==='bus'||kind==='truck'?7.5:9)+Math.random()*4;
+ npcs.push({...c,...p,deckLift:roads.roadLevel(c.edge,c.s),kind,mass:style==='bicycle'?95:style==='electric'?140:undefined,id:nextNpc++,speed:Math.min(pace,(roadSpeedLimit(c)??160)/3.6),pace,stopped:0});
 }
 function seedTraffic(){
  const {vehicles,busy}=gfx.streetLife.activity(roads,car.x,car.z,player.edge.kind,$('trafficLevel').value);
@@ -372,14 +390,14 @@ function trafficStep(dt){
    let target=fallen||n.recoil?.braking?0:Math.min(n.pace,(roadSpeedLimit(n)??160)/3.6);
    const control=roadControlAhead(roads,n,seconds,true);
    const wait=control&&(control.phase==='red'||control.phase==='amber'&&control.distance>n.speed*.9);
-   const stopAt=wait?Math.max(0,control.distance-control.stopLineOffset-(n.kind==='scooter'?1:2.1)):Infinity;
+   const stopAt=wait?Math.max(0,control.distance-control.stopLineOffset-npcHalf(n)-.1):Infinity;
    if(wait)target=Math.min(target,Math.sqrt(7*stopAt));
    for(const other of npcs){
      if(other===n||Math.abs(other.deckLift-n.deckLift)>2.5)continue;const ox=other.x-n.x,oz=other.z-n.z,long=ox*fx+oz*fz;
-     if(long>0&&long<15&&Math.abs(ox*fz-oz*fx)<1.65)target=Math.min(target,Math.max(0,(long-4)*1.3));
+     if(long>0&&long<15+npcHalf(other)&&Math.abs(ox*fz-oz*fx)<1.65)target=Math.min(target,Math.max(0,(long-npcHalf(n)-npcHalf(other))*1.3));
    }
    const ahead=dx*fx+dz*fz;
-   if(Math.abs(car.deckLift-n.deckLift)<=2.5&&ahead>0&&ahead<17&&Math.abs(dx*fz-dz*fx)<1.75)target=Math.min(target,Math.max(0,(ahead-5)*1.2));
+   if(Math.abs(car.deckLift-n.deckLift)<=2.5&&ahead>0&&ahead<15+npcHalf(n)&&Math.abs(dx*fz-dz*fx)<1.75)target=Math.min(target,Math.max(0,(ahead-3-npcHalf(n))*1.2));
    n.speed=fallen?0:n.speed+clamp(target-n.speed,-9*dt,2.8*dt);
    const moved=roads.advance(n,Math.min(stopAt,n.speed*dt),options=>{
      const opts=n.kind==='scooter'?options.filter(o=>!o.edge.kind.startsWith('motorway')):options;
@@ -408,9 +426,22 @@ function trafficStep(dt){
    hitVehicle(n);if(mode!=='drive')return;
  }
 }
+// Pedestrians are light: the car barely slows, but the bodywork and the driver's record suffer.
+function hitPedestrian(){
+ const pace=Math.abs(car.speed);
+ if(mode!=='drive'||pace<1.4||car.flood)return;
+ const struck=gfx.streetLife.strike(car.x,car.z,car.yaw,car.speed,(car.spec.length??4.4)/2,(car.spec.width??1.8)/2);
+ if(!struck)return;
+ const keep=1-75/(DriveBody.mass(car)+75)*1.4;
+ car.speed*=keep;if(car.vx!==undefined){car.vx*=keep;car.vz*=keep;}
+ const damage=Math.round(Math.min(16,2+pace*.6));
+ hp=Math.max(1,hp-damage);updateHud();
+ driveAudio.impact(Math.min(1,.25+pace/16),'vehicle');
+ inform('Tông người đi bộ · thân xe −'+damage+' · giảm tốc và nhường người đi bộ',4);
+}
 function hitVehicle(n){
  if(n.recoil?.y>1.35||Math.abs(car.deckLift-n.deckLift)>2.5)return;
- const bike=n.kind==='scooter',hit=DriveBody.contact(car,n,bike?.38:.91,bike?.95:1.98);
+ const bike=n.kind==='scooter',[halfWide,halfLong]=npcBody[n.kind]||[.91,1.98],hit=DriveBody.contact(car,n,halfWide,halfLong);
  if(!hit)return;
  const impact=DriveBody.resolve(car,hit,Math.sin(n.yaw)*n.speed+(n.recoil?.vx||0),-Math.cos(n.yaw)*n.speed+(n.recoil?.vz||0),n);
  if(impact.closing>.7){
@@ -535,7 +566,7 @@ function tick(dt){
      inform((won?'Thắng chặng!':'Đối thủ về trước.')+' Chặng '+(++duel.round)+' bắt đầu.',4);duel.gate+=1200;
    }
  }
- trafficStep(dt);spawnTick+=dt;if(spawnTick>1.6){fillTraffic();spawnTick=0;}
+ trafficStep(dt);hitPedestrian();spawnTick+=dt;if(spawnTick>1.6){fillTraffic();spawnTick=0;}
  snapshot+=dt;if(snapshot>4){save();snapshot=0;}
 }
 function visitTarget(){
